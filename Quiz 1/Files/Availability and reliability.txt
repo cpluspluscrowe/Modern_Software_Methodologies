@@ -1,0 +1,5 @@
+- Reliability
+	 The probability of failure-free system operation.
+- Availability
+	 The probability that a system conducts requested services at a 
+point in time.

@@ -1,0 +1,9 @@
+Dynamic binding with inheritance can be crazy.  
+Asliasing : more than 1 name to refer to the same state variable
+Unbounded arrays: buffer overflow failures
+Default input processing – malicious inputs trigger failures
+Provide restart capabilities – after long transactions
+Developers often write programs which address memory locations outside of array bounds
+Name all constants that represent real-world values
+	Do not use numeric values, always refer to them by name
+Reduce mistakes for wrong values by using a name rather than a value

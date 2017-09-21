@@ -1,0 +1,4 @@
+1.	Identify operational profiles
+2.	Prepare test data set
+3.	Apply tests to system
+4.	Compute observed reliability

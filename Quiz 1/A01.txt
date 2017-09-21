@@ -1,0 +1,478 @@
+﻿8/29/17
+1
+Chapter 10 – Dependable systems
+30/10/2014 Chapter	10	Dependable	Systems 1
+Topics covered
+² Dependability properties
+² Sociotechnical systems
+² Redundancy and diversity
+² Dependable processes
+² Formal methods and dependability
+30/10/2014 Chapter	10	Dependable	Systems 2
+8/29/17
+2
+System dependability
+² The most important system property is the dependability
+² Reflect the user’s degree of trust in that system. 
+² Reflect the extent of the user’s confidence that it will 
+operate as users expect.
+² Cover the related attributes: reliability, availability and 
+security.
+3
+Chapter	10	Dependable	Systems
+30/10/2014
+Importance of dependability
+² System failures may have widespread.
+² Systems that are not dependable may be rejected.
+² The costs of system failure is high if the failure leads to 
+economic losses.
+² Undependable systems may cause information loss.
+4
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+3
+Causes of failure
+² Hardware failure
+§ Design and manufacturing errors.
+² Software failure
+§ Errors in its implementation.
+² Operational failure
+§ Human operators make mistakes. 
+5
+Chapter	10	Dependable	Systems
+30/10/2014
+Dependability properties
+30/10/2014 Chapter	10	Dependable	Systems 6
+8/29/17
+4
+The principal dependability properties
+Dependability
+Availability Reliability Security
+Safety Resilience
+The ability of the system 
+to protect itself against 
+deliberate or accidental 
+intrusion
+The ability of the system 
+to resist and recover 
+from damaging events
+The ability of the system 
+to operate without 
+catastrophic failure
+The ability of the system 
+to deliver services as 
+specified
+The ability of the system 
+to deliver services when 
+requested
+30/10/2014 Chapter	10	Dependable	Systems 7
+Principal properties
+² Availability
+§ Deliver useful services to users.
+² Reliability
+§ Correctly deliver services as expected.
+² Safety
+§ Capability of preventing damage to people or its environment.
+8
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+5
+Principal properties
+² Security
+§ Capability of resisting accidental or deliberate intrusions.
+² Resilience
+§ A judgment of how well a system can maintain the continuity of 
+its critical services.
+30/10/2014 Chapter	10	Dependable	Systems 9
+Other dependability properties
+² Repairability
+§ Capability of being repaired in the event of a failure
+² Maintainability
+§ Capability of being adapted to new requirements
+² Error tolerance
+§ Capability to tolerate failures due to user input errors
+10
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+6
+Dependability attribute dependencies
+² Depend on the system's availability and reliability.
+² Corrupted data by an external attack.
+² Unavailable to conduct denial of service attacks on a 
+system.
+² Malicious system virus infection and damage
+Chapter	10	Dependable	Systems 11
+30/10/2014
+Dependability achievement
+² Inspect and avoid accidental error introduction.
+² Validation processes to reveal errors.
+² Fault tolerant system to tolerate runtime errors.
+² Protection mechanisms against external attacks.
+Chapter	10	Dependable	Systems 12
+30/10/2014
+8/29/17
+7
+Dependability achievement
+² Correct system configuration.
+² Capabilities to resist cyberattacks.
+² Service recovery mechanisms after a failure.
+30/10/2014 Chapter	10	Dependable	Systems 13
+Dependability costs
+² Dependability costs increase exponentially.
+² There are two reasons for this
+§ Expensive development techniques and hardware for higher 
+levels of dependability.
+§ Increased testing and system validation for system clients and 
+regulators.
+14
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+8
+Cost/dependability curve
+Cost
+Low Medium High Very
+high
+UltrahighDependability30/10/2014 Chapter
+10	Dependable	Systems 15
+Dependability economics
+² Accepting untrustworthy systems and pay for failure 
+costs may be cost effective.
+² However, it may lose future business depending on 
+social and political factors.
+² Depends on system types that need modest levels of 
+dependability.
+16
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+9
+Sociotechnical systems (STS)
+30/10/2014 Chapter	10	Dependable	Systems 17
+Systems and software
+² Software engineering is part of system engineering 
+process.
+² Software systems are are essential components of 
+systems based on organizational purposes.
+² Example
+§ The wilderness weather system is part of forecasting systems
+§ Hardware and software, forecasting processes, the 
+organizations, etc.
+Chapter	10	Dependable	Systems 18
+30/10/2014
+8/29/17
+10
+The sociotechnical systems (STS) stack
+Equipment
+Operating system
+Communications and data management
+Application system
+Business processes
+Organization
+Society
+Systems
+engineering
+Software
+engineering
+30/10/2014 Chapter	10	Dependable	Systems 19
+Layers in the STS stack
+² Equipment
+§ Hardware devices, including embedded systems
+² Operating system
+§ Common facilities for higher level applications.
+² Communications and data management
+§ Access to remote systems and databases.
+² Application systems
+§ Functionalities for specific requirements.
+Chapter	10	Dependable	Systems 20
+30/10/2014
+8/29/17
+11
+Layers in the STS stack
+² Business processes
+§ Processes involving people and systems
+² Organizations
+§ Business activities for system operations
+² Society
+§ Laws, regulation and culture
+Chapter	10	Dependable	Systems 21
+30/10/2014
+Holistic system design
+² Interactions and dependencies between system layers
+§ Example: regulation changes causes changes in applications.
+² For dependability, a systems perspective is essential
+§ Software failures within the enclosing layers.
+§ Failures in adjacent layers affects software systems.
+Chapter	10	Dependable	Systems 22
+30/10/2014
+8/29/17
+12
+Regulation and compliance
+² The general model of economic organization 
+§ Universal in the world.
+§ Offer goods and services and make a profit.
+² Ensure the safety of their citizens
+§ Follow standards to ensure that products are safe and secure. 
+30/10/2014 Chapter	10	Dependable	Systems 23
+Regulated systems
+² Critical systems are regulated systems
+§ Approved by an external regulator. 
+§ E.g., nuclear systems and air traffic control systems
+² A safety and dependability case 
+§ Approved by the regulator. 
+§ Create the evidence for systems' dependability, safety and 
+security.
+Chapter	10	Dependable	Systems 24
+30/10/2014
+8/29/17
+13
+Safety regulation
+² Regulation and compliance applies to the sociotechnical 
+system.
+² Safety-related systems 
+§ Certified as safe by the regulator.
+² Produce safety cases to show systems follow rules and 
+regulations. 
+² Expensive to document certification.
+30/10/2014 Chapter	10	Dependable	Systems 25
+Redundancy and diversity
+30/10/2014 Chapter	10	Dependable	Systems 26
+Aug	
+29th
+8/29/17
+14
+Redundancy and diversity
+² Redundancy
+§ Keep more than a single version.
+² Diversity
+§ Provide the same functionality in different mechanism. 
+² Redundant and diverse components should be 
+performed independently
+§ E.g., software written in different programming languages.
+27
+Chapter	10	Dependable	Systems
+30/10/2014
+Diversity and redundancy examples
+² Redundancy. 
+§ Backup servers to switch, when failure occurs.
+² Diversity. 
+§ Different servers running on different operating systems.
+28
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+15
+Process diversity and redundancy
+² Process activities
+§ Not depend on a single approach, such as testing.
+² Redundant and diverse process activities.
+² Multiple process activities complement each other 
+§ Cross-checking techniques avoid process errors
+Chapter	10	Dependable	Systems 29
+30/10/2014
+Problems with redundancy and diversity
+² Adding diversity and redundancy increases complexity.
+² Increase the chances of error 
+§ Unanticipated interactions between redundant components.
+² Advocate simplicity to decrease software dependability.
+§ E.g., an Airbus product is redundant/diverse; a Boeing product 
+has no software diversity
+30/10/2014 Chapter	10	Dependable	Systems 30
+8/29/17
+16
+Dependable processes
+30/10/2014 Chapter	10	Dependable	Systems 31
+Dependable processes
+² A well-defined, repeatable software process to reduce 
+faults.
+² A well-defined repeatable process 
+§ Not depend on individual skills.
+² Check whether to use software engineering practice.
+² Verification and validation (V&V) activities for fault 
+detection.
+32
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+17
+Dependable process characteristics
+² Explicitly defined 
+§ A defined process model to drive the production process. 
+§ Data must be collected during the process to prove that the 
+development follows process models.
+² Repeatable
+§ Not rely on individual judgment. 
+§ Can be repeated across projects and with different team 
+members. 
+30/10/2014 Chapter	10	Dependable	Systems 33
+Attributes of dependable processes
+Process characteristic Description
+Auditable The process should be understandable by people apart
+from process participants, who can check that process
+standards are being followed and make suggestions for
+process improvement.
+Diverse The process should include redundant and diverse
+verification and validation activities.
+Documentable The process should have a defined process model that
+sets out the activities in the process and the
+documentation that is to be produced during these
+activities.
+Robust The process should be able to recover from failures of
+individual process activities.
+Standardized A comprehensive set of software development
+standards covering software production and
+documentation should be available.
+34
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+18
+Dependable process activities
+² Requirements reviews
+§ Check whether to be complete and consistent.
+² Requirements management 
+§ Ensure that requirement modifications are controlled and 
+understood.
+² Formal specification
+§ Analyze mathematical models. 
+² System modeling
+§ Documentation through graphical models
+§ Relationships between system requirements. 
+30/10/2014 Chapter	10	Dependable	Systems 35
+Dependable process activities
+² Design and program inspections
+§ Inspection and checking for systems by different people. 
+² Static analysis 
+§ Automated inspection on the program source code. 
+² Test planning and management
+§ Design system test suites. 
+§ Manage to provide enough coverage of system requirements.
+30/10/2014 Chapter	10	Dependable	Systems 36
+8/29/17
+19
+Dependable processes and agility
+² Produce process and product documentation.
+² Up-front requirements analysis 
+§ Discover requirements and requirements conflicts for system 
+safety and security
+² These conflict with agile development 
+§ Minimizing documentation of system requirements
+30/10/2014 Chapter	10	Dependable	Systems 37
+Dependable processes and agility
+² Agile process 
+§ iterative development, test-first development and user 
+involvement in the development team.  
+² Agile team follows agile process, actions, and agile 
+methods
+² However, ‘pure agile’ is impractical for dependable 
+systems.
+30/10/2014 Chapter	10	Dependable	Systems 38
+8/29/17
+20
+Formal methods and dependability
+30/10/2014 Chapter	10	Dependable	Systems 39
+Formal specification
+² Formal methods 
+§ Development approaches based on mathematical analysis.
+² Formal methods include
+§ Formal specification;
+§ Specification analysis and proof;
+§ Transformational development;
+§ Program verification.
+² Reduce programming errors and cost for dependable 
+systems.
+40
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+21
+Formal approaches
+² Verification-based approaches
+§ Different representations of a software system are proved to be 
+equivalent. 
+§ Demonstrate the absence of errors.
+² Refinement-based approaches
+§ A system representation is transformed into a lower-level 
+representation.
+§ Correct transformation results in equivalent representations.
+30/10/2014 Chapter	10	Dependable	Systems 41
+Use of formal methods
+² The principal benefits 
+§ Reduce faults or runtime errors.
+² Applicable main area:
+§ Dependable systems engineering.
+² Cost-effective formal methods 
+§ Reduce high system failure costs
+42
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+22
+Classes of error
+² Specification and design errors and omissions. 
+§ Reveal errors and omissions in requirements. 
+§ Models generated automatically from source code.
+§ Analysis by using model checking find undesirable faults.
+² Inconsistences between a specification and a program. 
+§ Refinement methods 
+§ Programmer mistakes of inconsistencies with specification
+§ Discover inconsistencies between programs and specifications.
+30/10/2014 Chapter	10	Dependable	Systems 43
+Benefits of formal specification
+² Developing a formal specification
+§ Analyze system requirements in detail. 
+§ Detect problems, inconsistencies and incompleteness.
+² Specification expressed in a formal language
+§ Discover inconsistencies and incompleteness.
+² A formal method correctly transforms a formal specification 
+into a program.
+² Reduce program testing costs 
+§ Verify a program formally against its specification.
+44
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+23
+Acceptance of formal methods
+² Formal methods limited in practical development:
+§ Hard to understand a formal specification 
+§ Cannot assess if it is an accurate representation.
+§ Assess development costs but harder to assess the benefits. 
+§ Unwilling to invest in formal methods.
+§ Unfamiliar with formal method approach.
+§ Difficulty in scaling up to large systems.
+§ Incompatibility with agile development methods.
+45
+Chapter	10	Dependable	Systems
+30/10/2014
+Key points
+² System dependability is important 
+§ failure of critical systems can lead to economic losses, 
+information loss, physical damage or threats to human life.  
+² The dependability of a computer system 
+§ a system property that reflects the user’s degree of trust in the 
+system. 
+§ The most important dimensions are availability, reliability, safety, 
+security and resilience.
+² Sociotechnical systems 
+§ computer hardware, software and people, and are situated within 
+an organization. 
+§ designed to support organizational or business goals and 
+objectives.
+30/10/2014 Chapter	10	Dependable	Systems 46
+8/29/17
+24
+Key points
+² The use of a dependable, repeatable process 
+§ essential if faults in a system are to be minimized. 
+§ verification and validation activities at all stages, from 
+requirements definition through to system implementation.
+² The use of redundancy and diversity 
+§ essential to the development of dependable systems.
+² Formal methods, 
+§ a formal model of a system as a basis for development 
+§ reduce the number of specification and implementation errors
+30/10/2014 Chapter	10	Dependable	Systems 47

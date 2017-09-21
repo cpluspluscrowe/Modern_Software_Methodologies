@@ -1,0 +1,10 @@
+1.	A set of test data freque. Matches normal usage & number of times the failure event occurred
+2.	Close match with actual usage reflect actual usage
+3.	Generated from real data
+Think geometric distrubtion
+1.	Automatic data generation
+2.	Difficult to generate unlikely inputs and anomalies and test for these
+3.	Unknown usage pattern of a new system
+4.	Changeable operational profiles
+a.	Non-static, but dynamic 
+b.	Learn about new systems, changing usage patterns

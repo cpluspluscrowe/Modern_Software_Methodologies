@@ -1,0 +1,5 @@
+- Unexpectedly execute a call to method foo(int) with 
+default input '0', instead of a call to method foo(int, int).
+	 Method overloading.
+	 Integer '0' is a default value for argument 'b' in the overloaded 
+method foo(int). 

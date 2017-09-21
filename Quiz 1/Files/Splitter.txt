@@ -1,0 +1,28 @@
+Comparator
+Input value
+Output
+Status
+Splitter
+Comparator
+Output
+Status
+Input Filter
+Filter
+Filter
+Filter
+Filter
+Status
+Status
+Status
+Output
+Output
+Output
+Output
+Airbus architecture discussion
+	 Each system is able to perform the control software.
+- Extensive diverse systems between primary and 
+secondary systems:
+	 Different processors
+	 Different chipsets from different manufacturers.
+	 Different complexity -- only critical functionality in secondary.
+	 Different programming languages by different teams.

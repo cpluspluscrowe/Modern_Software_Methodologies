@@ -1,0 +1,8 @@
+1.	Limit the visibility of information in a program
+2.	Check al inputs for validity
+3.	Provide a handler for all exceptions
+4.	Minimize the use of error-prone constructs
+5.	Provide restart capabilities
+6.	Check array bounds
+7.	 Include timeouts when calling external components
+8.	Name all constants that represent real-world values

@@ -1,0 +1,5 @@
+- Security
+	 Capability of resisting accidental or deliberate intrusions.
+- Resilience
+	 A judgment of how well a system can maintain the continuity of 
+its critical services.

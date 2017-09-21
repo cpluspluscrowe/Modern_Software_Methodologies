@@ -1,0 +1,6 @@
+- Adding diversity and redundancy increases complexity.
+- Increase the chances of error 
+	 Unanticipated interactions between redundant components.
+- Advocate simplicity to decrease software dependability.
+	 E.g., an Airbus product is redundant slash diverse; a Boeing product 
+has no software diversity

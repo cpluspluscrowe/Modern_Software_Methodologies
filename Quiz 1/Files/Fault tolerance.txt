@@ -1,0 +1,9 @@
+- Fault tolerant in critical situations.
+- Fault tolerance required 
+	 High availability requirements 
+	 Failure costs are very high.
+- Fault tolerance
+	 Able to continue in operation despite software failures.
+- Fault tolerant required against incorrect validation or 
+specification errors, although a system is proved to 
+conform to its specification

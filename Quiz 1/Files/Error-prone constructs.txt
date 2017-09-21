@@ -1,0 +1,9 @@
+- Unconditional branch (goto) statements
+- Floating-point numbers
+comparisons. 
+- Pointers
+	 Pointers referring to the wrong memory areas can corrupt 
+data. Aliasing can make programs difficult to understand 
+and change.
+- Dynamic memory allocation
+	 Run-time allocation can cause memory overflow.

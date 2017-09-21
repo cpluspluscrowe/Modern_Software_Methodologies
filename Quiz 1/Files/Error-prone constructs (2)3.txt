@@ -1,0 +1,9 @@
+1.	Unconditional branch goto statements
+2.	Floating point numbers (inherently imprecise with invalid comparisons) 
+3.	Pointers referencing the wrong memory can cause corrupt data
+4.	Dyamic memory allocation might cause memory overflow
+Object may not be deleted if you throw an exception. 
+5.	Parallelism -> can result in subtle timing errors due to unforeseen interaction between parallel processes
+6.	Recursion -> can cause memory overflow as the stack fills up
+7.	Interrupts – signal that might cause a critical operation to be interrupted
+8.	Code is not localized.  This can result in unexpected behavior.  

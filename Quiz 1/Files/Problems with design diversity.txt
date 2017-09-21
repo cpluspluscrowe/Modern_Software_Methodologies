@@ -1,0 +1,5 @@
+- Tend to solve problems using same methods
+- Characteristic errors
+	 Different teams making same mistakes. Making mistakes in 
+same parts.
+	 Specification errors propagated to all implementations

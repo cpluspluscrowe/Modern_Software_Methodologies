@@ -1,0 +1,6 @@
+	 No indication of a failure.
+	 Failure of a remote computer can be ‘silent’ In a distributed 
+system.
+- Set timeouts on all calls to external components. 
+- Assume failure and take actions to recover from errors
+	 After a defined time period without a response.

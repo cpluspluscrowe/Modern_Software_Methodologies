@@ -1,0 +1,7 @@
+- Fault avoidance
+	 Avoid human errors to minimize system faults.
+	 Organize development processes to detect and repair faults.
+- Fault detection
+	 Verification and validation techniques to remove faults.
+- Fault tolerance
+	 Design systems that faults do not cause failures.

@@ -1,0 +1,3 @@
+4.	Different languages (programming)
+5.	Different design methods and tools
+6.	Different algorithms in the implementations

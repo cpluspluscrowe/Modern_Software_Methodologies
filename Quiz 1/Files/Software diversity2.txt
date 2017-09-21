@@ -1,0 +1,4 @@
+Fault tolerant - > depends on software diversity.
+	Assume that different implementations fail differently
+1. Uncommon errors
+2. independent implementations

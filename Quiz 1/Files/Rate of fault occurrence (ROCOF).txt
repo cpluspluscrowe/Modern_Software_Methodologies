@@ -1,0 +1,9 @@
+- System failure occurrence rate
+- ROCOF of 0.002 
+- Reliable systems needed
+	 Systems perform a number of similar requests in a short time
+	 E.g., credit card processing system.
+- Reciprocal of ROCOF is Mean time to Failure (MTTF)
+	 Systems with long transactions
+	 System processing takes a long time. MTTF is longer than expected 
+transaction length.

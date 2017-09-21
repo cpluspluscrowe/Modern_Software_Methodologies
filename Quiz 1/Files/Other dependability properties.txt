@@ -1,0 +1,6 @@
+- Repairability
+	 Capability of being repaired in the event of a failure
+- Maintainability
+	 Capability of being adapted to new requirements
+- Error tolerance
+	 Capability to tolerate failures due to user input errors

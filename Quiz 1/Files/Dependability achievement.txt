@@ -1,0 +1,3 @@
+- Correct system configuration.
+- Capabilities to resist cyberattacks.
+- Service recovery mechanisms after a failure.

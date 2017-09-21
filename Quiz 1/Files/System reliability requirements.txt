@@ -1,0 +1,9 @@
+- Functional reliability requirements 
+	 Define system and software functions 
+	 Avoid, detect or tolerate faults 
+	 Not lead to system failure.
+- Software reliability requirements 
+	 Cope with hardware failure or operator error.
+- Non-functional reliability requirements
+- A measurable system attribute specified quantitatively. 
+- E.g., the number of failures and the available time. 

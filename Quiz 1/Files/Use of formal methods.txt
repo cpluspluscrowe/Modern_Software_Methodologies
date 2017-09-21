@@ -1,0 +1,6 @@
+- The principal benefits 
+	 Reduce faults or runtime errors.
+- Applicable main area:
+	 Dependable systems engineering.
+- Cost-effective formal methods 
+	 Reduce high system failure costs

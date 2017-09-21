@@ -1,0 +1,9 @@
+- Automatic data generation, if possible.
+	 Difficult for interactive systems.
+	 Easy for ‘normal’ inputs 
+- Difficult to generate ‘unlikely’ inputs (anomalies) and test 
+data for these anomalies.
+- Unknown usage pattern of new systems.
+- Changeable operational profiles 
+	 Non-static but dynamic
+	 E.g., learn about new systems, changing usage patterns.

@@ -1,0 +1,9 @@
+Specialized system
+a.	Associated with controls system
+b.	Action to deal with failures
+c.	E.g. system to stop a train or to shut down a reactor
+Monitor the controlled system and the environment
+Take action to shut down the system and avoid a catastrophe
+Developers apply redundancy for protection systems -> regarding monitoring and control capabilities.
+1.	Diverse
+2.	Protection system for redundancy

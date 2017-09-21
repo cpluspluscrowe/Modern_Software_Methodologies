@@ -1,0 +1,4 @@
+a.	Specs using reliability metrics
+b.	POFOD probability of fault on demand
+c.	ROCOF rate of occurrence of fault
+d.	AVAIL: availibity

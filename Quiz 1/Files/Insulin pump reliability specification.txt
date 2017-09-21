@@ -1,0 +1,8 @@
+- Probability of failure (POFOD) metric.
+- Transient failures 
+	 Repaired by user actions, such as, recalibration of the machine. 
+demands.
+- Permanent failures
+	 Re-installed by the manufacturer. 
+	 Occur no more than once per year. 
+	 POFOD < 0.00002.

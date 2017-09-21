@@ -1,0 +1,4 @@
+1.	Different languages (programming)
+2.	Different design methods and tools
+3.	Different algorithms in the implementations
+Diverse version of systes hsoudl have no dependence (so they fail in completely different ways) -> problem similarity since ppl are not intellectually diverse (many people make similar mistakes in similar locations due to software complexity.).

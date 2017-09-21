@@ -1,0 +1,7 @@
+- Reliability 
+	 Defined formally w.r.t. a system specification
+	 A deviation from a specification.
+- Incomplete or incorrect specifications
+- Unfamiliar with specifications 
+	 Unaware how the system is supposed to behave.
+- Perceptions of reliability

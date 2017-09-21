@@ -1,0 +1,3 @@
+1. number of users affected by available services
+	Failure in the middle of the night is less important
+2.Length of system failure

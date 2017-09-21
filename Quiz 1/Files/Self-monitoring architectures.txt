@@ -1,0 +1,7 @@
+- Multi-channel architectures 
+	 System monitoring its own operations
+	 Take action if inconsistencies are discovered
+- The same computation is carried out on each channel 
+	 Compare the results
+	 Producing identical results assumes correct system operation
+	 A failure exception is reported when different results arise.

@@ -1,0 +1,18 @@
+ClassA *a = new ClassA; 
+foo();
+delete a; 
+}
+Error-prone constructs
+- Parallelism
+	 Can result in subtle timing errors because of unforeseen 
+interaction between parallel processes.
+- Recursion
+	 Errors in recursion can cause memory overflow as the 
+program stack fills up.
+- Interrupts
+	 Interrupts can cause a critical operation to be terminated 
+and make a program difficult to understand.  
+- Inheritance
+	 Code is not localised. This can result in unexpected 
+behaviour when changes are made and problems of 
+understanding the code.

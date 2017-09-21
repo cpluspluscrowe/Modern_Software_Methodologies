@@ -1,0 +1,7 @@
+- Critical systems are regulated systems
+	 Approved by an external regulator. 
+	 E.g., nuclear systems and air traffic control systems
+- A safety and dependability case 
+	 Approved by the regulator. 
+	 Create the evidence for systems' dependability, safety and 
+security.

@@ -1,0 +1,7 @@
+- Redundancy
+	 Keep more than a single version.
+- Diversity
+	 Provide the same functionality in different mechanism. 
+- Redundant and diverse components should be 
+performed independently
+	 E.g., software written in different programming languages.

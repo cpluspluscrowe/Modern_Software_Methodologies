@@ -1,0 +1,7 @@
+values
+- Use constants reflecting real-world values names 
+	 Do not use numeric values and always refer to them by name.
+- Reduce mistakes for wrong values by using a name 
+rather than a value.
+- Changing constant values 
+	 Easy to maintain and localize edit locations to make the change.

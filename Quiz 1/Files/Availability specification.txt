@@ -1,0 +1,4 @@
+Availability Explanation
+0.9 The system is available for 90% of the time. This means that, in a
+24-hour period (1,440 minutes), the system will be unavailable for
+Roughly, one minute per week.

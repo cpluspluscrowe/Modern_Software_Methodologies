@@ -1,0 +1,5 @@
+1.	Operational profile uncertainty
+a.	Inaccurate operational profile that does not reflect the real system
+2.	High costs of test data generation
+3.	Statistical uncertainy, highly reliabile systems rarely fail(so hard to test)
+4.	Recognizing failure – confliction interpretations of a specification about unobvious failures

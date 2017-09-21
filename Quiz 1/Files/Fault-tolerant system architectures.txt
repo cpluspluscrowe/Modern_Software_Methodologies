@@ -1,0 +1,6 @@
+- Fault-tolerant systems architectures
+	 Fault tolerance is essential based on redundancy and diversity.
+- Examples of situations for dependable architectures:
+	 Flight control systems for safety of passengers
+	 Reactor systems for a chemical or nuclear emergency
+	 Telecommunication systemsfor 24 slash 7 availability.

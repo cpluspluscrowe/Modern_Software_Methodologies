@@ -1,0 +1,4 @@
+Software redundancy susceptible to specification errors
+	incorrect specification
+Complex software specifications
+	Hard to perform comparisons

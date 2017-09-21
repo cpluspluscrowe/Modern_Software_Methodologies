@@ -1,0 +1,5 @@
+- The time that a software system is available
+	 Repair and restart time considered
+- Availability of 0.001 
+- Continuously running systems 
+	 E.g., railway signalling systems.

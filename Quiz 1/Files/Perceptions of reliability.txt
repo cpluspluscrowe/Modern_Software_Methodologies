@@ -1,0 +1,6 @@
+- Not always reflect the user’s reliability perception
+	 The assumptions about environments for a system are incorrect
+• Different usage of a system between in an office environment and in 
+a university environment.
+	 The consequences of system failures affects the perception of 
+reliability.

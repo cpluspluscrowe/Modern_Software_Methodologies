@@ -1,0 +1,7 @@
+- A specialized system 
+	 Associated with other control system.
+	 Take emergency action to deal with failures.
+	 E.g., System to stop a train or system to shut down a reactor
+- Monitor the controlled system and the environment.
+- Take emergency action to shut down the system and 
+avoid a catastrophe.

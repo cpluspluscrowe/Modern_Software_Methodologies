@@ -1,0 +1,17 @@
+sensors
+System environment
+Actuators
+Controlled
+equipment
+Control system
+Protection
+system
+Sensors
+Protection system functionality
+- Protection systems for redundancy 
+	 Control capabilities to replicate in the control software.
+- Diverse protection systems
+	 Different technology used in the control software.
+- Need to expend in validation and dependability 
+assurance.
+- A low probability of failure for the protection system.

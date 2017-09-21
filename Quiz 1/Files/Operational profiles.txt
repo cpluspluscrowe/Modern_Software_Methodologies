@@ -1,0 +1,10 @@
+- A set of test data 
+	 Frequency matches the actual frequency from ‘normal’ usage of 
+the system. 
+	 The number of times the failure event occurred.
+- A close match with actual usage 
+	 The measured reliability 
+	 Reflect the actual usage of the system.
+- Generate from real data 
+	 Collect from an existing system 
+	 Assumption of the usage pattern of a system

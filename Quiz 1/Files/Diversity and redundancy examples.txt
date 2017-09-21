@@ -1,0 +1,4 @@
+- Redundancy. 
+	 Backup servers to switch, when failure occurs.
+- Diversity. 
+	 Different servers running on different operating systems.

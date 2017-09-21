@@ -1,0 +1,10 @@
+- Software diversity is difficult to achieve because it is 
+practically impossible to ensure that each version of the 
+software is truly independent.
+- Dependable programming relies on including 
+redundancy in a program as checks on the validity of 
+inputs and the values of program variables.
+- Statistical testing is used to estimate software reliability. 
+It relies on testing the system with test data that matches 
+an operational profile, which reflects the distribution of 
+inputs to the software when it is in use.

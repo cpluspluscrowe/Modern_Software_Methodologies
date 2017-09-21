@@ -1,0 +1,8 @@
+1.	Diverse hardware systems on each channel To avoid errors on same channels
+2.	Diverse software applications in each channel
+3.	Several self-checking systems in parallel high-availability is required for such things
+Flight control system.  There is 1. Channel 1 and 2. Channel 2 that get run through the comparator
+a.	Different processors
+b.	Different chipsets from different manufacturers
+c.	Different complexity
+d.	Different programming langauges (by different teams)

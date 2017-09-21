@@ -1,0 +1,6 @@
+- The most important system property is the dependability
+- Reflect the user’s degree of trust in that system. 
+- Reflect the extent of the user’s confidence that it will 
+operate as users expect.
+- Cover the related attributes: reliability, availability and 
+security.

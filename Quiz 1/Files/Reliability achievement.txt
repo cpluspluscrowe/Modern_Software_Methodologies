@@ -1,0 +1,8 @@
+- Fault avoidance
+	 Development technique to minimise the possibility of mistakes or 
+reveal mistakes.
+- Fault detection and removal
+	 Verification and validation techniques to increase the probability 
+of correcting errors.
+- Fault tolerance
+	 Run-time techniques to ensure that faults do not cause errors.

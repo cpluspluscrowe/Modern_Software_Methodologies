@@ -1,0 +1,9 @@
+- Failures 
+	 Results of system errors resulted from faults in the system
+- However, faults do not necessarily result in system 
+errors
+	 Transient and ‘corrected’ before an error arises.
+	 Never be executed.
+- Errors do not necessarily lead to system failures
+	 Corrected by detection and recovery
+	 Protected by protection facilities.

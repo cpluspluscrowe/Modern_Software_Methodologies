@@ -1,0 +1,31 @@
+Exception handling code
+Normal flow
+of control
+Exception detected
+Normal exit
+Exception
+processing
+Method where error occurred
+Method with an exception handler
+The main method
+Throws 
+exception
+Forwards 
+exception
+Catches 
+exception
+Looking for 
+appropriate 
+handler
+Method without an exception handler
+Searching the call stack for the 
+exception handler
+Exception handling
+- Three possible exception handling strategies
+	 Report exceptions and provide the related information.
+	 Conduct alternative processes
+• The related information required to recover from the problem.
+	 Pass control to a run-time support system.
+- A mechanism to provide fault tolerance
+	 Recovering from fault-caused errors
+	 Eliminating faults

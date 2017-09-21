@@ -1,0 +1,13 @@
+}
+void foo(int a) {
+foo(a, 0);
+}
+(5) Provide restart capabilities
+- The system restart capability
+	 Preserve the program data or status.
+	 Long transactions or user interactions.
+- Restart scenarios
+	 Web applications keeping copies of forms that users fill in before 
+there is a problem
+	 Text editors restarting from the checkpoint saving periodically the 
+program state or memory 

@@ -1,0 +1,7 @@
+- Dependable software is expected
+- However, some system failures are accepted.
+- Software systems have high reliability requirements
+	 E.g., critical software systems
+- Software engineering techniques for reliability 
+requirements.
+	 E.g., medical systems and aerospace systems

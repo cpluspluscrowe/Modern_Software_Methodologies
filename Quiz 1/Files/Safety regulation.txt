@@ -1,0 +1,7 @@
+- Regulation and compliance applies to the sociotechnical 
+system.
+- Safety-related systems 
+	 Certified as safe by the regulator.
+- Produce safety cases to show systems follow rules and 
+regulations. 
+- Expensive to document certification.

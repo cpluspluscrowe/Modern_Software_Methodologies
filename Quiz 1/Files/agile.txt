@@ -1,0 +1,8 @@
+Agile method are popular -> ? dependable software?  
+A few conflicts:
+	Require certifications (for dependable software)
+		Must produce these certifications
+Analysis is also required in order to find these inconsistencies.  These conflict with the general approach of development.  We then develop these erquriements while developing the system.
+Developers incorporate agile techniques…
+	Iterative development, agile methods, test-first development.
+Pure agile is impractical.  

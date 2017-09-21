@@ -1,0 +1,2 @@
+- The costs of system failure is high if the failure leads to 
+economic losses.

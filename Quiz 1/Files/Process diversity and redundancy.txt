@@ -1,0 +1,5 @@
+- Process activities
+	 Not depend on a single approach, such as testing.
+- Redundant and diverse process activities.
+- Multiple process activities complement each other 
+	 Cross-checking techniques avoid process errors

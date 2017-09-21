@@ -1,0 +1,6 @@
+Allocation
+- No matter how much we try, it is very difficult to free all 
+dynamically allocated memory. Even if we can do that, it is 
+often not safe from exceptions.
+- If an exception is thrown, the “a” object is never deleted.
+- Detect memory leaks by Valgrind

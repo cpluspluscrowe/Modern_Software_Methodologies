@@ -1,0 +1,17 @@
+Term Description
+Human error or
+mistake
+Human behavior that results in the introduction of faults into a system. For 
+example, in the wilderness weather system, a programmer might decide that the 
+midnight (midnight is 00.00 in the 24-hour clock).
+System fault
+A characteristic of a software system that can lead to a system error. The fault is 
+without a check if the time is greater than or equal to 23.00.
+System error
+An erroneous system state that can lead to system behavior that is unexpected 
+by system users. The value of transmission time is set incorrectly (to 24.XX 
+rather than 00.XX) when the faulty code is executed.
+System failure
+An event that occurs at some point in time when the system does not deliver a 
+service as expected by its users. No weather data is transmitted because the 
+time is invalid.

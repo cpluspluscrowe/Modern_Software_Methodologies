@@ -1,0 +1,9 @@
+- Formal methods 
+	 Development approaches based on mathematical analysis.
+- Formal methods include
+	 Formal specification;
+	 Specification analysis and proof;
+	 Transformational development;
+	 Program verification.
+- Reduce programming errors and cost for dependable 
+systems.

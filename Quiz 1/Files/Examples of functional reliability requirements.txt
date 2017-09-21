@@ -1,0 +1,10 @@
+RR1: A pre-defined range for all operator inputs shall be defined and 
+the system shall check that all operator inputs fall within this pre-defined 
+range. (Checking)
+RR2: Copies of the patient database shall be maintained on two 
+separate servers that are not housed in the same building. (Recovery, 
+redundancy)
+RR3: N-version programming shall be used to implement the braking 
+control system. (Redundancy)
+RR4: The system must be implemented in a safe subset of Ada and 
+checked using static analysis. (Process)

@@ -1,0 +1,11 @@
+- Operational profile uncertainty
+	 Inaccurate operational profile that does not reflect the real use of 
+the system.
+- High costs of test data generation
+	 Expensive costs to generate test datasets for the system.
+- Statistical uncertainty
+	 A statistically significant number of failures for computation.
+	 Highly reliable systems rarely fail.
+- Recognizing failure
+	 Conflicting interpretations of a specification about unobvious 
+failures.

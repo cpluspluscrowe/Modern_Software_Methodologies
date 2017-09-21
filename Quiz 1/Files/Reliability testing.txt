@@ -1,0 +1,6 @@
+- Reliability testing (Statistical testing) 
+	 Assess whether a system reaches the required level of reliability.
+- Not part of a defect testing process 
+	 Datasets for defect testing do not include actual usage data.
+- Data sets required to replicate actual inputs to be 
+processed.

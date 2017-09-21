@@ -1,0 +1,8 @@
+- Software engineering is part of system engineering 
+process.
+- Software systems are are essential components of 
+systems based on organizational purposes.
+- Example
+	 The wilderness weather system is part of forecasting systems
+	 Hardware and software, forecasting processes, the 
+organizations, etc.

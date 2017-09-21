@@ -1,0 +1,7 @@
+- Triple-modular redundancy (TMR).
+- Three replicated identical components 
+	 Receive the same input and their outputs are compared.
+- One different output 
+	 Ignored based on the assumption of component failure.
+- Most faults caused by component failures 
+	 A low probability of simultaneous component failure.

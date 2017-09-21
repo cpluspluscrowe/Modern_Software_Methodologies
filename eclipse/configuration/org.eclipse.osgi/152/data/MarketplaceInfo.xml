@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_131" class="java.beans.XMLDecoder">
+ <object class="org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceInfo" id="MarketplaceInfo0">
+  <void property="iuToNodeKey">
+   <void method="put">
+    <string>org.scala-ide.sdt.scalatest.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>http://marketplace.eclipse.org#421</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.scala-ide.sdt.weaving.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>http://marketplace.eclipse.org#421</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.scalaide.worksheet.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>http://marketplace.eclipse.org#421</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.scala-ide.sdt.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>http://marketplace.eclipse.org#421</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.scala-ide.play2.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>http://marketplace.eclipse.org#421</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.scala.tools.eclipse.search.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>http://marketplace.eclipse.org#421</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="nodeKeyToIU">
+   <void method="put">
+    <string>http://marketplace.eclipse.org#421</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>org.scala-ide.sdt.feature</string>
+     </void>
+     <void method="add">
+      <string>org.scala-ide.sdt.weaving.feature</string>
+     </void>
+     <void method="add">
+      <string>org.scalaide.worksheet.feature</string>
+     </void>
+     <void method="add">
+      <string>org.scala.tools.eclipse.search.feature</string>
+     </void>
+     <void method="add">
+      <string>org.scala-ide.play2.feature</string>
+     </void>
+     <void method="add">
+      <string>org.scala-ide.sdt.scalatest.feature</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

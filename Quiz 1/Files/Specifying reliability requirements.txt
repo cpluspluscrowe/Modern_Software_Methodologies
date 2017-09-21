@@ -1,0 +1,8 @@
+- Availability and reliability requirements for different types 
+of failure. 
+	 Low probability of high-cost failures
+- Availability and reliability requirements for different types 
+of system service. 
+	 Tolerate failures in less critical services. 
+- A high level of reliability required. 
+	 Other mechanisms for reliable system services.

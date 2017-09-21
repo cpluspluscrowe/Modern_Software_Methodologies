@@ -1,0 +1,8 @@
+- Verification-based approaches
+	 Different representations of a software system are proved to be 
+equivalent. 
+	 Demonstrate the absence of errors.
+- Refinement-based approaches
+	 A system representation is transformed into a lower-level 
+representation.
+	 Correct transformation results in equivalent representations.

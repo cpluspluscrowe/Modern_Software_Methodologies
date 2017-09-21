@@ -1,0 +1,5 @@
+- Key reliability issues depends on mechanical reliability. 
+- A lower level of software availability is acceptable. 
+- The overall availability
+	 Specify availability with 0.999
+each day. 

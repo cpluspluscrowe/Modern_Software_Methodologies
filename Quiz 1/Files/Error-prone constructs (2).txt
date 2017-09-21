@@ -1,0 +1,5 @@
+- Human error of misunderstanding or losing track of the 
+relationships between the different parts of the system
+- Error-prone constructs in programming languages 
+	 Inherently complex
+- Avoid or minimize the use of error-prone constructs.

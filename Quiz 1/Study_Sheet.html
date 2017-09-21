@@ -1,0 +1,1775 @@
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.css">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<style>
+div {
+font-size:45%;
+}
+article {
+float:left;
+max-width:500px;
+max-height:100px;
+}
+body {
+{
+  margin: 0px;
+  padding: 0px;
+  width: 670px; /* width: 7in; */
+  height: 900px; /* or height: 9.5in; */
+  clear: both;
+  background-color: gray;
+  page-break-after: always;
+}
+}
+</style>
+</head>
+<body>
+<script>
+$('.grid').masonry({
+  // options...
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+</script>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>abstract class Base {</strong> -- int f = 0;
+public int m1() {
+return 0;
+}
+}
+class ClassA extends Base {
+public int m1() {
+return f;
+}
+}
+class ClassB extends Base {
+public int m1() {
+return f;
+}
+}
+class ClassC extends ClassB {
+public int m1() {
+return f;
+}
+}
+1: class Main {
+2:   Base x1;
+void thread1() {
+3: x1 = new ClassA();
+4: System.out.println(x1.m1());
+}
+void thread2() {
+5: x1 = new ClassB();
+6: System.out.println(x1.m1());
+}
+void thread3() {
+7: x1 = new ClassC();
+8: System.out.println(x1.m1());
+}
+}
+Inheritance when combined with dynamic 
+binding can cause timing problems at runtime.
+
+Error&#9679;prone constructs
+&#9679; Aliasing
+&#9679; Unbounded arrays
+	 Buffer overflow failures can occur if no bound checking on 
+arrays.
+&#9679; Default input processing
+	 Occur irrespective of the input.
+	 The default action changes the program control flow. 
+	 Malicious inputs trigger a program failure.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Acceptance of formal methods</strong> -- &#9679; Formal methods limited in practical development:
+	 Hard to understand a formal specification 
+	 Cannot assess if it is an accurate representation.
+	 Assess development costs but harder to assess the benefits. 
+	 Unwilling to invest in formal methods.
+	 Unfamiliar with formal method approach.
+	 Difficulty in scaling up to large systems.
+	 Incompatibility with agile development methods.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>agile</strong> -- Agile method are popular &#9679;> ? dependable software?  
+A few conflicts:
+	Require certifications (for dependable software)
+		Must produce these certifications
+Analysis is also required in order to find these inconsistencies.  These conflict with the general approach of development.  We then develop these erquriements while developing the system.
+Developers incorporate agile techniques…
+	Iterative development, agile methods, test&#9679;first development.
+Pure agile is impractical.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>An operational profile</strong> -- ...
+Number of inputs
+Input classes
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>ATM availability specification</strong> -- &#9679; Key reliability issues depends on mechanical reliability. 
+&#9679; A lower level of software availability is acceptable. 
+&#9679; The overall availability
+	 Specify availability with 0.999
+each day.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>ATM reliability specification</strong> -- &#9679; Key concerns
+	 ATMs conduct services as requested 
+	 Record customer transactions
+	 ATM systems are available when required.
+&#9679; Database transaction mechanisms make a correction of 
+transaction problems
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Attributes of dependable processes</strong> -- Process characteristic Description
+Auditable The process should be understandable by people apart
+from process participants, who can check that process
+standards are being followed and make suggestions for
+process improvement.
+Diverse The process should include redundant and diverse
+verification and validation activities.
+Documentable The process should have a defined process model that
+sets out the activities in the process and the
+documentation that is to be produced during these
+activities.
+Robust The process should be able to recover from failures of
+individual process activities.
+Standardized A comprehensive set of software development
+standards covering software production and
+documentation should be available.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Availability and reliability</strong> -- &#9679; Reliability
+	 The probability of failure&#9679;free system operation.
+&#9679; Availability
+	 The probability that a system conducts requested services at a 
+point in time.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Availability perception</strong> -- &#9679; Expressed as a percentage of the time
+	 Available to conduct services.
+&#9679; Two factors not considered:
+	 The number of users affected by unavailable systems. 
+	 The length of system failed or unavailable period.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Availability specification</strong> -- Availability Explanation
+0.9 The system is available for 90% of the time. This means that, in a
+24&#9679;hour period (1,440 minutes), the system will be unavailable for
+Roughly, one minute per week.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Availability</strong> -- &#9679; The time that a software system is available
+	 Repair and restart time considered
+&#9679; Availability of 0.001 
+&#9679; Continuously running systems 
+	 E.g., railway signalling systems.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>avoiding failures</strong> -- 4.	Diverse hardware systems on each channel To avoid errors on same channels
+5.	Diverse software applications in each channel
+6.	Several self&#9679;checking systems in parallel high&#9679;availability is required for such things
+Flight control system.  There is 1. Channel 1 and 2. Channel 2 that get run through the comparator
+5 seaprate computers in airbus.  Each system can control the software
+	Extensive diverse systems between primary and secondary systems	
+e.	Different processors
+f.	Different chipsets from different manufacturers
+g.	Different complexity
+h.	Different programming langauges (by different teams)
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>bad practices</strong> -- Dynamic binding with inheritance can be crazy.  
+Asliasing : more than 1 name to refer to the same state variable
+Unbounded arrays: buffer overflow failures
+Default input processing – malicious inputs trigger failures
+Provide restart capabilities – after long transactions
+Developers often write programs which address memory locations outside of array bounds
+Name all constants that represent real&#9679;world values
+	Do not use numeric values, always refer to them by name
+Reduce mistakes for wrong values by using a name rather than a value
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Benefits of formal specification</strong> -- &#9679; Developing a formal specification
+	 Analyze system requirements in detail. 
+	 Detect problems, inconsistencies and incompleteness.
+&#9679; Specification expressed in a formal language
+	 Discover inconsistencies and incompleteness.
+&#9679; A formal method correctly transforms a formal specification 
+into a program.
+&#9679; Reduce program testing costs 
+	 Verify a program formally against its specification.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Benefits of reliability specification</strong> -- &#9679; Help to clarify stakeholders' needs.
+&#9679; Provide a measurement basis for system tests.
+&#9679; Improve the reliability by different design strategies. 
+&#9679; Evidence of including required reliability 
+implementations.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Causes of failure</strong> -- &#9679; Hardware failure
+	 Design and manufacturing errors.
+&#9679; Software failure
+	 Errors in its implementation.
+&#9679; Operational failure
+	 Human operators make mistakes.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Check array bounds</strong> -- &#9679; Address a memory location outside of the range of an 
+array declaration.
+&#9679; Bounded buffer vulnerability 
+	 E.g., Writing executable code into memory by deliberately writing 
+beyond the top element in an array.
+&#9679; Bound checking for an array access 
+	 Within the bounds of the array.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>checks program</strong> -- 1.	Range checks 
+2.	Size checks min or max input sizes
+3.	Representation checks Does the input contain invalid pieces, e.g. names or numbers that are invalid
+4.	Reasonableness checks check the logical information.  Is this input reasonable?
+Provide a handler for all exceptions
+1.	Report exceptions and provide the related information
+2.	Conduct alternative processes relatd info to recover from the problem
+3.	Pass control to a run&#9679;time support system
+4.	A mechanism to provide fault tolerance
+a.	Recover from fault&#9679;cuased errors
+b.	Eliminating faults
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Classes of error</strong> -- &#9679; Specification and design errors and omissions. 
+	 Reveal errors and omissions in requirements. 
+	 Models generated automatically from source code.
+	 Analysis by using model checking find undesirable faults.
+&#9679; Inconsistences between a specification and a program. 
+	 Refinement methods 
+	 Programmer mistakes of inconsistencies with specification
+	 Discover inconsistencies between programs and specifications.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Code section</strong> -- Exception handling code
+Normal flow
+of control
+Exception detected
+Normal exit
+Exception
+processing
+Method where error occurred
+Method with an exception handler
+The main method
+Throws 
+exception
+Forwards 
+exception
+Catches 
+exception
+Looking for 
+appropriate 
+handler
+Method without an exception handler
+Searching the call stack for the 
+exception handler
+Exception handling
+&#9679; Three possible exception handling strategies
+	 Report exceptions and provide the related information.
+	 Conduct alternative processes
+• The related information required to recover from the problem.
+	 Pass control to a run&#9679;time support system.
+&#9679; A mechanism to provide fault tolerance
+	 Recovering from fault&#9679;caused errors
+	 Eliminating faults
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Common Errors in Bounded Buffer Vulnerability</strong> -- &#9679; Writing data past the end of allocated memory can be 
+detected by OS 
+	 Generate a segmentation fault error that terminates the process.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Common Errors in Default Input Processing</strong> -- &#9679; Unexpectedly execute a call to method foo(int) with 
+default input '0', instead of a call to method foo(int, int).
+	 Method overloading.
+	 Integer '0' is a default value for argument 'b' in the overloaded 
+method foo(int).
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Common Mistake in Inheritance and Dynamic </strong> -- Binding
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Common Mistakes in Dynamic Memory </strong> -- Allocation
+&#9679; No matter how much we try, it is very difficult to free all 
+dynamically allocated memory. Even if we can do that, it is 
+often not safe from exceptions.
+&#9679; If an exception is thrown, the “a” object is never deleted.
+&#9679; Detect memory leaks by Valgrind
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Constant Interface Pattern</strong> -- &#9679; Use final class for Constants
+&#9679; Declare public static final and static import all constants
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Constants Best Practice</strong> -- values
+&#9679; Use constants reflecting real&#9679;world values names 
+	 Do not use numeric values and always refer to them by name.
+&#9679; Reduce mistakes for wrong values by using a name 
+rather than a value.
+&#9679; Changing constant values 
+	 Easy to maintain and localize edit locations to make the change.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependability achievement</strong> -- &#9679; Correct system configuration.
+&#9679; Capabilities to resist cyberattacks.
+&#9679; Service recovery mechanisms after a failure.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependability attribute dependencies</strong> -- &#9679; Depend on the system's availability and reliability.
+&#9679; Corrupted data by an external attack.
+&#9679; Unavailable to conduct denial of service attacks on a 
+system.
+&#9679; Malicious system virus infection and damage
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependability costs</strong> -- &#9679; Dependability costs increase exponentially.
+&#9679; There are two reasons for this
+	 Expensive development techniques and hardware for higher 
+levels of dependability.
+	 Increased testing and system validation for system clients and 
+regulators.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependability economics</strong> -- &#9679; Accepting untrustworthy systems and pay for failure 
+social and political factors.
+&#9679; Depends on system types that need modest levels of 
+dependability.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependable bslash programming bslash guidelines</strong> -- ProcessBuilder pb =
+new ProcessBuilder("external&#9679;program"); 
+Timer t = new Timer(); 
+Process p = pb.start(); 
+TimerTask killer =
+new TimeoutProcessKiller(p); 
+t.schedule(killer, 5000);
+class TimeoutProcessKiller extends TimerTask { 
+Process p; 
+public TimeoutProcessKiller(Process p) { 
+this.p = p; 
+} 
+@Override
+public void run() { p.destroy(); } 
+}
+(1) Limit the visibility of information in a program
+&#9679; Limited access to data for their implementation.
+&#9679; Reduce possibilities of accidental corruption of program 
+state by other components
+&#9679; Control visibility by using abstract data types
+	 Private data representation.
+	 Limited access to data through predefined operations.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependable process activities</strong> -- &#9679; Design and program inspections
+	 Inspection and checking for systems by different people. 
+&#9679; Static analysis 
+	 Automated inspection on the program source code. 
+&#9679; Test planning and management
+	 Design system test suites. 
+	 Manage to provide enough coverage of system requirements.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependable process characteristics</strong> -- &#9679; Explicitly defined 
+	 A defined process model to drive the production process. 
+	 Data must be collected during the process to prove that the 
+development follows process models.
+&#9679; Repeatable
+	 Not rely on individual judgment. 
+	 Can be repeated across projects and with different team 
+members.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependable processes and agility</strong> -- &#9679; Agile process 
+	 iterative development, test&#9679;first development and user 
+involvement in the development team.  
+&#9679; Agile team follows agile process, actions, and agile 
+methods
+&#9679; However, ‘pure agile’ is impractical for dependable 
+systems.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependable processes</strong> -- &#9679; A well&#9679;defined, repeatable software process to reduce 
+faults.
+&#9679; A well&#9679;defined repeatable process 
+	 Not depend on individual skills.
+&#9679; Check whether to use software engineering practice.
+&#9679; Verification and validation (V&V) activities for fault 
+detection.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Dependable programming</strong> -- &#9679; Standard programming practices 
+	 Reduce program fault introduction rate.
+&#9679; Support fault avoidance, detection and tolerance
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>dependable software</strong> -- 1.	Limit the visibility of information in a program
+2.	Check al inputs for validity
+3.	Provide a handler for all exceptions
+4.	Minimize the use of error&#9679;prone constructs
+5.	Provide restart capabilities
+6.	Check array bounds
+7.	 Include timeouts when calling external components
+8.	Name all constants that represent real&#9679;world values
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Diversity and redundancy examples</strong> -- &#9679; Redundancy. 
+	 Backup servers to switch, when failure occurs.
+&#9679; Diversity. 
+	 Different servers running on different operating systems.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Error Avoidance</strong> -- 1.	Fault avoidance Programmer created program to avoid errors and minimize faults.  
+2.	Fault detection Developers use verification techinuqes to remove faults in the system.
+3.	Developers design software systems that do not cause system failure
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Error-prone constructs (2)</strong> -- &#9679; Human error of misunderstanding or losing track of the 
+relationships between the different parts of the system
+&#9679; Error&#9679;prone constructs in programming languages 
+	 Inherently complex
+&#9679; Avoid or minimize the use of error&#9679;prone constructs.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Error-prone constructs (2)3</strong> -- 1.	Unconditional branch goto statements
+2.	Floating point numbers (inherently imprecise with invalid comparisons) 
+3.	Pointers referencing the wrong memory can cause corrupt data
+4.	Dyamic memory allocation might cause memory overflow
+Object may not be deleted if you throw an exception. 
+5.	Parallelism &#9679;> can result in subtle timing errors due to unforeseen interaction between parallel processes
+6.	Recursion &#9679;> can cause memory overflow as the stack fills up
+7.	Interrupts – signal that might cause a critical operation to be interrupted
+8.	Code is not localized.  This can result in unexpected behavior.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Error-prone constructs</strong> -- &#9679; Unconditional branch (goto) statements
+&#9679; Floating&#9679;point numbers
+comparisons. 
+&#9679; Pointers
+	 Pointers referring to the wrong memory areas can corrupt 
+data. Aliasing can make programs difficult to understand 
+and change.
+&#9679; Dynamic memory allocation
+	 Run&#9679;time allocation can cause memory overflow.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Examples of functional reliability requirements</strong> -- RR1: A pre&#9679;defined range for all operator inputs shall be defined and 
+the system shall check that all operator inputs fall within this pre&#9679;defined 
+range. (Checking)
+RR2: Copies of the patient database shall be maintained on two 
+separate servers that are not housed in the same building. (Recovery, 
+redundancy)
+RR3: N&#9679;version programming shall be used to implement the braking 
+control system. (Redundancy)
+RR4: The system must be implemented in a safe subset of Ada and 
+checked using static analysis. (Process)
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>failure channels</strong> -- 1.	Diverse hardware systems on each channel To avoid errors on same channels
+2.	Diverse software applications in each channel
+3.	Several self&#9679;checking systems in parallel high&#9679;availability is required for such things
+Flight control system.  There is 1. Channel 1 and 2. Channel 2 that get run through the comparator
+a.	Different processors
+b.	Different chipsets from different manufacturers
+c.	Different complexity
+d.	Different programming langauges (by different teams)
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Failures</strong> -- 1.	Operators are not familiar with the specification
+a.	How is the system supposed to behave?
+i.	Important to gain knowledge about reliability & use
+2.	System does not always reflect the user’s reliability of perception
+a.	User has certain pre&#9679;assumptions about the environment
+i.	Office environment is different from university environment
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Fault management</strong> -- &#9679; Fault avoidance
+	 Avoid human errors to minimize system faults.
+	 Organize development processes to detect and repair faults.
+&#9679; Fault detection
+	 Verification and validation techniques to remove faults.
+&#9679; Fault tolerance
+	 Design systems that faults do not cause failures.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Fault tolerance</strong> -- &#9679; Fault tolerant in critical situations.
+&#9679; Fault tolerance required 
+	 High availability requirements 
+	 Failure costs are very high.
+&#9679; Fault tolerance
+	 Able to continue in operation despite software failures.
+&#9679; Fault tolerant required against incorrect validation or 
+specification errors, although a system is proved to 
+conform to its specification
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Fault-tolerant system architectures</strong> -- &#9679; Fault&#9679;tolerant systems architectures
+	 Fault tolerance is essential based on redundancy and diversity.
+&#9679; Examples of situations for dependable architectures:
+	 Flight control systems for safety of passengers
+	 Reactor systems for a chemical or nuclear emergency
+	 Telecommunication systemsfor 24 slash 7 availability.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Faults and failures</strong> -- &#9679; Failures 
+	 Results of system errors resulted from faults in the system
+&#9679; However, faults do not necessarily result in system 
+errors
+	 Transient and ‘corrected’ before an error arises.
+	 Never be executed.
+&#9679; Errors do not necessarily lead to system failures
+	 Corrected by detection and recovery
+	 Protected by protection facilities.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Faults, errors and failures</strong> -- Term Description
+Human error or
+mistake
+Human behavior that results in the introduction of faults into a system. For 
+example, in the wilderness weather system, a programmer might decide that the 
+midnight (midnight is 00.00 in the 24&#9679;hour clock).
+System fault
+A characteristic of a software system that can lead to a system error. The fault is 
+without a check if the time is greater than or equal to 23.00.
+System error
+An erroneous system state that can lead to system behavior that is unexpected 
+by system users. The value of transmission time is set incorrectly (to 24.XX 
+rather than 00.XX) when the faulty code is executed.
+System failure
+An event that occurs at some point in time when the system does not deliver a 
+service as expected by its users. No weather data is transmitted because the 
+time is invalid.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Formal approaches</strong> -- &#9679; Verification&#9679;based approaches
+	 Different representations of a software system are proved to be 
+equivalent. 
+	 Demonstrate the absence of errors.
+&#9679; Refinement&#9679;based approaches
+	 A system representation is transformed into a lower&#9679;level 
+representation.
+	 Correct transformation results in equivalent representations.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>formal benefits</strong> -- Develop formal
+	Formal language for all of this
+		Which therein finds inconsistencies
+			Hopefully turn this into a program
+1.	Hard to understand
+2.	Hard to apply to a large system
+3.	Cannot assess if accurate
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Formal methods and dependability</strong> -- You define a formal model of the software system.  Formal methods are based on the mathe
+Formal methods are cost&#9679;effective for s/w eng.  Considerably reduce certain tyeps of software error.
+1.	Verification based approaches.
+a.	Different representations of the software systems
+b.	Demonstrates the absence of errors?  Verification based approaches
+2.	Refine&#9679;based approaches
+a.	Low&#9679;level representations.  Correct transformations result in equivalent representations.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Formal specification</strong> -- &#9679; Formal methods 
+	 Development approaches based on mathematical analysis.
+&#9679; Formal methods include
+	 Formal specification;
+	 Specification analysis and proof;
+	 Transformational development;
+	 Program verification.
+&#9679; Reduce programming errors and cost for dependable 
+systems.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>formal</strong> -- 1.	Reduce # of errors
+2.	Reduce faults or runtime errors
+3.	Dependable systems engineering
+4.	Use of formal methods in certain areas (high system failure cost reducation).
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Functional reliability requirements</strong> -- &#9679; Checking requirements
+	 Identify incorrect data before it leads to a failure.
+&#9679; Recovery requirements 
+	 Help the system recover from a failure.
+&#9679; Redundancy requirements 
+	 Specify redundant system features.
+&#9679; Process requirements 
+	 Specify software development processes.
+31
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Functional reliability requirements2</strong> -- 1.	Checking requirements
+a.	Identify incorrect data before it leads to a failure
+2.	Recovery requirements 
+a.	Help the system recover from a failure
+3.	Redundancy requiremnts
+a.	Specify reduantnat system features
+4.	Process requirements
+a.	Specify software development processes
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Good practice guidelines for dependable </strong> -- programming
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Hardware fault tolerance</strong> -- &#9679; Triple&#9679;modular redundancy (TMR).
+&#9679; Three replicated identical components 
+	 Receive the same input and their outputs are compared.
+&#9679; One different output 
+	 Ignored based on the assumption of component failure.
+&#9679; Most faults caused by component failures 
+	 A low probability of simultaneous component failure.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Holistic system design</strong> -- &#9679; Interactions and dependencies between system layers
+	 Example: regulation changes causes changes in applications.
+&#9679; For dependability, a systems perspective is essential
+	 Software failures within the enclosing layers.
+	 Failures in adjacent layers affects software systems.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Importance of dependability</strong> -- &#9679; The costs of system failure is high if the failure leads to 
+economic losses.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Improvements in practice</strong> -- &#9679; Multi&#9679;version programming leads to significant 
+improvements in reliability and availability.
+	 Diversity and independence
+&#9679; In practice, observed improvements are much less 
+significant 
+&#9679; Considerable costs to develop multi&#9679;versions of systems.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Include timeouts when calling external components</strong> -- No indication of a failure.
+	 Failure of a remote computer can be ‘silent’ In a distributed 
+system.
+&#9679; Set timeouts on all calls to external components. 
+&#9679; Assume failure and take actions to recover from errors
+	 After a defined time period without a response.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Input Check for Validity</strong> -- &#9679; Taking inputs from their environment based on 
+assumptions about the inputs.
+&#9679; Program specifications rarely defined 
+	 Inconsistent inputs with the assumptions.
+&#9679; Unpredictable program behavior 
+	 Unusual inputs
+	 Threats to the security of the system.
+&#9679; Check program inputs before processing 
+	 Considering the assumptions about the inputs.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Input Output Mapping</strong> -- 1. number of users affected by available services
+	Failure in the middle of the night is less important
+2.Length of system failure
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Insulin pump reliability specification</strong> -- &#9679; Probability of failure (POFOD) metric.
+&#9679; Transient failures 
+	 Repaired by user actions, such as, recalibration of the machine. 
+demands.
+&#9679; Permanent failures
+	 Re&#9679;installed by the manufacturer. 
+	 Occur no more than once per year. 
+	 POFOD < 0.00002.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Key points</strong> -- &#9679; Software diversity is difficult to achieve because it is 
+practically impossible to ensure that each version of the 
+software is truly independent.
+&#9679; Dependable programming relies on including 
+redundancy in a program as checks on the validity of 
+inputs and the values of program variables.
+&#9679; Statistical testing is used to estimate software reliability. 
+It relies on testing the system with test data that matches 
+an operational profile, which reflects the distribution of 
+inputs to the software when it is in use.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Layers in the STS stack</strong> -- &#9679; Business processes
+	 Processes involving people and systems
+&#9679; Organizations
+	 Business activities for system operations
+&#9679; Society
+	 Laws, regulation and culture
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>N-version programming</strong> -- &#9679; Multiple versions of a program execute computations. 
+	 Odd number of computers involved, e.g., three versions.
+&#9679; The results are compared using a voting system.
+&#9679; The correct result is determine by the majority result.
+&#9679; The notion of triple&#9679;modular redundancy, as used in 
+hardware systems.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Non-functional reliability requirements</strong> -- &#9679; Non&#9679;functional reliability requirements
+	 Reliability specifications using one of the reliability metrics 
+(POFOD, ROCOF or AVAIL).
+&#9679; Used for many years in safety&#9679;critical systems 
+	 Uncommon for business critical systems. 
+&#9679; Need precise measurement about reliability and 
+availability expectations.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Non-functional reliability requirements2</strong> -- a.	Specs using reliability metrics
+b.	POFOD probability of fault on demand
+c.	ROCOF rate of occurrence of fault
+d.	AVAIL: availibity
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Operational profile generation</strong> -- &#9679; Automatic data generation, if possible.
+	 Difficult for interactive systems.
+	 Easy for ‘normal’ inputs 
+&#9679; Difficult to generate ‘unlikely’ inputs (anomalies) and test 
+data for these anomalies.
+&#9679; Unknown usage pattern of new systems.
+&#9679; Changeable operational profiles 
+	 Non&#9679;static but dynamic
+	 E.g., learn about new systems, changing usage patterns.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Operational profiles</strong> -- &#9679; A set of test data 
+	 Frequency matches the actual frequency from ‘normal’ usage of 
+the system. 
+	 The number of times the failure event occurred.
+&#9679; A close match with actual usage 
+	 The measured reliability 
+	 Reflect the actual usage of the system.
+&#9679; Generate from real data 
+	 Collect from an existing system 
+	 Assumption of the usage pattern of a system
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Operational profiles2</strong> -- 1.	A set of test data freque. Matches normal usage & number of times the failure event occurred
+2.	Close match with actual usage reflect actual usage
+3.	Generated from real data
+Think geometric distrubtion
+1.	Automatic data generation
+2.	Difficult to generate unlikely inputs and anomalies and test for these
+3.	Unknown usage pattern of a new system
+4.	Changeable operational profiles
+a.	Non&#9679;static, but dynamic 
+b.	Learn about new systems, changing usage patterns
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Other dependability properties</strong> -- &#9679; Repairability
+	 Capability of being repaired in the event of a failure
+&#9679; Maintainability
+	 Capability of being adapted to new requirements
+&#9679; Error tolerance
+	 Capability to tolerate failures due to user input errors
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Output</strong> -- selector
+N software versions
+Agreed
+result
+Fault
+manager
+Input
+N&#9679;version programming
+&#9679; The different versions of a system 
+	 Designed and implemented by different teams. 
+&#9679; Assuming a low probability of making same mistakes
+	 Different algorithms used
+&#9679; Empirical evidence
+	 Commonly misinterpret specifications 
+	 Use same algorithms in different systems.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Perceptions of reliability</strong> -- &#9679; Not always reflect the user’s reliability perception
+	 The assumptions about environments for a system are incorrect
+• Different usage of a system between in an office environment and in 
+a university environment.
+	 The consequences of system failures affects the perception of 
+reliability.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Principal properties</strong> -- &#9679; Security
+	 Capability of resisting accidental or deliberate intrusions.
+&#9679; Resilience
+	 A judgment of how well a system can maintain the continuity of 
+its critical services.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Probability of failure on demand (POFOD)</strong> -- &#9679; The probability of the system failure when a service 
+request is made. 
+	 Useful when demands for service are relatively infrequent.
+&#9679; Implement appropriate protection systems
+	 Demand services occasionally.
+	 Serious consequence due to failed services.
+&#9679; Develop for safety&#9679;critical systems
+	 E.g., emergency shutdown system in a chemical plant.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Problems with design diversity</strong> -- &#9679; Tend to solve problems using same methods
+&#9679; Characteristic errors
+	 Different teams making same mistakes. Making mistakes in 
+same parts.
+	 Specification errors propagated to all implementations
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Problems with redundancy and diversity</strong> -- &#9679; Adding diversity and redundancy increases complexity.
+&#9679; Increase the chances of error 
+	 Unanticipated interactions between redundant components.
+&#9679; Advocate simplicity to decrease software dependability.
+	 E.g., an Airbus product is redundant slash diverse; a Boeing product 
+has no software diversity
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Process diversity and redundancy</strong> -- &#9679; Process activities
+	 Not depend on a single approach, such as testing.
+&#9679; Redundant and diverse process activities.
+&#9679; Multiple process activities complement each other 
+	 Cross&#9679;checking techniques avoid process errors
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Protection systems</strong> -- &#9679; A specialized system 
+	 Associated with other control system.
+	 Take emergency action to deal with failures.
+	 E.g., System to stop a train or system to shut down a reactor
+&#9679; Monitor the controlled system and the environment.
+&#9679; Take emergency action to shut down the system and 
+avoid a catastrophe.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>protection systems2</strong> -- Specialized system
+a.	Associated with controls system
+b.	Action to deal with failures
+c.	E.g. system to stop a train or to shut down a reactor
+Monitor the controlled system and the environment
+Take action to shut down the system and avoid a catastrophe
+Developers apply redundancy for protection systems &#9679;> regarding monitoring and control capabilities.
+1.	Diverse
+2.	Protection system for redundancy
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Protection</strong> -- sensors
+System environment
+Actuators
+Controlled
+equipment
+Control system
+Protection
+system
+Sensors
+Protection system functionality
+&#9679; Protection systems for redundancy 
+	 Control capabilities to replicate in the control software.
+&#9679; Diverse protection systems
+	 Different technology used in the control software.
+&#9679; Need to expend in validation and dependability 
+assurance.
+&#9679; A low probability of failure for the protection system.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>public final class Constants {</strong> -- private Constants() {
+}
+public static final double PLANCK_CONSTANT = 6.62606896e&#9679;34;
+}
+import static math.Constants.PLANCK_CONSTANT;
+import static math.Constants.PI;
+class Calculations {
+public double getReducedPlanckConstant() {
+return PLANCK_CONSTANT  slash  (2 * PI);
+}
+}
+Reliability measurement
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Rate of fault occurrence (ROCOF)</strong> -- &#9679; System failure occurrence rate
+&#9679; ROCOF of 0.002 
+&#9679; Reliable systems needed
+	 Systems perform a number of similar requests in a short time
+	 E.g., credit card processing system.
+&#9679; Reciprocal of ROCOF is Mean time to Failure (MTTF)
+	 Systems with long transactions
+	 System processing takes a long time. MTTF is longer than expected 
+transaction length.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Redundancy and diversity</strong> -- &#9679; Redundancy
+	 Keep more than a single version.
+&#9679; Diversity
+	 Provide the same functionality in different mechanism. 
+&#9679; Redundant and diverse components should be 
+performed independently
+	 E.g., software written in different programming languages.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Regulated systems</strong> -- &#9679; Critical systems are regulated systems
+	 Approved by an external regulator. 
+	 E.g., nuclear systems and air traffic control systems
+&#9679; A safety and dependability case 
+	 Approved by the regulator. 
+	 Create the evidence for systems' dependability, safety and 
+security.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Regulation and compliance</strong> -- &#9679; The general model of economic organization 
+	 Universal in the world.
+	 Offer goods and services and make a profit.
+&#9679; Ensure the safety of their citizens
+	 Follow standards to ensure that products are safe and secure.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Reliability achievement</strong> -- &#9679; Fault avoidance
+	 Development technique to minimise the possibility of mistakes or 
+reveal mistakes.
+&#9679; Fault detection and removal
+	 Verification and validation techniques to increase the probability 
+of correcting errors.
+&#9679; Fault tolerance
+	 Run&#9679;time techniques to ensure that faults do not cause errors.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Reliability and specifications</strong> -- &#9679; Reliability 
+	 Defined formally w.r.t. a system specification
+	 A deviation from a specification.
+&#9679; Incomplete or incorrect specifications
+&#9679; Unfamiliar with specifications 
+	 Unaware how the system is supposed to behave.
+&#9679; Perceptions of reliability
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Reliability in use</strong> -- &#9679; Reliability not improved by X% by removing faults with 
+X%
+&#9679; Program defects rarely executed
+	 Not encountered by users. 
+	 Not affect the perceived reliability.
+&#9679; Users' operation patterns to avoid system features.
+&#9679; Software systems with known faults
+	 Considered reliable systems by users.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Reliability measurement problems</strong> -- &#9679; Operational profile uncertainty
+	 Inaccurate operational profile that does not reflect the real use of 
+the system.
+&#9679; High costs of test data generation
+	 Expensive costs to generate test datasets for the system.
+&#9679; Statistical uncertainty
+	 A statistically significant number of failures for computation.
+	 Highly reliable systems rarely fail.
+&#9679; Recognizing failure
+	 Conflicting interpretations of a specification about unobvious 
+failures.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Reliability measurement</strong> -- Compute
+observed
+reliability
+Apply tests to
+system
+Prepare test
+data set
+Identify
+operational
+profiles
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Reliability metrics</strong> -- &#9679; Units of measurement of system reliability.
+&#9679; Counting the number of operational failures and the 
+period length that the system has been operational.
+&#9679; Assess the reliability (e.g., critical systems)
+	 Long&#9679;term measurement techniques
+&#9679; Metrics
+	 Probability of failure on demand
+	 Rate of occurrence of failures
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>reliability problems</strong> -- 1.	Operational profile uncertainty
+a.	Inaccurate operational profile that does not reflect the real system
+2.	High costs of test data generation
+3.	Statistical uncertainy, highly reliabile systems rarely fail(so hard to test)
+4.	Recognizing failure – confliction interpretations of a specification about unobvious failures
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>reliability systems concerns</strong> -- A.	ATMS CONDUCTED services as requested
+B.	Record customer transactions
+C.	Atm systems are available when required
+1.	Need to identify system services in order to identify system reliability
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Reliability testing</strong> -- &#9679; Reliability testing (Statistical testing) 
+	 Assess whether a system reaches the required level of reliability.
+&#9679; Not part of a defect testing process 
+	 Datasets for defect testing do not include actual usage data.
+&#9679; Data sets required to replicate actual inputs to be 
+processed.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>reliability testing2</strong> -- 1.	Identify operational profiles
+2.	Prepare test data set
+3.	Apply tests to system
+4.	Compute observed reliability
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>runtime evolution</strong> -- 1.	Build time
+2.	Hire time
+3.	Deploye time
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Safety regulation</strong> -- &#9679; Regulation and compliance applies to the sociotechnical 
+system.
+&#9679; Safety&#9679;related systems 
+	 Certified as safe by the regulator.
+&#9679; Produce safety cases to show systems follow rules and 
+regulations. 
+&#9679; Expensive to document certification.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Self-monitoring architectures</strong> -- &#9679; Multi&#9679;channel architectures 
+	 System monitoring its own operations
+	 Take action if inconsistencies are discovered
+&#9679; The same computation is carried out on each channel 
+	 Compare the results
+	 Producing identical results assumes correct system operation
+	 A failure exception is reported when different results arise.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Software diversity strategies</strong> -- 1.	Different languages (programming)
+2.	Different design methods and tools
+3.	Different algorithms in the implementations
+Diverse version of systes hsoudl have no dependence (so they fail in completely different ways) &#9679;> problem similarity since ppl are not intellectually diverse (many people make similar mistakes in similar locations due to software complexity.).
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Software diversity</strong> -- &#9679; Fault tolerance depend on software diversity 
+&#9679; Assume that different implementations fail differently
+	 Independent implementations 
+	 Uncommon errors
+&#9679; Strategies
+	 Different programming languages
+	 Different design methods and tools
+	 Explicit specification of different algorithms
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Software diversity2</strong> -- Fault tolerant &#9679; > depends on software diversity.
+	Assume that different implementations fail differently
+1. Uncommon errors
+2. independent implementations
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Software reliability</strong> -- &#9679; Dependable software is expected
+&#9679; However, some system failures are accepted.
+&#9679; Software systems have high reliability requirements
+	 E.g., critical software systems
+&#9679; Software engineering techniques for reliability 
+requirements.
+	 E.g., medical systems and aerospace systems
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Software usage patterns</strong> -- Possible
+inputs
+User
+User
+User
+Erroneous
+inputs
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Specification dependency</strong> -- &#9679; Software redundancy susceptible to specification errors. 
+	 Incorrect specification causes system failures.
+&#9679; Complex software specifications
+	 Hard to perform validation and verification.
+&#9679; Developing separate software specifications.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Specification dependency2</strong> -- Software redundancy susceptible to specification errors
+	incorrect specification
+Complex software specifications
+	Hard to perform comparisons
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Specifying reliability requirements</strong> -- &#9679; Availability and reliability requirements for different types 
+of failure. 
+	 Low probability of high&#9679;cost failures
+&#9679; Availability and reliability requirements for different types 
+of system service. 
+	 Tolerate failures in less critical services. 
+&#9679; A high level of reliability required. 
+	 Other mechanisms for reliable system services.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Splitter</strong> -- Comparator
+Input value
+Output
+Status
+Splitter
+Comparator
+Output
+Status
+Input Filter
+Filter
+Filter
+Filter
+Filter
+Status
+Status
+Status
+Output
+Output
+Output
+Output
+Airbus architecture discussion
+	 Each system is able to perform the control software.
+&#9679; Extensive diverse systems between primary and 
+secondary systems:
+	 Different processors
+	 Different chipsets from different manufacturers.
+	 Different complexity &#9679;&#9679; only critical functionality in secondary.
+	 Different programming languages by different teams.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Statistical testing</strong> -- &#9679; Testing software for reliability rather than fault detection.
+&#9679; Measuring the number of errors 
+	 Predict reliability of the software
+	 More errors, compared to the one in the specification.
+&#9679; An acceptable level of reliability 
+	 Test software systems and repair or improve them until systems 
+reach the level of reliability.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Strategies</strong> -- 4.	Different languages (programming)
+5.	Different design methods and tools
+6.	Different algorithms in the implementations
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>System dependability</strong> -- &#9679; The most important system property is the dependability
+&#9679; Reflect the user’s degree of trust in that system. 
+&#9679; Reflect the extent of the user’s confidence that it will 
+operate as users expect.
+&#9679; Cover the related attributes: reliability, availability and 
+security.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>system input output mapping</strong> -- Ie
+Input set
+Oe
+Output set
+Program
+Inputs causing
+erroneous outputs
+Erroneous
+outputs
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>System reliability requirements</strong> -- &#9679; Functional reliability requirements 
+	 Define system and software functions 
+	 Avoid, detect or tolerate faults 
+	 Not lead to system failure.
+&#9679; Software reliability requirements 
+	 Cope with hardware failure or operator error.
+&#9679; Non&#9679;functional reliability requirements
+&#9679; A measurable system attribute specified quantitatively. 
+&#9679; E.g., the number of failures and the available time.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Systems and software</strong> -- &#9679; Software engineering is part of system engineering 
+process.
+&#9679; Software systems are are essential components of 
+systems based on organizational purposes.
+&#9679; Example
+	 The wilderness weather system is part of forecasting systems
+	 Hardware and software, forecasting processes, the 
+organizations, etc.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>The increasing costs of residual fault removal </strong> -- Cost per error detected
+Few
+Number of residual errors
+Many Very few
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>The principal dependability properties</strong> -- Dependability
+Availability Reliability Security
+Safety Resilience
+The ability of the system 
+to protect itself against 
+deliberate or accidental 
+intrusion
+The ability of the system 
+to resist and recover 
+from damaging events
+The ability of the system 
+to operate without 
+catastrophic failure
+The ability of the system 
+to deliver services as 
+specified
+The ability of the system 
+to deliver services when 
+requested
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>The sociotechnical systems (STS) stack</strong> -- Equipment
+Operating system
+Communications and data management
+Application system
+Business processes
+Organization
+Society
+Systems
+engineering
+Software
+engineering
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>try {</strong> -- System.out.println ("a[" + i + "]=" + a[i] + "\n");
+}
+}
+catch (Exception e) {
+System.out.println ("error = " + e);
+}
+catch (ArrayIndexOutOfBoundsException e) {
+System.out.println ("ArrayIndexOutOfBoundsException");
+}
+A.java: error: exception ArrayIndexOutOfBoundsException has already been caught 
+catch (ArrayIndexOutOfBoundsException e)
+(3) Provide a handler for all exceptions
+&#9679; An error or some unexpected event 
+	 E.g., a power failure.
+&#9679; Exception handling constructs
+	 Responding and handling exception events 
+	 Change the program execution flow
+&#9679; Using normal control constructs to handle exceptions?
+	 A number of additional statements
+	 Significant overhead 
+	 Tedious and error&#9679;prone
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Use of formal methods</strong> -- &#9679; The principal benefits 
+	 Reduce faults or runtime errors.
+&#9679; Applicable main area:
+	 Dependable systems engineering.
+&#9679; Cost&#9679;effective formal methods 
+	 Reduce high system failure costs
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>Validity checks</strong> -- &#9679; Range checks
+	 Check the input's range.
+&#9679; Size checks
+	 Check the input's maximum or minimum size.
+&#9679; Representation checks
+	 Check the input's expression for the representation 
+	 E.g. names do not include numerals.
+&#9679; Reasonableness checks
+	 Check the input's logical information.
+	 E.g., reasonable rather than an extreme value.
+  </div>
+</article>
+
+<article class="message is-dark" style="margin:0px;">
+  <div class="message-body" style="white-space: normal;padding:0px;display: block;">
+  <p></p>
+   <strong>var str year</strong> -- var str year
+value 'b' 'o' 'u' 'n' 'd' 'l' 'e' 's' ????
+Common Errors in Bounded Buffer Vulnerability
+&#9679; Return a heap&#9679;allocated copy of the string with all 
+uppercase letters.
+&#9679; No bounds checking on its input.
+&#9679; Overflow buf with the unbounded call to strcpy().
+  </div>
+</article>

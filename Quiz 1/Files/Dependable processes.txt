@@ -1,0 +1,7 @@
+- A well-defined, repeatable software process to reduce 
+faults.
+- A well-defined repeatable process 
+	 Not depend on individual skills.
+- Check whether to use software engineering practice.
+- Verification and validation (V&V) activities for fault 
+detection.

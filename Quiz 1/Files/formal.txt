@@ -1,0 +1,4 @@
+1.	Reduce # of errors
+2.	Reduce faults or runtime errors
+3.	Dependable systems engineering
+4.	Use of formal methods in certain areas (high system failure cost reducation).

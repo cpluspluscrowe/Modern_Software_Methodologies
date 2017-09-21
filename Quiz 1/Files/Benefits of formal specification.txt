@@ -1,0 +1,9 @@
+- Developing a formal specification
+	 Analyze system requirements in detail. 
+	 Detect problems, inconsistencies and incompleteness.
+- Specification expressed in a formal language
+	 Discover inconsistencies and incompleteness.
+- A formal method correctly transforms a formal specification 
+into a program.
+- Reduce program testing costs 
+	 Verify a program formally against its specification.

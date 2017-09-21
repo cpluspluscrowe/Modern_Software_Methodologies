@@ -1,0 +1,8 @@
+- Units of measurement of system reliability.
+- Counting the number of operational failures and the 
+period length that the system has been operational.
+- Assess the reliability (e.g., critical systems)
+	 Long-term measurement techniques
+- Metrics
+	 Probability of failure on demand
+	 Rate of occurrence of failures

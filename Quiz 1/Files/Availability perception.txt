@@ -1,0 +1,5 @@
+- Expressed as a percentage of the time
+	 Available to conduct services.
+- Two factors not considered:
+	 The number of users affected by unavailable systems. 
+	 The length of system failed or unavailable period. 

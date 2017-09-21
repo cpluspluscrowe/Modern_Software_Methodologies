@@ -1,0 +1,9 @@
+- Checking requirements
+	 Identify incorrect data before it leads to a failure.
+- Recovery requirements 
+	 Help the system recover from a failure.
+- Redundancy requirements 
+	 Specify redundant system features.
+- Process requirements 
+	 Specify software development processes.
+31

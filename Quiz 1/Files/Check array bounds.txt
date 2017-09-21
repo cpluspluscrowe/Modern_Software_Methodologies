@@ -1,0 +1,7 @@
+- Address a memory location outside of the range of an 
+array declaration.
+- Bounded buffer vulnerability 
+	 E.g., Writing executable code into memory by deliberately writing 
+beyond the top element in an array.
+- Bound checking for an array access 
+	 Within the bounds of the array.

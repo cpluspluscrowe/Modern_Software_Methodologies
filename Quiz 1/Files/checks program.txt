@@ -1,0 +1,12 @@
+1.	Range checks 
+2.	Size checks min or max input sizes
+3.	Representation checks Does the input contain invalid pieces, e.g. names or numbers that are invalid
+4.	Reasonableness checks check the logical information.  Is this input reasonable?
+Provide a handler for all exceptions
+1.	Report exceptions and provide the related information
+2.	Conduct alternative processes relatd info to recover from the problem
+3.	Pass control to a run-time support system
+4.	A mechanism to provide fault tolerance
+a.	Recover from fault-cuased errors
+b.	Eliminating faults
+

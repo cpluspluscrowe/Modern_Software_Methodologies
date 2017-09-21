@@ -1,0 +1,19 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: My6wjY8mtPn9DDTr+rVAmOwvZPNgL
+ 6rdYJrlCiKoygs=
+SHA-256-Digest-Manifest: O1K5wDRYxKJgewuwtd7vv7q0Y7NSM38IMfOawrNbOxI=
+Created-By: 1.8.0_92 (Oracle Corporation)
+
+Name: p2.inf
+SHA-256-Digest: 4gQCz7IiIUGxogJ52odv0gXEgh7W2GcYcjqWY6nQCpQ=
+
+Name: META-INF/maven/org.scala-ide/org.scala-ide.sdt.feature/pom.xml
+SHA-256-Digest: F0U5MzxHN7he0yhTB/cAUVSTZ1oPiJSe+FB6pBOvPxc=
+
+Name: feature.xml
+SHA-256-Digest: MZZUBBIvQcT6DvdeoT7EARpRzPaWh5DG3ppwGD+c0sY=
+
+Name: META-INF/maven/org.scala-ide/org.scala-ide.sdt.feature/pom.prope
+ rties
+SHA-256-Digest: TsloFAZe8GQeJ/TYMiSve6UV6n0Q6RWY3dtXTdPm3OY=
+

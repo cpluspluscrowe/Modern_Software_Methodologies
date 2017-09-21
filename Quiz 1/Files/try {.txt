@@ -1,0 +1,21 @@
+System.out.println ("a[" + i + "]=" + a[i] + "\n");
+}
+}
+catch (Exception e) {
+System.out.println ("error = " + e);
+}
+catch (ArrayIndexOutOfBoundsException e) {
+System.out.println ("ArrayIndexOutOfBoundsException");
+}
+A.java: error: exception ArrayIndexOutOfBoundsException has already been caught 
+catch (ArrayIndexOutOfBoundsException e)
+(3) Provide a handler for all exceptions
+- An error or some unexpected event 
+	 E.g., a power failure.
+- Exception handling constructs
+	 Responding and handling exception events 
+	 Change the program execution flow
+- Using normal control constructs to handle exceptions?
+	 A number of additional statements
+	 Significant overhead 
+	 Tedious and error-prone

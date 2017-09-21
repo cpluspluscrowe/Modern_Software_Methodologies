@@ -1,0 +1,16 @@
+Process characteristic Description
+Auditable The process should be understandable by people apart
+from process participants, who can check that process
+standards are being followed and make suggestions for
+process improvement.
+Diverse The process should include redundant and diverse
+verification and validation activities.
+Documentable The process should have a defined process model that
+sets out the activities in the process and the
+documentation that is to be produced during these
+activities.
+Robust The process should be able to recover from failures of
+individual process activities.
+Standardized A comprehensive set of software development
+standards covering software production and
+documentation should be available.

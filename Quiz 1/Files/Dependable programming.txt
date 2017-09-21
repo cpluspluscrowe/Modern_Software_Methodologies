@@ -1,0 +1,3 @@
+- Standard programming practices 
+	 Reduce program fault introduction rate.
+- Support fault avoidance, detection and tolerance

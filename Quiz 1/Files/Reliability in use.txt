@@ -1,0 +1,8 @@
+- Reliability not improved by X% by removing faults with 
+X%
+- Program defects rarely executed
+	 Not encountered by users. 
+	 Not affect the perceived reliability.
+- Users' operation patterns to avoid system features.
+- Software systems with known faults
+	 Considered reliable systems by users.

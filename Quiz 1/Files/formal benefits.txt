@@ -1,0 +1,7 @@
+Develop formal
+	Formal language for all of this
+		Which therein finds inconsistencies
+			Hopefully turn this into a program
+1.	Hard to understand
+2.	Hard to apply to a large system
+3.	Cannot assess if accurate

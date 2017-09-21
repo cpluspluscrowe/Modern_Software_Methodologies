@@ -1,0 +1,6 @@
+- Hardware failure
+	 Design and manufacturing errors.
+- Software failure
+	 Errors in its implementation.
+- Operational failure
+	 Human operators make mistakes. 

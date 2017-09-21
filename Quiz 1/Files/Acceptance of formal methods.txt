@@ -1,0 +1,8 @@
+- Formal methods limited in practical development:
+	 Hard to understand a formal specification 
+	 Cannot assess if it is an accurate representation.
+	 Assess development costs but harder to assess the benefits. 
+	 Unwilling to invest in formal methods.
+	 Unfamiliar with formal method approach.
+	 Difficulty in scaling up to large systems.
+	 Incompatibility with agile development methods.

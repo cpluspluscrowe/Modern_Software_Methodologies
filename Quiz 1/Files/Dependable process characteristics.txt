@@ -1,0 +1,8 @@
+- Explicitly defined 
+	 A defined process model to drive the production process. 
+	 Data must be collected during the process to prove that the 
+development follows process models.
+- Repeatable
+	 Not rely on individual judgment. 
+	 Can be repeated across projects and with different team 
+members. 

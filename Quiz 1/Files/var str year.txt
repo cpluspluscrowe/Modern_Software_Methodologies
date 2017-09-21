@@ -1,0 +1,7 @@
+var str year
+value 'b' 'o' 'u' 'n' 'd' 'l' 'e' 's' ????
+Common Errors in Bounded Buffer Vulnerability
+- Return a heap-allocated copy of the string with all 
+uppercase letters.
+- No bounds checking on its input.
+- Overflow buf with the unbounded call to strcpy().

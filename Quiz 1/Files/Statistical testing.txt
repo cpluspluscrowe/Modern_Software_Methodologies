@@ -1,0 +1,7 @@
+- Testing software for reliability rather than fault detection.
+- Measuring the number of errors 
+	 Predict reliability of the software
+	 More errors, compared to the one in the specification.
+- An acceptable level of reliability 
+	 Test software systems and repair or improve them until systems 
+reach the level of reliability.

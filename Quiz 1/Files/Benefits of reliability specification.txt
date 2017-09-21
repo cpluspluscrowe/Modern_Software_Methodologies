@@ -1,0 +1,5 @@
+- Help to clarify stakeholders' needs.
+- Provide a measurement basis for system tests.
+- Improve the reliability by different design strategies. 
+- Evidence of including required reliability 
+implementations.

@@ -1,0 +1,12 @@
+private Constants() {
+}
+public static final double PLANCK_CONSTANT = 6.62606896e-34;
+}
+import static math.Constants.PLANCK_CONSTANT;
+import static math.Constants.PI;
+class Calculations {
+public double getReducedPlanckConstant() {
+return PLANCK_CONSTANT  slash  (2 * PI);
+}
+}
+Reliability measurement

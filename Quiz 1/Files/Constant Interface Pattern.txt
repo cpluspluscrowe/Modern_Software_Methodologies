@@ -1,0 +1,2 @@
+- Use final class for Constants
+- Declare public static final and static import all constants

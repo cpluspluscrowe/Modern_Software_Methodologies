@@ -1,0 +1,6 @@
+- Multiple versions of a program execute computations. 
+	 Odd number of computers involved, e.g., three versions.
+- The results are compared using a voting system.
+- The correct result is determine by the majority result.
+- The notion of triple-modular redundancy, as used in 
+hardware systems.

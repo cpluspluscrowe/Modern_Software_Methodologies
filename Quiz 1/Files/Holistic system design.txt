@@ -1,0 +1,5 @@
+- Interactions and dependencies between system layers
+	 Example: regulation changes causes changes in applications.
+- For dependability, a systems perspective is essential
+	 Software failures within the enclosing layers.
+	 Failures in adjacent layers affects software systems.

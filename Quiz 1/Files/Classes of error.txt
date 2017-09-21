@@ -1,0 +1,8 @@
+- Specification and design errors and omissions. 
+	 Reveal errors and omissions in requirements. 
+	 Models generated automatically from source code.
+	 Analysis by using model checking find undesirable faults.
+- Inconsistences between a specification and a program. 
+	 Refinement methods 
+	 Programmer mistakes of inconsistencies with specification
+	 Discover inconsistencies between programs and specifications.

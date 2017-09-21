@@ -1,0 +1,7 @@
+- Non-functional reliability requirements
+	 Reliability specifications using one of the reliability metrics 
+(POFOD, ROCOF or AVAIL).
+- Used for many years in safety-critical systems 
+	 Uncommon for business critical systems. 
+- Need precise measurement about reliability and 
+availability expectations.

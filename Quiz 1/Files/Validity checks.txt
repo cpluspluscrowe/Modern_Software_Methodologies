@@ -1,0 +1,10 @@
+- Range checks
+	 Check the input's range.
+- Size checks
+	 Check the input's maximum or minimum size.
+- Representation checks
+	 Check the input's expression for the representation 
+	 E.g. names do not include numerals.
+- Reasonableness checks
+	 Check the input's logical information.
+	 E.g., reasonable rather than an extreme value.

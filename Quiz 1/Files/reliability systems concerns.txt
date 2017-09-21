@@ -1,0 +1,4 @@
+A.	ATMS CONDUCTED services as requested
+B.	Record customer transactions
+C.	Atm systems are available when required
+1.	Need to identify system services in order to identify system reliability

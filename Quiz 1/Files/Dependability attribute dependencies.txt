@@ -1,0 +1,5 @@
+- Depend on the system's availability and reliability.
+- Corrupted data by an external attack.
+- Unavailable to conduct denial of service attacks on a 
+system.
+- Malicious system virus infection and damage

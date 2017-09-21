@@ -1,0 +1,5 @@
+- Software redundancy susceptible to specification errors. 
+	 Incorrect specification causes system failures.
+- Complex software specifications
+	 Hard to perform validation and verification.
+- Developing separate software specifications.

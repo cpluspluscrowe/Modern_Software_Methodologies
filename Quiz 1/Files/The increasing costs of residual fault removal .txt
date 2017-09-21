@@ -1,0 +1,4 @@
+Cost per error detected
+Few
+Number of residual errors
+Many Very few

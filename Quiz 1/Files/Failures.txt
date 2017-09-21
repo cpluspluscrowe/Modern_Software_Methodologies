@@ -1,0 +1,6 @@
+1.	Operators are not familiar with the specification
+a.	How is the system supposed to behave?
+i.	Important to gain knowledge about reliability & use
+2.	System does not always reflect the user’s reliability of perception
+a.	User has certain pre-assumptions about the environment
+i.	Office environment is different from university environment

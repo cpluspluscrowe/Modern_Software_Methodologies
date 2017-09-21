@@ -1,0 +1,6 @@
+- Dependability costs increase exponentially.
+- There are two reasons for this
+	 Expensive development techniques and hardware for higher 
+levels of dependability.
+	 Increased testing and system validation for system clients and 
+regulators.

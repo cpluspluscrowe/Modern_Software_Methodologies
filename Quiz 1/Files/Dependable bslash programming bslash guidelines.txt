@@ -1,0 +1,22 @@
+ProcessBuilder pb =
+new ProcessBuilder("external-program"); 
+Timer t = new Timer(); 
+Process p = pb.start(); 
+TimerTask killer =
+new TimeoutProcessKiller(p); 
+t.schedule(killer, 5000);
+class TimeoutProcessKiller extends TimerTask { 
+Process p; 
+public TimeoutProcessKiller(Process p) { 
+this.p = p; 
+} 
+@Override
+public void run() { p.destroy(); } 
+}
+(1) Limit the visibility of information in a program
+- Limited access to data for their implementation.
+- Reduce possibilities of accidental corruption of program 
+state by other components
+- Control visibility by using abstract data types
+	 Private data representation.
+	 Limited access to data through predefined operations.

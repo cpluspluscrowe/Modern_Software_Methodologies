@@ -1,0 +1,19 @@
+Dependability
+Availability Reliability Security
+Safety Resilience
+The ability of the system 
+to protect itself against 
+deliberate or accidental 
+intrusion
+The ability of the system 
+to resist and recover 
+from damaging events
+The ability of the system 
+to operate without 
+catastrophic failure
+The ability of the system 
+to deliver services as 
+specified
+The ability of the system 
+to deliver services when 
+requested

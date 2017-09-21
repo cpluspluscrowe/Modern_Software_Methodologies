@@ -1,0 +1,15 @@
+selector
+N software versions
+Agreed
+result
+Fault
+manager
+Input
+N-version programming
+- The different versions of a system 
+	 Designed and implemented by different teams. 
+- Assuming a low probability of making same mistakes
+	 Different algorithms used
+- Empirical evidence
+	 Commonly misinterpret specifications 
+	 Use same algorithms in different systems.

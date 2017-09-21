@@ -1,0 +1,1048 @@
+Chapter 11 – Reliability Engineering
+1
+Chapter	11	Reliability	Engineering
+30/10/2014
+Topics covered
+² Availability and reliability
+² Reliability requirements
+² Fault-tolerant architectures
+² Programming for reliability
+² Reliability measurement
+2
+Chapter	11	Reliability	Engineering
+30/10/2014
+Software reliability
+² Dependable software is expected
+² However, some system failures are accepted.
+² Software systems have high reliability requirements
+§ E.g., critical software systems
+² Software engineering techniques for reliability 
+requirements.
+§ E.g., medical systems and aerospace systems
+3
+Chapter	11	Reliability	Engineering
+30/10/2014
+Faults, errors and failures
+Term Description
+Human error or
+mistake
+Human behavior that results in the introduction of faults into a system. For 
+example, in the wilderness weather system, a programmer might decide that the 
+way to compute the time for the next transmission is to add 1 hour to the current 
+time. This works except when the transmission time is between 23.00 and 
+midnight (midnight is 00.00 in the 24-hour clock).
+System fault
+A characteristic of a software system that can lead to a system error. The fault is 
+the inclusion of the code to add 1 hour to the time of the last transmission, 
+without a check if the time is greater than or equal to 23.00.
+System error
+An erroneous system state that can lead to system behavior that is unexpected 
+by system users. The value of transmission time is set incorrectly (to 24.XX 
+rather than 00.XX) when the faulty code is executed.
+System failure
+An event that occurs at some point in time when the system does not deliver a 
+service as expected by its users. No weather data is transmitted because the 
+time is invalid.
+4
+Chapter	11	Reliability	Engineering
+30/10/2014
+Faults and failures
+² Failures 
+§ Results of system errors resulted from faults in the system
+² However, faults do not necessarily result in system 
+errors
+§ Transient and ‘corrected’ before an error arises.
+§ Never be executed.
+² Errors do not necessarily lead to system failures
+§ Corrected by detection and recovery
+§ Protected by protection facilities.
+5
+Chapter	11	Reliability	Engineering
+30/10/2014
+Fault management
+² Fault avoidance
+§ Avoid human errors to minimize system faults.
+§ Organize development processes to detect and repair faults.
+² Fault detection
+§ Verification and validation techniques to remove faults.
+² Fault tolerance
+§ Design systems that faults do not cause failures.
+6
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability achievement
+² Fault avoidance
+§ Development technique to minimise the possibility of mistakes or 
+reveal mistakes.
+² Fault detection and removal
+§ Verification and validation techniques to increase the probability 
+of correcting errors.
+² Fault tolerance
+§ Run-time techniques to ensure that faults do not cause errors.
+7
+Chapter	11	Reliability	Engineering
+30/10/2014
+The increasing costs of residual fault removal 
+8
+Cost per error detected
+Few
+Number of residual errors
+Many Very few
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability and reliability
+9
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability and reliability
+² Reliability
+§ The probability of failure-free system operation.
+² Availability
+§ The probability that a system conducts requested services at a 
+point in time.
+10
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability and specifications
+² Reliability 
+§ Defined formally w.r.t. a system specification
+§ A deviation from a specification.
+² Incomplete or incorrect specifications
+§ A system following specifications may ‘fail’.
+² Unfamiliar with specifications 
+§ Unaware how the system is supposed to behave.
+² Perceptions of reliability
+11
+Chapter	11	Reliability	Engineering
+30/10/2014
+Perceptions of reliability
+² Not always reflect the user’s reliability perception
+§ The assumptions about environments for a system are incorrect
+• Different usage of a system between in an office environment and in 
+a university environment.
+§ The consequences of system failures affects the perception of 
+reliability.
+12
+Chapter	11	Reliability	Engineering
+30/10/2014
+A system as an input/output mapping
+Ie
+Input set
+Oe
+Output set
+Program
+Inputs causing
+erroneous outputs
+Erroneous
+outputs
+13
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability perception
+² Expressed as a percentage of the time
+§ Available to conduct services.
+² Two factors not considered:
+§ The number of users affected by unavailable systems. 
+§ The length of system failed or unavailable period. 
+14
+Chapter	11	Reliability	Engineering
+30/10/2014
+Software usage patterns
+Possible
+inputs
+User
+1
+User
+3
+User
+2
+Erroneous
+inputs
+15
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability in use
+² Reliability not improved by X% by removing faults with 
+X%
+² Program defects rarely executed
+§ Not encountered by users. 
+§ Not affect the perceived reliability.
+² Users' operation patterns to avoid system features.
+² Software systems with known faults
+§ Considered reliable systems by users.
+16
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability requirements
+Chapter	11	Reliability	Engineering 17
+30/10/2014
+System reliability requirements
+² Functional reliability requirements 
+§ Define system and software functions 
+§ Avoid, detect or tolerate faults 
+§ Not lead to system failure.
+² Software reliability requirements 
+§ Cope with hardware failure or operator error.
+² Non-functional reliability requirements
+² A measurable system attribute specified quantitatively. 
+² E.g., the number of failures and the available time. 
+18
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability metrics
+² Units of measurement of system reliability.
+² Counting the number of operational failures and the 
+period length that the system has been operational.
+² Assess the reliability (e.g., critical systems)
+§ Long-term measurement techniques
+² Metrics
+§ Probability of failure on demand
+§ Rate of occurrence of failures
+19
+Chapter	11	Reliability	Engineering
+30/10/2014
+Probability of failure on demand (POFOD)
+² The probability of the system failure when a service 
+request is made. 
+§ Useful when demands for service are relatively infrequent.
+² Implement appropriate protection systems
+§ Demand services occasionally.
+§ Serious consequence due to failed services.
+² Develop for safety-critical systems
+§ E.g., emergency shutdown system in a chemical plant.
+20
+Chapter	11	Reliability	Engineering
+30/10/2014
+Rate of fault occurrence (ROCOF)
+² System failure occurrence rate
+² ROCOF of 0.002 
+§ 2 failures are likely in each 1000 operational time units
+² Reliable systems needed
+§ Systems perform a number of similar requests in a short time
+§ E.g., credit card processing system.
+² Reciprocal of ROCOF is Mean time to Failure (MTTF)
+§ Systems with long transactions
+§ System processing takes a long time. MTTF is longer than expected 
+transaction length.
+21
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability
+² The time that a software system is available
+§ Repair and restart time considered
+² Availability of 0.001 
+§ Software is available for 1 out of 1000 time units.
+² Continuously running systems 
+§ E.g., railway signalling systems.
+22
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability specification
+Availability Explanation
+0.9 The system is available for 90% of the time. This means that, in a
+24-hour period (1,440 minutes), the system will be unavailable for
+144 minutes. (1440 * 10%) 
+0.99 In a 24-hour period, the system is unavailable for 14.4 minutes.
+0.999 The system is unavailable for 84 seconds in a 24-hour period.
+0.9999 The system is unavailable for 8.4 seconds in a 24-hour period.
+Roughly, one minute per week.
+23
+Chapter	11	Reliability	Engineering
+30/10/2014
+Non-functional reliability requirements
+² Non-functional reliability requirements
+§ Reliability specifications using one of the reliability metrics 
+(POFOD, ROCOF or AVAIL).
+² Used for many years in safety-critical systems 
+§ Uncommon for business critical systems. 
+² Need precise measurement about reliability and 
+availability expectations.
+Chapter	11	Reliability	Engineering 24
+30/10/2014
+Benefits of reliability specification
+² Help to clarify stakeholders' needs.
+² Provide a measurement basis for system tests.
+² Improve the reliability by different design strategies. 
+² Evidence of including required reliability 
+implementations.
+Chapter	11	Reliability	Engineering 25
+30/10/2014
+Specifying reliability requirements
+² Availability and reliability requirements for different types 
+of failure. 
+§ Low probability of high-cost failures
+² Availability and reliability requirements for different types 
+of system service. 
+§ Tolerate failures in less critical services. 
+² A high level of reliability required. 
+§ Other mechanisms for reliable system services.
+Chapter	11	Reliability	Engineering 26
+30/10/2014
+ATM reliability specification
+² Key concerns
+§ ATMs conduct services as requested 
+§ Record customer transactions
+§ ATM systems are available when required.
+² Database transaction mechanisms make a correction of 
+transaction problems 
+Chapter	11	Reliability	Engineering 27
+30/10/2014
+ATM availability specification
+² System services
+§ The customer account database service;
+§ ‘withdraw cash’, ‘provide account information’, etc.
+² Specify a high level of availability in database service.
+§ Database availability: 0.9999, between 7 am and 11pm. 
+§ A downtime of less than 1 minute per week.
+Chapter	11	Reliability	Engineering 28
+30/10/2014
+ATM availability specification
+² Key reliability issues depends on mechanical reliability. 
+² A lower level of software availability is acceptable. 
+² The overall availability
+§ Specify availability with 0.999
+§ A machine might be unavailable for between 1 and 2 minutes 
+each day. 
+Chapter	11	Reliability	Engineering 29
+30/10/2014
+Insulin pump reliability specification
+² Probability of failure (POFOD) metric.
+² Transient failures 
+§ Repaired by user actions, such as, recalibration of the machine. 
+§ Low POFOD is acceptable. A failure occurs in every 500 
+demands.
+² Permanent failures
+§ Re-installed by the manufacturer. 
+§ Occur no more than once per year. 
+§ POFOD < 0.00002.
+30
+Chapter	11	Reliability	Engineering
+30/10/2014
+Functional reliability requirements
+² Checking requirements
+§ Identify incorrect data before it leads to a failure.
+² Recovery requirements 
+§ Help the system recover from a failure.
+² Redundancy requirements 
+§ Specify redundant system features.
+² Process requirements 
+§ Specify software development processes.
+31
+Chapter	11	Reliability	Engineering
+30/10/2014
+Examples of functional reliability requirements
+RR1: A pre-defined range for all operator inputs shall be defined and 
+the system shall check that all operator inputs fall within this pre-defined 
+range. (Checking)
+RR2: Copies of the patient database shall be maintained on two 
+separate servers that are not housed in the same building. (Recovery, 
+redundancy)
+RR3: N-version programming shall be used to implement the braking 
+control system. (Redundancy)
+RR4: The system must be implemented in a safe subset of Ada and 
+checked using static analysis. (Process)
+32
+Chapter	11	Reliability	Engineering
+30/10/2014
+Fault-tolerant architectures
+Chapter	11	Reliability	Engineering 33
+30/10/2014
+Fault tolerance
+² Fault tolerant in critical situations.
+² Fault tolerance required 
+§ High availability requirements 
+§ Failure costs are very high.
+² Fault tolerance
+§ Able to continue in operation despite software failures.
+² Fault tolerant required against incorrect validation or 
+specification errors, although a system is proved to 
+conform to its specification
+Chapter	11	Reliability	Engineering 34
+30/10/2014
+Fault-tolerant system architectures
+² Fault-tolerant systems architectures
+§ Fault tolerance is essential based on redundancy and diversity.
+² Examples of situations for dependable architectures:
+§ Flight control systems for safety of passengers
+§ Reactor systems for a chemical or nuclear emergency
+§ Telecommunication systemsfor 24/7 availability.
+Chapter	11	Reliability	Engineering 35
+30/10/2014
+Protection systems
+² A specialized system 
+§ Associated with other control system.
+§ Take emergency action to deal with failures.
+§ E.g., System to stop a train or system to shut down a reactor
+² Monitor the controlled system and the environment.
+² Take emergency action to shut down the system and 
+avoid a catastrophe.
+Chapter	11	Reliability	Engineering 36
+30/10/2014
+Protection system architecture
+Chapter	11	Reliability	Engineering 37
+Protection
+sensors
+System environment
+Actuators
+Controlled
+equipment
+Control system
+Protection
+system
+Sensors
+30/10/2014
+Protection system functionality
+² Protection systems for redundancy 
+§ Control capabilities to replicate in the control software.
+² Diverse protection systems
+§ Different technology used in the control software.
+² Need to expend in validation and dependability 
+assurance.
+² A low probability of failure for the protection system.
+Chapter	11	Reliability	Engineering 38
+30/10/2014
+Self-monitoring architectures
+² Multi-channel architectures 
+§ System monitoring its own operations
+§ Take action if inconsistencies are discovered
+² The same computation is carried out on each channel 
+§ Compare the results
+§ Producing identical results assumes correct system operation
+§ A failure exception is reported when different results arise.
+Chapter	11	Reliability	Engineering 39
+30/10/2014
+Self-monitoring architecture
+Chapter	11	Reliability	Engineering 40
+Splitter
+Channel 1
+Channel 2
+Comparator
+Input value
+Output value
+Status
+30/10/2014
+Self-monitoring systems
+² Diverse hardware systems on each channel 
+§ Prevent common failures producing the same results.
+² Diverse software applications in each channel 
+§ Prevent same errors affecting each channel.
+² Several self-checking systems in parallel.
+§ High-availability required.
+§ E.g., Airbus aircraft's flight control systems.
+Chapter	11	Reliability	Engineering 41
+30/10/2014
+Airbus flight control system architecture
+Chapter	11	Reliability	Engineering 42
+Splitter
+Channel 1
+Channel 2
+Comparator
+Input value
+Output
+Status
+Primary flight control system 1
+Primary flight control system 2
+Primary flight control system 3
+Splitter
+Channel 1
+Channel 2
+Comparator
+Output
+Status
+Secondary flight control system 1
+Secondary flight control system 2
+Input Filter
+Filter
+Filter
+Filter
+Filter
+Status
+Status
+Status
+Output
+Output
+Output
+Output
+30/10/2014
+Airbus architecture discussion
+² The Airbus FCS has 5 separate computers
+§ Each system is able to perform the control software.
+² Extensive diverse systems between primary and 
+secondary systems:
+§ Different processors
+§ Different chipsets from different manufacturers.
+§ Different complexity -- only critical functionality in secondary.
+§ Different programming languages by different teams.
+Chapter	11	Reliability	Engineering 43
+30/10/2014
+N-version programming
+² Multiple versions of a program execute computations. 
+§ Odd number of computers involved, e.g., three versions.
+² The results are compared using a voting system.
+² The correct result is determine by the majority result.
+² The notion of triple-modular redundancy, as used in 
+hardware systems.
+Chapter	11	Reliability	Engineering 44
+30/10/2014
+Hardware fault tolerance
+² Triple-modular redundancy (TMR).
+² Three replicated identical components 
+§ Receive the same input and their outputs are compared.
+² One different output 
+§ Ignored based on the assumption of component failure.
+² Most faults caused by component failures 
+§ A low probability of simultaneous component failure.
+Chapter	11	Reliability	Engineering 45
+30/10/2014
+Triple modular redundancy (TMR)
+Chapter	11	Reliability	Engineering 46
+A2
+A1
+A3
+Output
+selector
+Input
+30/10/2014
+N-version programming
+Chapter	11	Reliability	Engineering 47
+Version 2
+Version 1
+Version 3
+Output
+selector
+N software versions
+Agreed
+result
+Fault
+manager
+Input
+30/10/2014
+N-version programming
+² The different versions of a system 
+§ Designed and implemented by different teams. 
+² Assuming a low probability of making same mistakes
+§ Different algorithms used
+² Empirical evidence
+§ Commonly misinterpret specifications 
+§ Use same algorithms in different systems.
+Chapter	11	Reliability	Engineering 48
+30/10/2014
+Software diversity
+² Fault tolerance depend on software diversity 
+² Assume that different implementations fail differently
+§ Independent implementations 
+§ Uncommon errors
+² Strategies
+§ Different programming languages
+§ Different design methods and tools
+§ Explicit specification of different algorithms
+Chapter	11	Reliability	Engineering 49
+30/10/2014
+Problems with design diversity
+² Tend to solve problems using same methods
+² Characteristic errors
+§ Different teams making same mistakes. Making mistakes in 
+same parts.
+§ Specification errors propagated to all implementations
+Chapter	11	Reliability	Engineering 50
+30/10/2014
+Specification dependency
+² Software redundancy susceptible to specification errors. 
+§ Incorrect specification causes system failures.
+² Complex software specifications
+§ Hard to perform validation and verification.
+² Developing separate software specifications.
+Chapter	11	Reliability	Engineering 51
+30/10/2014
+Improvements in practice
+² Multi-version programming leads to significant 
+improvements in reliability and availability.
+§ Diversity and independence
+² In practice, observed improvements are much less 
+significant 
+§ Reliability improvements of between 5 and 9 times.
+² Considerable costs to develop multi-versions of systems.
+Chapter	11	Reliability	Engineering 52
+30/10/2014
+Programming for reliability
+Chapter	11	Reliability	Engineering 53
+30/10/2014
+Dependable programming
+² Standard programming practices 
+§ Reduce program fault introduction rate.
+² Support fault avoidance, detection and tolerance
+Chapter	11	Reliability	Engineering 54
+30/10/2014
+Good practice guidelines for dependable 
+programming
+Chapter	11	Reliability	Engineering 55
+Dependable	programming	guidelines
+1. Limit	the	visibility	of	information	in	a	program
+2. Check	all	inputs	for	validity
+3. Provide	a	handler	for	all	exceptions
+4. Minimize	the	use	of	error-prone	constructs
+5. Provide	restart	capabilities
+6. Check	array	bounds
+7. Include	timeouts	when	calling	external	components
+8. Name	all	constants	that	represent	real-world	values
+30/10/2014
+ProcessBuilder pb =
+new ProcessBuilder("external-program"); 
+Timer t = new Timer(); 
+Process p = pb.start(); 
+TimerTask killer =
+new TimeoutProcessKiller(p); 
+t.schedule(killer, 5000);
+class TimeoutProcessKiller extends TimerTask { 
+Process p; 
+public TimeoutProcessKiller(Process p) { 
+this.p = p; 
+} 
+@Override
+public void run() { p.destroy(); } 
+}
+(1) Limit the visibility of information in a program
+² Limited access to data for their implementation.
+² Reduce possibilities of accidental corruption of program 
+state by other components
+² Control visibility by using abstract data types
+§ Private data representation.
+§ Limited access to data through predefined operations.
+Chapter	11	Reliability	Engineering 56
+30/10/2014
+(2) Check all inputs for validity
+² Taking inputs from their environment based on 
+assumptions about the inputs.
+² Program specifications rarely defined 
+§ Inconsistent inputs with the assumptions.
+² Unpredictable program behavior 
+§ Unusual inputs
+§ Threats to the security of the system.
+² Check program inputs before processing 
+§ Considering the assumptions about the inputs.
+Chapter	11	Reliability	Engineering 57
+30/10/2014
+Validity checks
+² Range checks
+§ Check the input's range.
+² Size checks
+§ Check the input's maximum or minimum size.
+² Representation checks
+§ Check the input's expression for the representation 
+§ E.g. names do not include numerals.
+² Reasonableness checks
+§ Check the input's logical information.
+§ E.g., reasonable rather than an extreme value.
+Chapter	11	Reliability	Engineering 58
+30/10/2014
+Example
+30/10/2014 Chapter	11	Reliability	Engineering 59
+try {
+int a[]= {1, 2, 3, 4};
+for (int i = 1; i <= SIZE; i++) {
+System.out.println ("a[" + i + "]=" + a[i] + "\n");
+}
+}
+catch (Exception e) {
+System.out.println ("error = " + e);
+}
+catch (ArrayIndexOutOfBoundsException e) {
+System.out.println ("ArrayIndexOutOfBoundsException");
+}
+A.java: error: exception ArrayIndexOutOfBoundsException has already been caught 
+catch (ArrayIndexOutOfBoundsException e)
+^ 1 error
+(3) Provide a handler for all exceptions
+² An error or some unexpected event 
+§ E.g., a power failure.
+² Exception handling constructs
+§ Responding and handling exception events 
+§ Change the program execution flow
+² Using normal control constructs to handle exceptions?
+§ A number of additional statements
+§ Significant overhead 
+§ Tedious and error-prone
+Chapter	11	Reliability	Engineering 60
+30/10/2014
+Exception handling
+Chapter	11	Reliability	Engineering 61
+Code section
+Exception handling code
+Normal flow
+of control
+Exception detected
+Normal exit
+Exception
+processing
+30/10/2014
+Method where error occurred
+Method with an exception handler
+The main method
+Throws 
+exception
+Forwards 
+exception
+Catches 
+exception
+Looking for 
+appropriate 
+handler
+Method without an exception handler
+Searching the call stack for the 
+exception handler
+Exception handling
+² Three possible exception handling strategies
+§ Report exceptions and provide the related information.
+§ Conduct alternative processes
+• The related information required to recover from the problem.
+§ Pass control to a run-time support system.
+² A mechanism to provide fault tolerance
+§ Recovering from fault-caused errors
+§ Eliminating faults
+Chapter	11	Reliability	Engineering 62
+30/10/2014
+(4) Minimize the use of error-prone constructs
+² Human error of misunderstanding or losing track of the 
+relationships between the different parts of the system
+² Error-prone constructs in programming languages 
+§ Inherently complex
+² Avoid or minimize the use of error-prone constructs.
+Chapter	11	Reliability	Engineering 63
+30/10/2014
+Error-prone constructs
+² Unconditional branch (goto) statements
+² Floating-point numbers
+§ Inherently imprecise. The imprecision may lead to invalid 
+comparisons. 
+§ E.g., 7.00000000 (6.99999999 or 7.00000001)
+² Pointers
+§ Pointers referring to the wrong memory areas can corrupt 
+data. Aliasing can make programs difficult to understand 
+and change.
+² Dynamic memory allocation
+§ Run-time allocation can cause memory overflow.
+Chapter	11	Reliability	Engineering 64
+30/10/2014
+Common Mistakes in Dynamic Memory 
+Allocation
+² No matter how much we try, it is very difficult to free all 
+dynamically allocated memory. Even if we can do that, it is 
+often not safe from exceptions.
+² If an exception is thrown, the “a” object is never deleted.
+² Detect memory leaks by Valgrind
+30/10/2014 Chapter	11	Reliability	Engineering 65
+void SomeMethod() { 
+ClassA *a = new ClassA; 
+// it can throw an exception 
+foo();
+delete a; 
+}
+Error-prone constructs
+² Parallelism
+§ Can result in subtle timing errors because of unforeseen 
+interaction between parallel processes.
+² Recursion
+§ Errors in recursion can cause memory overflow as the 
+program stack fills up.
+² Interrupts
+§ Interrupts can cause a critical operation to be terminated 
+and make a program difficult to understand.  
+² Inheritance
+§ Code is not localised. This can result in unexpected 
+behaviour when changes are made and problems of 
+understanding the code.
+Chapter	11	Reliability	Engineering 66
+30/10/2014
+Common Mistake in Inheritance and Dynamic 
+Binding
+30/10/2014 Chapter	11	Reliability	Engineering 67
+abstract class Base {
+int f = 0;
+public int m1() {
+return 0;
+}
+}
+class ClassA extends Base {
+int f = 1;
+public int m1() {
+return f;
+}
+}
+class ClassB extends Base {
+public int m1() {
+return f;
+}
+}
+class ClassC extends ClassB {
+int f = 2;
+public int m1() {
+return f;
+}
+}
+1: class Main {
+2:   Base x1;
+void thread1() {
+3: x1 = new ClassA();
+4: System.out.println(x1.m1());
+}
+void thread2() {
+5: x1 = new ClassB();
+6: System.out.println(x1.m1());
+}
+void thread3() {
+7: x1 = new ClassC();
+8: System.out.println(x1.m1());
+}
+}
+Inheritance when combined with dynamic 
+binding can cause timing problems at runtime.
+
+Error-prone constructs
+² Aliasing
+§ Using more than 1 name to refer to the same state variable.
+² Unbounded arrays
+§ Buffer overflow failures can occur if no bound checking on 
+arrays.
+² Default input processing
+§ Occur irrespective of the input.
+§ The default action changes the program control flow. 
+§ Malicious inputs trigger a program failure.
+Chapter	11	Reliability	Engineering 68
+30/10/2014
+Sep.	7
+Common Errors in Default Input Processing
+² Unexpectedly execute a call to method foo(int) with 
+default input '0', instead of a call to method foo(int, int).
+§ Method overloading.
+§ Integer '0' is a default value for argument 'b' in the overloaded 
+method foo(int). 
+30/10/2014 Chapter	11	Reliability	Engineering 69
+void foo(int a, int b) {
+// the implementation goes here
+}
+void foo(int a) {
+foo(a, 0);
+}
+(5) Provide restart capabilities
+² The system restart capability
+§ Preserve the program data or status.
+§ Long transactions or user interactions.
+² Restart scenarios
+§ Web applications keeping copies of forms that users fill in before 
+there is a problem
+§ Text editors restarting from the checkpoint saving periodically the 
+program state or memory 
+Chapter	11	Reliability	Engineering 70
+30/10/2014
+(6) Check array bounds
+² Address a memory location outside of the range of an 
+array declaration.
+² Bounded buffer vulnerability 
+§ E.g., Writing executable code into memory by deliberately writing 
+beyond the top element in an array.
+² Bound checking for an array access 
+§ Within the bounds of the array.
+Chapter	11	Reliability	Engineering 71
+30/10/2014
+Common Errors in Bounded Buffer Vulnerability
+² Writing data past the end of allocated memory can be 
+detected by OS 
+§ Generate a segmentation fault error that terminates the process.
+30/10/2014 Chapter	11	Reliability	Engineering 72
+char str[8] = ""; // 8-byte-long string buffer
+unsigned short year = 2017; // two-byte integer
+var str year
+value [null	string] 2017
+strcpy(str, "boundless"); // boundless" 9 characters long
+var str year
+value 'b' 'o' 'u' 'n' 'd' 'l' 'e' 's' ????
+Common Errors in Bounded Buffer Vulnerability
+² Return a heap-allocated copy of the string with all 
+uppercase letters.
+² No bounds checking on its input.
+² Overflow buf with the unbounded call to strcpy().
+30/10/2014 Chapter	11	Reliability	Engineering 73
+char *lccopy(const char *str) {
+char buf[BUFSIZE];
+char *p;
+strcpy(buf, str);
+for (p = buf; *p; p++) {
+if (isupper(*p)) {
+*p = tolower(*p);
+}
+} 
+return strdup(buf);
+}
+(7) Include timeouts when calling external 
+components
+² May never receive services from failed systems
+§ No indication of a failure.
+§ Failure of a remote computer can be ‘silent’ In a distributed 
+system.
+² Set timeouts on all calls to external components. 
+² Assume failure and take actions to recover from errors
+§ After a defined time period without a response.
+Chapter	11	Reliability	Engineering 74
+30/10/2014
+(8) Name all constants that represent real-world 
+values
+² Use constants reflecting real-world values names 
+§ Do not use numeric values and always refer to them by name.
+² Reduce mistakes for wrong values by using a name 
+rather than a value.
+² Changing constant values 
+§ Easy to maintain and localize edit locations to make the change.
+Chapter	11	Reliability	Engineering 75
+30/10/2014
+Constant Interface Pattern
+² Use final class for Constants
+² Declare public static final and static import all constants
+30/10/2014 Chapter	11	Reliability	Engineering 76
+public final class Constants {
+private Constants() {
+// restrict instantiation
+}
+public static final double PI = 3.14159;
+public static final double PLANCK_CONSTANT = 6.62606896e-34;
+}
+import static math.Constants.PLANCK_CONSTANT;
+import static math.Constants.PI;
+class Calculations {
+public double getReducedPlanckConstant() {
+return PLANCK_CONSTANT / (2 * PI);
+}
+}
+Reliability measurement
+Chapter	11	Reliability	Engineering 77
+30/10/2014
+Reliability measurement
+² Collect data about system operation:
+² The number of failures for system service requests 
+§ Probability of failure on demand (POFOD)
+² The time or the number of transactions between system 
+failures plus the total elapsed time or total number of 
+transactions
+§ Mean time to failure (MTTF)
+§ Rate of occurrence of fault (ROCOF)
+² The repair or restart time after a system failure 
+§ Availability
+§ The time between failures 
+§ The time required to restore the system from failures
+Chapter	11	Reliability	Engineering 78
+30/10/2014
+Reliability testing
+² Reliability testing (Statistical testing) 
+§ Assess whether a system reaches the required level of reliability.
+² Not part of a defect testing process 
+§ Datasets for defect testing do not include actual usage data.
+² Data sets required to replicate actual inputs to be 
+processed.
+Chapter	11	Reliability	Engineering 79
+30/10/2014
+Statistical testing
+² Testing software for reliability rather than fault detection.
+² Measuring the number of errors 
+§ Predict reliability of the software
+§ More errors, compared to the one in the specification.
+² An acceptable level of reliability 
+§ Test software systems and repair or improve them until systems 
+reach the level of reliability.
+Chapter	11	Reliability	Engineering 80
+30/10/2014
+Reliability measurement
+Compute
+observed
+reliability
+Apply tests to
+system
+Prepare test
+data set
+Identify
+operational
+profiles
+Chapter	11	Reliability	Engineering 81
+30/10/2014
+Reliability measurement problems
+² Operational profile uncertainty
+§ Inaccurate operational profile that does not reflect the real use of 
+the system.
+² High costs of test data generation
+§ Expensive costs to generate test datasets for the system.
+² Statistical uncertainty
+§ A statistically significant number of failures for computation.
+§ Highly reliable systems rarely fail.
+² Recognizing failure
+§ Conflicting interpretations of a specification about unobvious 
+failures.
+Chapter	11	Reliability	Engineering 82
+30/10/2014
+Operational profiles
+² A set of test data 
+§ Frequency matches the actual frequency from ‘normal’ usage of 
+the system. 
+§ The number of times the failure event occurred.
+² A close match with actual usage 
+§ The measured reliability 
+§ Reflect the actual usage of the system.
+² Generate from real data 
+§ Collect from an existing system 
+§ Assumption of the usage pattern of a system
+Chapter	11	Reliability	Engineering 83
+30/10/2014
+An operational profile
+...
+Number of inputs
+Input classes
+Chapter	11	Reliability	Engineering 84
+30/10/2014
+Operational profile generation
+² Automatic data generation, if possible.
+§ Difficult for interactive systems.
+§ Easy for ‘normal’ inputs 
+² Difficult to generate ‘unlikely’ inputs (anomalies) and test 
+data for these anomalies.
+² Unknown usage pattern of new systems.
+² Changeable operational profiles 
+§ Non-static but dynamic
+§ E.g., learn about new systems, changing usage patterns.
+Chapter	11	Reliability	Engineering 85
+30/10/2014
+Key points
+² Software reliability can be achieved by avoiding the 
+introduction of faults, by detecting and removing faults 
+before system deployment and by including fault 
+tolerance facilities that allow the system to remain 
+operational after a fault has caused a system failure.
+² Reliability requirements can be defined quantitatively in 
+the system requirements specification. 
+² Reliability metrics include probability of failure on 
+demand (POFOD), rate of occurrence of failure 
+(ROCOF) and availability (AVAIL). 
+86
+Chapter	11	Reliability	Engineering
+30/10/2014
+Key points
+² Functional reliability requirements are requirements for 
+system functionality, such as checking and redundancy 
+requirements, which help the system meet its nonfunctional
+reliability requirements.
+² Dependable system architectures are system 
+architectures that are designed for fault tolerance. 
+² There are a number of architectural styles that support 
+fault tolerance including protection systems, selfmonitoring
+architectures and N-version programming.
+Chapter	11	Reliability	Engineering 87
+30/10/2014
+Key points
+² Software diversity is difficult to achieve because it is 
+practically impossible to ensure that each version of the 
+software is truly independent.
+² Dependable programming relies on including 
+redundancy in a program as checks on the validity of 
+inputs and the values of program variables.
+² Statistical testing is used to estimate software reliability. 
+It relies on testing the system with test data that matches 
+an operational profile, which reflects the distribution of 
+inputs to the software when it is in use.
+Chapter	11	Reliability	Engineering 88
+30/10/2014

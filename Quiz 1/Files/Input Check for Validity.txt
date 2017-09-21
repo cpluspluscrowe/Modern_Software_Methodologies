@@ -1,0 +1,9 @@
+- Taking inputs from their environment based on 
+assumptions about the inputs.
+- Program specifications rarely defined 
+	 Inconsistent inputs with the assumptions.
+- Unpredictable program behavior 
+	 Unusual inputs
+	 Threats to the security of the system.
+- Check program inputs before processing 
+	 Considering the assumptions about the inputs.

@@ -1,0 +1,6 @@
+- Multi-version programming leads to significant 
+improvements in reliability and availability.
+	 Diversity and independence
+- In practice, observed improvements are much less 
+significant 
+- Considerable costs to develop multi-versions of systems.

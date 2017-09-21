@@ -1,0 +1,6 @@
+- Key concerns
+	 ATMs conduct services as requested 
+	 Record customer transactions
+	 ATM systems are available when required.
+- Database transaction mechanisms make a correction of 
+transaction problems 

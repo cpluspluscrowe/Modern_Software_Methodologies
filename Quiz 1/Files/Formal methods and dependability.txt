@@ -1,0 +1,7 @@
+You define a formal model of the software system.  Formal methods are based on the mathe
+Formal methods are cost-effective for s/w eng.  Considerably reduce certain tyeps of software error.
+1.	Verification based approaches.
+a.	Different representations of the software systems
+b.	Demonstrates the absence of errors?  Verification based approaches
+2.	Refine-based approaches
+a.	Low-level representations.  Correct transformations result in equivalent representations.

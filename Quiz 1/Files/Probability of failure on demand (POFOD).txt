@@ -1,0 +1,8 @@
+- The probability of the system failure when a service 
+request is made. 
+	 Useful when demands for service are relatively infrequent.
+- Implement appropriate protection systems
+	 Demand services occasionally.
+	 Serious consequence due to failed services.
+- Develop for safety-critical systems
+	 E.g., emergency shutdown system in a chemical plant.

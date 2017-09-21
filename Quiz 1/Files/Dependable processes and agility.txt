@@ -1,0 +1,7 @@
+- Agile process 
+	 iterative development, test-first development and user 
+involvement in the development team.  
+- Agile team follows agile process, actions, and agile 
+methods
+- However, ‘pure agile’ is impractical for dependable 
+systems.

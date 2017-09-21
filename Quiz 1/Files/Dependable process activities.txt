@@ -1,0 +1,7 @@
+- Design and program inspections
+	 Inspection and checking for systems by different people. 
+- Static analysis 
+	 Automated inspection on the program source code. 
+- Test planning and management
+	 Design system test suites. 
+	 Manage to provide enough coverage of system requirements.
