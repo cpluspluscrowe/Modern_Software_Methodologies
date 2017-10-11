@@ -1,0 +1,11 @@
+Security policies should set out general information 
+access strategies that should apply across the 
+organization. 
+The point of security policies is to inform everyone in an 
+organization about security so these should not be long 
+and detailed technical documents. 
+From a security engineering perspective, the security 
+policy defines, in broad terms, the security goals of the 
+organization. 
+The security engineering process is concerned with 
+implementing these goals. 

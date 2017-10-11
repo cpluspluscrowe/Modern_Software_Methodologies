@@ -1,0 +1,9 @@
+Risk avoidance requirements set out the risks that 
+should be avoided by designing the system so that these 
+risks simply cannot arise.
+Risk detection requirements define mechanisms that 
+identify the risk if it arises and neutralise the risk before 
+losses occur.
+Risk mitigation requirements set out how the system 
+should be designed so that it can recover from and 
+restore system assets after some loss has occurred. 

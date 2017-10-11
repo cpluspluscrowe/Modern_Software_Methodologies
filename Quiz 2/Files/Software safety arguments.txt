@@ -1,0 +1,9 @@
+Safety arguments are intended to show that the system 
+cannot reach in unsafe state.
+These are weaker than correctness arguments which 
+must show that the system code conforms to its 
+specification.
+They are generally based on proof by contradiction
+ Assume that an unsafe state can be reached;
+ Show that this is contradicted by the program code.
+developed.

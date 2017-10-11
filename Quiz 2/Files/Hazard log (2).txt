@@ -1,0 +1,6 @@
+Title: System safety design requirements
+1. the system shall include self-testing software that will test he system
+2. the self-checking s/w shall be executed every so often
+3. In the event if a fault in teh system, an audible warning and display shall indicate the fault and its discovery
+4. the system shall incorporate an override systm taht allows the system user to modify the computed dose of insulin to be delivered
+5. the amount of override shall be no greater than a pre-set value (maxOverride)

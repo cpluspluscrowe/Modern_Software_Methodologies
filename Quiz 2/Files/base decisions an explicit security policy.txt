@@ -1,0 +1,11 @@
+ Define a security policy for the organization that sets out the 
+fundamental security requirements that should apply to all 
+organizational systems.
+Avoid a single point of failure
+ Ensure that a security failure can only result when there is more 
+than one failure in security procedures. For example, have 
+password and question-based authentication.
+Fail securely
+ When systems fail, for whatever reason, ensure that sensitive 
+information cannot be accessed by unauthorized users even 
+although normal security procedures are unavailable.

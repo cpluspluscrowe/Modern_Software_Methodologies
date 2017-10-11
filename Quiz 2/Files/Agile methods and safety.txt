@@ -1,0 +1,9 @@
+Agile methods are not usually used for safety-critical 
+systems engineering
+ Extensive process and product documentation is needed for 
+system regulation. Contradicts the focus in agile methods on the 
+software itself.
+ A detailed safety analysis of a complete system specification is 
+important. Contradicts the interleaved development of a system 
+specification and program.
+Some agile techniques such as test-driven development 

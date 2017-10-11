@@ -1,0 +1,10 @@
+Risk assessment and management is concerned with 
+assessing the possible losses that might ensue from 
+attacks on the system and balancing these losses 
+these losses.
+Risk management should be driven by an organisational
+security policy.
+Risk management involves
+ Preliminary risk assessment
+ Life cycle risk assessment
+ Operational risk assessment

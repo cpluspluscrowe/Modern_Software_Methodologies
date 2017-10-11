@@ -1,0 +1,9 @@
+Insulin overdose (service failure).
+Insulin underdose (service failure).
+Power failure due to exhausted battery (electrical).
+Electrical interference with other medical equipment 
+(electrical).
+Poor sensor and actuator contact (physical).
+Parts of machine break off in body (physical).
+Infection caused by introduction of machine (biological).
+Allergic reaction to materials or insulin (biological).

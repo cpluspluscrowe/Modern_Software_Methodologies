@@ -1,0 +1,8 @@
+decisions made by the software and subsequent actions 
+are safety-critical. Therefore, the software behaviour is 
+directly related to the overall safety of the system. 
+Software is extensively used for checking and monitoring 
+other safety-critical components in a system. For 
+example, all aircraft engine components are monitored 
+by software looking for early indications of component 
+failure. This software is safety-critical because, if it fails, 

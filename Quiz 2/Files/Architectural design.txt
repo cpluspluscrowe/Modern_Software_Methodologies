@@ -1,0 +1,11 @@
+Two fundamental issues have to be considered when 
+designing an architecture for security.
+ Protection
+• How should the system be organisedso that critical assets can be 
+protected against external attack?
+ Distribution
+• How should system assets be distributed so that the effects of a 
+successful attack are minimized?
+These are potentially conflicting
+ If assets are distributed, then they are more expensive to protect. 
+If assets are protected, then usability and performance 

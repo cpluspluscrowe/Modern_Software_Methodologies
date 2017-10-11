@@ -1,0 +1,11 @@
+Experience-based testing
+ The system is reviewed and analysed against the types of attack 
+that are known to the validation team.
+Penetration testing
+ A team is established whose goal is to breach the security of the 
+system by simulating attacks on the system.
+Tool-based analysis
+ Various security tools such as password checkers are used to 
+analyse the system in operation.
+Formal verification
+ The system is verified against a formal security specification.

@@ -1,0 +1,7 @@
+A password checker shall be made available and shall 
+be run daily. Weak passwords shall be reported to 
+system administrators.
+Access to the system shall only be allowed by approved 
+client computers.
+All client computers shall have a single, approved web 
+browser installed by system administrators.

@@ -1,0 +1,9 @@
+Infrastructure security, which is concerned with 
+maintaining the security of all systems and networks that 
+provide an infrastructure and a set of shared services to 
+the organization. 
+Application security, which is concerned with the security 
+of individual application systems or related groups of 
+systems.
+Operational security, which is concerned with the secure 
+operation and use of the organization’s systems.

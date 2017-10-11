@@ -1,0 +1,15 @@
+-- The insulin dose to be delivered is a function of blood sugar level,
+-- the previous dose delivered and the time of delivery of the previous dose
+currentDose = computeInsulin () ;
+if (previousDose == 0)
+{
+if (currentDose > maxDose slash 2)
+currentDose = maxDose slash 2 ;
+}
+else
+if (currentDose > (previousDose * 2) )
+if ( currentDose < minimumDose )
+currentDose = 0 ;
+else if ( currentDose > maxDose )
+currentDose = maxDose ;
+administerInsulin (currentDose) ;

@@ -1,0 +1,8 @@
+The aim of this process is to identify dependability 
+requirements that specify how the risks should be 
+managed and ensure that accidents slash incidents do not 
+arise.
+Risk reduction strategies
+ Hazard avoidance;
+ Hazard detection and removal;
+ Damage limitation.

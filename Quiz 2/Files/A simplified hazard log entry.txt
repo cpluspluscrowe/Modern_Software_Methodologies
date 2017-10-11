@@ -1,0 +1,21 @@
+System: Insulin Pump System
+Safety Engineer: James Brown
+Identified 
+Hazard
+Insulin overdose delivered to patient
+Identified 
+by
+Jane Williams
+Criticality 
+class
+Identified 
+risk
+High
+Fault tree 
+identified
+Fault tree 
+creators
+Jane Williams and Bill Smith
+Fault tree 
+checked
+Brown

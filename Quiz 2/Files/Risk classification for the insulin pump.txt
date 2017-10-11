@@ -1,0 +1,17 @@
+Identified hazard Hazard probability Accident severity Estimated risk Acceptability
+1.Insulin overdose 
+computation
+Medium High High Intolerable
+computation
+Medium Low Low Acceptable
+hardware monitoring 
+system
+Medium Medium Low ALARP
+incorrectly fitted
+High High High Intolerable
+patient
+Low High Medium ALARP
+infection
+Medium Medium Medium ALARP
+interference
+Low High Medium ALARP

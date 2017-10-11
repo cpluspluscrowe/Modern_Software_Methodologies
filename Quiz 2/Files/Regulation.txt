@@ -1,0 +1,11 @@
+processes have been used in system development
+For example:
+ The specification of the system that has been developed and 
+records of the checks made on that specification.
+ Evidence of the verification and validation processes that have 
+been carried out and the results of the system verification and 
+validation.
+ Evidence that the organizations developing the system have 
+defined and dependable software processes that include safety 
+assurance reviews. There must also be records that show that 
+these processes have been properly enacted. 

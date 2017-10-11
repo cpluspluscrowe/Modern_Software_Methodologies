@@ -1,0 +1,12 @@
+Characteristic error checking
+ The static analyzer can check for patterns in the code that are 
+characteristic of errors made by programmers using a particular 
+language.
+User-defined error checking
+ Users of a programming language define error patterns, thus 
+extending the types of error that can be detected. This allows 
+specific rules that apply to a program to be checked.
+Assertion checking
+ Developers include formal assertions in their program and 
+relationships that must hold. The static analyzer symbolically 
+executes the code and highlights potential problems.

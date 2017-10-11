@@ -1,0 +1,16 @@
+Fault class Static analysis check
+Data faults Variables used before initialization
+Variables declared but never used
+Variables assigned twice but never used between assignments
+Possible array bound violations
+Undeclared variables
+Control faults Unreachable code
+Unconditional branches into loops
+Input slash output faults Variables output twice with no intervening assignment
+Interface faults Parameter-type mismatches
+Parameter number mismatches
+Non-usage of the results of functions
+Uncalled functions and procedures
+Storage management faults Unassigned pointers
+Pointer arithmetic
+Memory leaks

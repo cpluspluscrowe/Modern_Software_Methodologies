@@ -1,0 +1,10 @@
+Testing the extent to which the system can protect itself 
+from external attacks.
+ Problems with security testing
+ Security requirements are ‘shall not’ requirements i.e. they 
+specify what should not happen. It is not usually possible to 
+define security requirements as simple constraints that can be 
+checked by the system.
+ The people attacking a system are intelligent and look for 
+vulnerabilities. They can experiment to discover weaknesses 
+and loopholes in the system.

@@ -1,0 +1,6 @@
+Creation of a hazard logging and monitoring system.
+Appointment of project safety engineers who have 
+explicit responsibility for system safety.
+Extensive use of safety reviews.
+Creation of a safety certification system where the safety 
+of critical components is formally certified.

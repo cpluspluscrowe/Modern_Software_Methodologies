@@ -1,0 +1,13 @@
+Vulnerability avoidance
+ The system is designed so that vulnerabilities do not occur. For 
+example, if there is no external network connection then external 
+attack is impossible
+Attack detection and elimination
+ The system is designed so that attacks on vulnerabilities are 
+detected and neutralised before they result in an exposure. For 
+example, virus checkers find and remove viruses before they 
+infect a system
+Exposure limitation and recovery
+ The system is designed so that the adverse consequences of a 
+successful attack are minimised. For example, a backup policy 
+allows damaged information to be restored

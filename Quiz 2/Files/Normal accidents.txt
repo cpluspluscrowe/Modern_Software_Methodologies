@@ -1,0 +1,12 @@
+Accidents in complex systems rarely have a single cause 
+as these systems are designed to be resilient to a single 
+point of failure
+ Designing systems so that a single point of failure does not 
+cause an accident is a fundamental principle of safe systems 
+design.
+Almost all accidents are a result of combinations of 
+malfunctions rather than single failures.
+It is probably the case that anticipating all problem 
+combinations, especially, in software controlled systems 
+is impossible so achieving complete safety is impossible. 
+Accidents are inevitable.

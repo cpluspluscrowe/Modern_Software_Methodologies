@@ -1,0 +1,16 @@
+carried out during system development.
+Change 
+management 
+processes
+Records of all changes proposed, actions taken and, where
+appropriate, justification of the safety of these changes. Information
+about configuration management procedures and configuration
+management logs.
+Associated safety 
+cases
+Structured arguments
+Safety cases should be based around structured 
+arguments that present evidence to justify the assertions 
+made in these arguments.
+The argument justifies why a claim about system safety 
+and security is justified by the available evidence.

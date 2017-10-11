@@ -1,0 +1,7 @@
+Safety engineering processes are based on reliability 
+engineering processes
+ Plan-based approach with reviews and checks at each stage in 
+the process
+ General goal of fault avoidance and fault detection
+ Must also include safety reviews and explicit identification and 
+tracking of hazards

@@ -1,0 +1,429 @@
+Chapter 12 – Safety Engineering
+04/11/2014 Chapter	12	Safety	Engineering 1
+Topics covered
+² Safety-critical systems
+² Safety requirements
+² Safety engineering processes
+² Safety cases
+04/11/2014 Chapter	12	Safety	Engineering 2
+Safety
+² A property of a system 
+² The system’s ability to operate services
+§ Prevent danger causing human injury or death 
+§ Avoiding damage to the system’s environment.
+² Software safety issues become important 
+§ Most devices incorporate software-based control systems. 
+§ Control real-time, safety-critical processes.
+3
+Chapter	12	Safety	Engineering
+04/11/2014
+Software in safety-critical systems
+² Software-controlled systems 
+§ Decisions are made by the software.
+§ Subsequent actions are safety-critical. 
+§ Software behaviour is related to safety of the system. 
+² Checking and monitoring safety-critical components
+§ E.g., monitoring aircraft engine components for fault detection. 
+² Monitoring software is safety-critical 
+§ Other components may fail due to the failure of fault detection. 
+04/11/2014 Chapter	12	Safety	Engineering 4
+Safety and reliability
+² Safety and reliability 
+§ Reliability and availability are not sufficient for system safety 
+² Reliability 
+§ Conformance to a given specification and delivery of service
+² Safety 
+§ Ensuring system cannot cause damage.
+² System reliability is essential for safety 
+§ However, reliable systems can be unsafe
+5
+Chapter	12	Safety	Engineering
+04/11/2014
+Unsafe reliable systems
+² Dormant system faults
+§ Undetected for a number of years and only rarely arise.
+² Specification errors
+§ Software system behaves as specified but cause an accident.
+² Hardware failures at runtime
+§ E.g., generating spurious inputs
+§ Hard to anticipate in the specification
+² Context-sensitive commands 
+§ E.g., a system command is executed at the wrong time.
+6
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety-critical systems
+04/11/2014 Chapter	12	Safety	Engineering 7
+Safety critical systems
+² Essential that system operation is always safe 
+§ Must not cause damage to people or the system’s environment
+² Examples
+§ Process control systems in chemical manufacture
+§ Automobile control systems such as braking management 
+systems
+04/11/2014 Chapter	12	Safety	Engineering 8
+Safety criticality
+² Primary safety-critical systems
+§ Embedded software systems 
+§ Cause associated hardware failures, directly threatening people. 
+§ E.g., the insulin pump control system.
+² Secondary safety-critical systems
+§ Result in faults in other connected systems, affecting safety 
+consequences. 
+§ E.g., the Mentcare system producing inappropriate treatment 
+being prescribed.
+§ Infrastructure control systems.
+9
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin pump control system
+² Collects data from a blood sugar sensor and calculates 
+the amount of insulin required to be injected.
+² Calculation based on the rate of change of blood sugar 
+levels.
+Insulin pump control system (cont.)
+² Sends signals to a micro-pump to deliver the correct 
+dose of insulin.
+² Safety-critical system as low blood sugars can lead to 
+brain malfunctioning, coma and death; high-blood sugar 
+levels have long-term consequences such as eye and 
+kidney damage.
+Safety criticality
+² Primary safety-critical systems
+§ Embedded software systems 
+§ Cause associated hardware failures, directly threatening people. 
+§ E.g., the insulin pump control system.
+² Secondary safety-critical systems
+§ Result in faults in other connected systems, affecting safety 
+consequences. 
+§ E.g., the Mentcare system producing inappropriate treatment 
+being prescribed.
+§ Infrastructure control systems.
+12
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazards
+² Situations or events that can lead to an accident
+§ Incorrect computation by software in navigation system
+§ Failure to detect possible disease in medication prescribing 
+system
+² Perform accident prevention actions 
+§ Hazards do not inevitably lead to accidents
+04/11/2014 Chapter	12	Safety	Engineering 13
+Safety achievement
+² Hazard avoidance
+§ Appling hazard avoidance design to software systems.
+§ Prevent some classes of hazard.     
+² Hazard detection and removal
+§ Detecting and removing hazard before causing accidents.
+² Damage limitation
+§ Protection features to minimise the damage.
+14
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety terminology
+Term Definition
+Accident (or mishap)
+An unplanned event or sequence of events which results in human death or injury,
+damage to property, or to the environment. An overdose of insulin is an example of an
+accident.
+Hazard A condition with the potential for causing or contributing to an accident. A failure of the
+sensor that measures blood glucose is an example of a hazard.
+Damage
+A measure of the loss resulting from a mishap. Damage can range from many people
+being killed as a result of an accident to minor injury or property damage. Damage
+resulting from an overdose of insulin could be serious injury or the death of the user of
+the insulin pump.
+Hazard severity
+An assessment of the worst possible damage that could result from a particular hazard.
+Hazard severity can range from catastrophic, where many people are killed, to minor,
+where only minor damage results. When an individual death is a possibility, a
+reasonable assessment of hazard severity is ‘very high’.
+Hazard probability
+The probability of the events occurring which create a hazard. Probability values tend to
+be arbitrary but range from ‘probable’ (say 1/100 chance of a hazard occurring) to
+‘implausible’ (no conceivable situations are likely in which the hazard could occur). The
+probability of a sensor failure in the insulin pump that results in an overdose is probably
+low.
+Risk
+This is a measure of the probability that the system will cause an accident. The risk is
+assessed by considering the hazard probability, the hazard severity, and the probability
+that the hazard will lead to an accident. The risk of an insulin overdose is probably
+medium to low.
+15
+Chapter	12	Safety	Engineering
+04/11/2014
+Normal accidents
+² Rarely have a single cause in complex systems 
+² Designed to be resilient to a single point of failure
+² A fundamental principle of safe systems design
+§ A single point of failure does not cause an accident.
+² A result of combinations of malfunctions.
+² Hard to anticipate all combinations in software systems
+§ Difficult to achieve complete safety.
+§ Accidents are inevitable.
+16
+Chapter	12	Safety	Engineering
+04/11/2014
+Software safety benefits
+² Software control systems contributes to system safety
+§ A large number of conditions to be monitored and controlled.
+§ Reducing human efforts and time in hazardous environments.
+§ Detecting and repairing safety-critical operator errors.
+Chapter	12	Safety	Engineering 17
+04/11/2014
+Safety requirements
+04/11/2014 Chapter	12	Safety	Engineering 18
+Functional and non-functional requirements
+² Functional requirements
+§ Statements of services the system should provide, 
+§ How the system should react to particular inputs and 
+how the system should behave in particular situations.
+² Non-functional requirements
+§ Constraints on the services or functions of the system.
+§ Apply to the whole system rather than individual features.
+Functional requirements
+² Describe functionality or system services.
+§ Depending on the type of software systems and users. 
+² Functional user requirements 
+§ High-level statements of what the system should do.
+² Functional system requirements 
+§ The system services in detail.
+Safety specification
+² Goal 
+§ Identifying protection requirements.
+§ Preventing injury or death or environmental damage.
+² Safety requirements
+§ Shall Not requirements.
+§ Define situations and events that should never occur.
+² Functional safety requirements
+§ Checking and recovery features in a system.
+§ Protection feature against failures and external attacks.
+21
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard-driven analysis
+² Hazard identification
+² Hazard assessment
+² Hazard analysis
+² Risk reduction
+§ Safety requirements specification
+04/11/2014 Chapter	12	Safety	Engineering 22
+Hazard identification
+² Identify the hazards threatening the system.
+² Different types of hazard:
+§ Physical hazards
+§ Electrical hazards
+§ Biological hazards
+§ Service failure hazards
+§ Etc.
+23
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin pump risks
+² Insulin overdose (service failure).
+² Insulin underdose (service failure).
+² Power failure due to exhausted battery (electrical).
+² Electrical interference with other medical equipment 
+(electrical).
+² Poor sensor and actuator contact (physical).
+² Infection caused by introduction of machine (biological).
+² Allergic reaction to materials or insulin (biological).
+24
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard assessment
+² Understanding the likelihood that a risk will arise and the 
+potential consequences.
+² Risks category:
+² Intolerable. 
+§ Unsupportable.
+² As low as reasonably practical (ALARP). 
+§ Minimising risk possibilities given available resources.
+² Acceptable. 
+§ No extra costs to reduce hazard probability.
+25
+Chapter	12	Safety	Engineering
+04/11/2014
+The risk triangle
+Unacceptable region
+Risk cannot be tolerated
+Risk tolerated only if
+risk reduction is impractical
+or excessively expensive
+Acceptable
+region
+Negligible risk
+ALARP
+region
+26
+Chapter	12	Safety	Engineering
+04/11/2014
+Social acceptability of risk
+² The acceptability of a risk.
+§ Human, social and political considerations.
+² Society is less willing to accept risk in most cases.
+§ E.g., the costs of cleaning up or preventing pollution.
+² Subjective assessment
+§ Depending on evaluators making the assessment.
+27
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard assessment
+² The risk probability and the risk severity.
+² Relative values: ‘unlikely’, ‘rare’, ‘very high’, etc.
+§ Impossible to do precise measurement
+² Goal:
+§ Prevent or remove potential risks with the high severity.
+28
+Chapter	12	Safety	Engineering
+04/11/2014
+Risk classification for the insulin pump
+Identified hazard Hazard probability Accident severity Estimated risk Acceptability
+1.Insulin overdose 
+computation
+Medium High High Intolerable
+2. Insulin underdose 
+computation
+Medium Low Low Acceptable
+3. Failure of 
+hardware monitoring 
+system
+Medium Medium Low ALARP
+4. Power failure High Low Low Acceptable
+5. Machine 
+incorrectly fitted
+High High High Intolerable
+6. Machine breaks in 
+patient
+Low High Medium ALARP
+7. Machine causes 
+infection
+Medium Medium Medium ALARP
+8. Electrical 
+interference
+Low High Medium ALARP
+9. Allergic reaction Low Low Low Acceptable
+29
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard analysis
+² The root causes of risks in a particular system.
+² Hazard analysis techniques
+§ Inductive, bottom-up techniques: 
+Evaluate the hazards, starting with system failures.
+§ Deductive, top-down techniques: 
+Reason failure causes, starting with a hazard
+30
+Chapter	12	Safety	Engineering
+04/11/2014
+Fault-tree analysis
+² A deductive top-down technique.
+² Hazard at the root of the tree 
+§ Identify states causing hazards.
+² Linking conditions by relationships (e.g., ‘and’ or ‘or’)
+² Goal
+§ Minimizing the number of single failure causes.
+31
+Chapter	12	Safety	Engineering
+04/11/2014
+An example of a software fault tree
+Incorrect
+sugar level
+measured
+Incorrect
+insulin dose
+administered
+or
+Correct dose
+delivered at
+wrong time
+Sensor
+failure
+or
+Sugar
+computation
+error
+Timer
+failure
+Pump
+signals
+incorrect
+or
+Insulin
+computation
+incorrect
+Delivery
+system
+failure
+Arithmetic
+error
+or
+Algorithm
+error
+Arithmetic
+error
+or
+Algorithm
+error
+32
+Chapter	12	Safety	Engineering
+04/11/2014
+Fault tree analysis
+² Possible conditions of incorrect dose of insulin:
+§ Incorrect measurement of blood sugar level
+§ Failure of delivery system
+§ Dose delivered at wrong time
+² Root causes of these hazards:
+§ Algorithm error
+§ Arithmetic error
+33
+Chapter	12	Safety	Engineering
+04/11/2014
+Risk reduction
+² Goal:
+§ Identify requirements for risk managements to avoid accidents.
+² Risk reduction strategies
+§ Hazard avoidance
+§ Hazard detection and removal
+§ Damage limitation
+34
+Chapter	12	Safety	Engineering
+04/11/2014
+Strategy use
+² Combining multiple risk reduction strategies
+² E.g., a chemical plant control system:
+§ Detecting and correcting excess pressure in the reactor.
+§ Opening a relief valve as independent protection system
+35
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin pump - software risks
+² Arithmetic error
+§ Data variable overflow or underflow during a computation.
+§ Handing runtime exception.
+² Algorithmic error
+§ Comparison between previous and current values
+§ Checking the maximum value to control dose.
+36
+Chapter	12	Safety	Engineering
+04/11/2014
+Examples of safety requirements
+SR1:	The	system	shall	not	deliver	a	single	dose	of	insulin	that	is	greater	than	a	
+specified	maximum	dose	for	a	system	user.
+SR2:	The	system	shall	not	deliver	a	daily	cumulative	dose	of	insulin	that	is	greater	
+than	a	specified	maximum	daily	dose	for	a	system	user.
+SR3:	The	system	shall	include	a	hardware	diagnostic	facility	that	shall	be	
+executed	at	least	four	times	per	hour.
+SR4:	The	system	shall	include	an	exception	handler	for	all	of	the	exceptions	that	
+are	identified	in	Table	3.
+SR5:	The	audible	alarm	shall	be	sounded	when	any	hardware	or	software	
+anomaly	is	discovered	and	a	diagnostic	message,	as	defined	in	Table	4,	shall	be	
+displayed.
+SR6:	In	the	event	of	an	alarm,	insulin	delivery	shall	be	suspended	until	the	user	
+has	reset	the	system	and	cleared	the	alarm.
+37
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety engineering processes
+04/11/2014 Chapter	12	Safety	Engineering 38

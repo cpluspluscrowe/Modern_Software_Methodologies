@@ -1,0 +1,9 @@
+undetected for many years and only rarely arise.
+Specification errors
+ If the system specification is incorrect then the system can 
+behave as specified but still cause an accident.
+Hardware failures generating spurious inputs
+ Hard to anticipate in the specification.
+Context-sensitive commands i.e. issuing the right 
+command at the wrong time
+ Often the result of operator error.

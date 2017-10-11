@@ -1,0 +1,8 @@
+Formal methods can be used when a mathematical 
+specification of the system is produced.
+They are the ultimate static verification technique that 
+process:
+analyzed for consistency. This helps discover specification errors 
+and omissions.
+ Formal arguments that a program conforms to its mathematical 
+programming and design errors.

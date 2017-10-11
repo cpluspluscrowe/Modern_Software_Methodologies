@@ -1,0 +1,11 @@
+clock, and the insulin delivery system.
+components, an audible warning shall be issued and the pump display shall indicate 
+the name of the component where the fault has been discovered. The delivery of 
+insulin shall be suspended.
+the computed dose of insulin that is to be delivered by the system.
+which is set when the system is configured by medical staff.
+Safety reviews
+Driven by the hazard register.
+For each identified hazrd, the review team should assess 
+the system and judge whether or not the system can 
+cope with that hazard in a safe way.

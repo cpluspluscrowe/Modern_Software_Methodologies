@@ -1,0 +1,8 @@
+The security of a system is a system property that 
+reflects the system’s ability to protect itself from 
+accidental or deliberate external attack.
+Security isessential as most systems are networked so 
+that external access to the system through the Internet is 
+possible.
+Security is an essential pre-requisite for availability, 
+reliability and safety.

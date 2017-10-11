@@ -1,0 +1,432 @@
+Chapter 12 – Safety Engineering
+² Safety-critical systems
+² Safety requirements
+² Safety engineering processes
+² Safety cases
+04/11/2014 Chapter	12	Safety	Engineering 1
+Safety engineering processes
+04/11/2014 Chapter	12	Safety	Engineering 2
+Safety engineering processes
+² Reliability engineering processes
+§ Reviews and checks at each stage in the process
+§ General goal of fault avoidance and fault detection
+§ Safety reviews and explicit identification of hazards
+04/11/2014 Chapter	12	Safety	Engineering 3
+Regulation
+² Evidence that safety engineering processes used.
+² For example:
+§ The specification and records of the checks.
+§ Evidence of the verification and validation the results.
+§ Organizations for dependable software processes. 
+04/11/2014 Chapter	12	Safety	Engineering 4
+Agile methods and safety
+² Agile methods are not usually used for safety-critical 
+systems engineering
+§ Extensive documentation. 
+§ A detailed safety analysis of a complete system specification.
+² Test-driven development may be used
+04/11/2014 Chapter	12	Safety	Engineering 5
+Safety assurance processes
+² Defining and ensuring a dependable process.
+² Process assurance focuses on:
+§ The processes are appropriate for dependability required.
+§ The processes are followed by the development team.
+² Should generate documentation
+§ Agile processes are not used for critical systems.
+6
+Chapter	12	Safety	Engineering
+04/11/2014
+Processes for safety assurance
+² Process assurance is important for safety-critical 
+systems development:
+§ Testing may not find all problems.
+² Safety assurance activities 
+§ Record the analyses.
+§ Personal responsibility.
+7
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety related process activities
+² A hazard logging and monitoring system.
+² Safety engineers who responsible for safety.
+² Extensive use of safety reviews.
+² A safety certification system.
+² Detailed configuration management 
+8
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard analysis
+² Identifying hazards and their root causes.
+² Traceability from identified hazards 
+§ Analysis to to ensure that the hazards have been covered.
+² A hazard log may be used to track hazards.
+9
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety reviews
+² Driven by the hazard register.
+² Assess the system and judge whether to cope with  
+hazards in a safe way.
+04/11/2014 Chapter	12	Safety	Engineering 12
+Formal verification
+² A mathematical specification of the system is produced.
+² Static verification technique used in development:
+§ A formal specification -- mathematically analyzed for consistency. 
+• Discover specification errors and omissions.
+§ A program conforms to its mathematical specification 
+• Programming and design errors.
+13
+Chapter	12	Safety	Engineering
+04/11/2014
+Arguments for formal methods
+² A mathematical specification requires a detailed analysis 
+² Concurrent systems 
+§ Discover race conditions. 
+§ Testing is difficult.
+² Detect implementation errors before testing 
+§ Program is analyzed alongside the specification.
+14
+Chapter	12	Safety	Engineering
+04/11/2014
+Arguments against formal methods
+² Require specialized notations 
+§ Cannot be understood by domain experts.
+² Expensive to develop a specification 
+² Proofs may contain errors.
+² More cheaply using other V & V techniques.
+² The proof making incorrect assumptions 
+§ System’s behavior lies outside the scope of the proof.
+15
+Chapter	12	Safety	Engineering
+04/11/2014
+Model checking
+² Create a state model of using a specialized system 
+§ Checking the model for errors.
+² The model checker explores all possible paths 
+§ Checks that a user-specified property is valid for each path.  
+² Verifying concurrent systems, which are hard to test.
+² Model checking is computationally very expensive
+§ Verification of small to medium sized critical systems. 
+16
+Chapter	12	Safety	Engineering
+04/11/2014
+Static program analysis
+² Tools for source text processing.
+² Parse the program text to discover erroneous conditions.
+² Effective as an aid to inspections
+§ A supplement to inspections.
+18
+Chapter	12	Safety	Engineering
+04/11/2014
+Automated static analysis checks
+Fault class Static analysis check
+Data faults Variables used before initialization
+Variables declared but never used
+Variables assigned twice but never used between assignments
+Possible array bound violations
+Undeclared variables
+Control faults Unreachable code
+Unconditional branches into loops
+Input/output faults Variables output twice with no intervening assignment
+Interface faults Parameter-type mismatches
+Parameter number mismatches
+Non-usage of the results of functions
+Uncalled functions and procedures
+Storage management faults Unassigned pointers
+Pointer arithmetic
+Memory leaks
+19
+Chapter	12	Safety	Engineering
+04/11/2014
+Levels of static analysis
+² Characteristic error checking
+§ Check for patterns in the code for characteristic of errors.
+² User-defined error checking
+§ Define error patterns, extending error types by specific rules
+² Assertion checking
+§ Formal assertions in their program 
+§ Symbolically executes to find potential problems.
+20
+Chapter	12	Safety	Engineering
+04/11/2014
+Example for Symbolic Execution
+04/11/2014 Chapter	12	Safety	Engineering 21
+ x = readInput(); 
+ y = x * 2; 
+ 
+if (y == 12) { 
+ fail(); 
+} else { 
+ print("OK"); 
+} 
+Use of static analysis
+² Particularly valuable when a language has weak typing 
+§ Many errors are undetected by the compiler.
+² Security checking 
+§ Discover areas of vulnerability such as buffer overflows.
+² The development of safety and security critical systems.
+22
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety cases
+04/11/2014 Chapter	12	Safety	Engineering 23
+Sep	19
+Safety and dependability cases
+² Safety and dependability cases 
+§ Structured documents 
+§ Evidence of a required level of safety or dependability.
+² Regulators check a system is as safe or dependable.
+² Regulators and developers work together for a system 
+safety/dependability case.
+24
+Chapter	12	Safety	Engineering
+04/11/2014
+The system safety case
+² A safety case is:
+§ A documented body of evidence.
+§ A system is adequately safe for a given environment.
+² Formal proof, design rationale, safety proofs, etc. 
+² Wider system safety case that takes hardware and 
+operational issues into account.
+25
+Chapter	12	Safety	Engineering
+04/11/2014
+The contents of a software safety case
+Chapter Description
+System description
+Safety 
+requirements
+Hazard and risk 
+analysis
+Design analysis
+Verification and 
+validation 
+26
+An overview of the system and a description of its critical 
+components. 
+The safety requirements abstracted from the system requirements 
+specification. Details of other relevant system requirements may 
+also be included.
+Documents describing the hazards and risks that have been 
+identified and the measures taken to reduce risk. Hazard analyses 
+and hazard logs.
+A set of structured arguments that justify why the design is safe. 
+A description of the V & V procedures used and, where 
+appropriate, the test plans for the system. Summaries of the test 
+results showing defects that have been detected and corrected. If 
+formal methods have been used, a formal system specification 
+and any analyses of that specification. Records of static analyses 
+of the source code.
+04/11/2014 Chapter	12	Safety	Engineering 27
+Chapter Description
+Review reports Records of all design and safety reviews.
+Team 
+competences
+Evidence of the competence of all of the team involved in safetyrelated
+systems development and validation.
+Process QA Records of the quality assurance processes (see Chapter 24) 
+carried out during system development.
+Change 
+management 
+processes
+Associated safety 
+cases
+References to other safety cases that may impact the safety case.
+Records of all changes proposed, actions taken and, where 
+appropriate, justification of the safety of these changes. Information 
+about configuration management procedures and configuration 
+management logs. 
+Structured arguments
+² Safety cases be based on structured arguments 
+² Claims of safety and security justified by evidences.
+28
+Chapter	12	Safety	Engineering
+04/11/2014
+Structured arguments
+EVIDENCE
+EVIDENCE
+EVIDENCE
+<< ARGUMENT >> CLAIM
+Supports
+Supports
+Supports Justifies
+29
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin pump safety argument
+² Arguments are based on claims and evidence.
+² Insulin pump safety:
+§ Claim: The maximum single dose of insulin to be delivered 
+(CurrentDose) will not exceed MaxDose.
+§ Evidence: Safety argument for insulin pump
+§ Evidence: Test data for insulin pump. The value of currentDose
+was correctly computed in 400 tests
+§ Evidence: Static analysis report for insulin pump software 
+revealed no anomalies that affected the value of CurrentDose
+§ Argument: The evidence presented demonstrates that the 
+maximum dose of insulin that can be computed = MaxDose.
+30
+Chapter	12	Safety	Engineering
+04/11/2014
+Structured safety arguments
+² Structured arguments of a system safety obligations.
+² Generally based on a claim hierarchy. 
+31
+Chapter	12	Safety	Engineering
+04/11/2014
+A safety claim hierarchy for the insulin pump 
+The maximum single
+dose computed by
+the pump software
+will not exceed
+maxDose
+maxDose is set up
+correctly when the
+pump is configured
+maxDose is a safe
+dose for the user of
+the insulin pump
+The insulin pump will
+not deliver a single
+dose of insulin that is
+unsafe
+In normal
+operation, the
+maximum dose
+computed will not
+exceed maxDose
+If the software fails,
+the maximum dose
+computed will not
+exceed maxDose
+32
+Chapter	12	Safety	Engineering
+04/11/2014
+Even	if	the	software	
+fails,	the	maximum	
+dose	computed	will	
+not	exceed	maxDose.
+Software safety arguments
+² Show that the system cannot reach in unsafe state.
+² These are weaker than correctness arguments which 
+must show that the system code conforms to its 
+specification.
+² They are generally based on proof by contradiction
+§ Assume that an unsafe state can be reached;
+§ Show that this is contradicted by the program code.
+33
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin dose computation with safety checks
+-- The insulin dose to be delivered is a function of blood sugar level,
+-- the previous dose delivered and the time of delivery of the previous dose
+currentDose = computeInsulin () ;
+// Safety check—adjust currentDose if necessary.
+// if statement 1
+if (previousDose == 0)
+{
+if (currentDose > maxDose/2)
+currentDose = maxDose/2 ;
+}
+else
+if (currentDose > (previousDose * 2) )
+currentDose = previousDose * 2 ;
+// if statement 2
+if ( currentDose < minimumDose )
+currentDose = 0 ;
+else if ( currentDose > maxDose )
+currentDose = maxDose ;
+administerInsulin (currentDose) ;
+35
+Chapter	12	Safety	Engineering
+04/11/2014
+Informal safety argument based on 
+demonstrating contradictions 
+currentDose = 0
+currentDose = 0
+if statement 2
+then branch
+executed
+currentDose =
+maxDose
+currentDose =
+maxDose
+if statement 2
+else branch
+executed
+if statement 2
+not executed
+currentDose >= minimumDose and
+currentDose <= maxDose
+or
+currentDose >
+maxDose
+administerInsulin
+Contradiction
+Contradiction Contradiction
+Pre-condition
+for unsafe state
+Overdose
+administered
+assign assign
+36
+Chapter	12	Safety	Engineering
+04/11/2014
+...
+/* if statement 2 */
+if ( currentDose < minimumDose ) { 
+currentDose = 0 ;
+}
+else if ( currentDose > maxDose ) {
+currentDose = maxDose ; 
+}
+administerInsulin (currentDose) ;
+...
+Program paths
+² Neither branch of if-statement 2 is executed
+§ Can only happen if CurrentDose is >= minimumDose and <= 
+maxDose.
+² then branch of if-statement 2 is executed
+§ currentDose = 0.
+² else branch of if-statement 2 is executed
+§ currentDose = maxDose.
+² In all cases, the post conditions contradict the unsafe 
+condition that the dose administered is greater than 
+maxDose.
+37
+Chapter	12	Safety	Engineering
+04/11/2014
+if ( currentDose < minimumDose ) { 
+currentDose = 0 ;
+}
+else if ( currentDose > maxDose ) {
+currentDose = maxDose ; 
+}
+administerInsulin (currentDose) ;
+Key points
+² Safety-critical systems are systems whose failure can 
+lead to human injury or death.
+² A hazard-driven approach is used to understand the 
+safety requirements for safety-critical systems. You 
+identify potential hazards and decompose these (using 
+methods such as fault tree analysis) to discover their 
+root causes. You then specify requirements to avoid or 
+recover from these problems.
+² It is important to have a well-defined, certified process 
+for safety-critical systems development. This should 
+include the identification and monitoring of potential 
+hazards.
+04/11/2014 Chapter	12	Safety	Engineering 38
+Key points
+² Static analysis is an approach to V & V that examines 
+the source code of a system, looking for errors and 
+anomalies. It allows all parts of a program to be checked, 
+not just those parts that are exercised by system tests.
+² Model checking is a formal approach to static analysis 
+that exhaustively checks all states in a system for 
+potential errors.
+² Safety and dependability cases collect the evidence that 
+demonstrates a system is safe and dependable. Safety 
+cases are required when an external regulator must 
+certify the system before it is used.
+04/11/2014 Chapter	12	Safety	Engineering 39

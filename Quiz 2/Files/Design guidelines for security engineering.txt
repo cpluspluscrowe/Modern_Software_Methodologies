@@ -1,0 +1,10 @@
+Design guidelines encapsulate good practice in secure 
+systems design
+Design guidelines serve two purposes:
+ They raise awareness of security issues in a software 
+engineering team. Security is considered when design decisions 
+are made.
+ They can be used as the basis of a review checklist that is 
+applied during the system validation process. 
+Design guidelines here are applicable during software 
+specification and design

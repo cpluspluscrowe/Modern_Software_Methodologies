@@ -2,9 +2,8 @@ from datetime import datetime
 from dateutil.parser import parse
 import os
 folder = r"C:\Users\CCrowe\Documents\Modern Software Methodologies\Quiz 1\Files"
-paths = [os.path.join(folder,"A01.txt"),
-        os.path.join(folder,"A02.txt"),
-        os.path.join(folder,"A03.txt")]
+paths = [os.path.join(folder,"A04.txt"),
+        os.path.join(folder,"A05.txt")]
 slides = []
 def ContainsDate(line):
     spl = line.split()

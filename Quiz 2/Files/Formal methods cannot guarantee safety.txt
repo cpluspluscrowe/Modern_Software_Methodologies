@@ -1,0 +1,8 @@
+system users. Users rarely understand formal notations 
+so they cannot directly read the formal specification to 
+find errors and omissions. 
+and complex, so, like large and complex programs, they 
+usually contain errors.
+way that the system is used. If the system is not used as 
+anticipated, then the system’s behavior lies outside the 
+scope of the proof.

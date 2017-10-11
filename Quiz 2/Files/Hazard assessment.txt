@@ -1,0 +1,5 @@
+Estimate the risk probability and the risk severity.
+It is not normally possible to do this precisely so relative 
+values are used such as ‘unlikely’, ‘rare’, ‘very high’, etc.
+The aim must be to exclude risks that are likely to arise 
+or that have high severity.

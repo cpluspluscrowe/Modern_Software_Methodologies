@@ -1,0 +1,8 @@
+Security checklist
+users.
+computer.
+attackers to send code strings to the system and then execute them.
+passwords consist of mixed letters, numbers, and punctuation, and are not normal 
+dictionary entries. They are more difficult to break than simple passwords.
+specification? Incorrect processing of badly formed inputs is a common cause of 
+security vulnerabilities.

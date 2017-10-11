@@ -1,0 +1,7 @@
+Primarily a human and social issue
+Concerned with ensuring the people do not take actions 
+ E.g. Tell others passwords, leave computers logged on
+Users sometimes take insecure actions to make it easier 
+for them to do their jobs
+There is therefore a trade-off between system security 
+and system effectiveness.

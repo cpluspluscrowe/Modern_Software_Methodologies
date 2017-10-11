@@ -1,0 +1,8 @@
+Static analysers are software tools for source text 
+processing.
+They parse the program text and try to discover 
+potentially erroneous conditions and bring these to the 
+attention of the V & V team.
+They are very effective as an aid to inspections - they 
+are a supplement to but not a replacement for 
+inspections.

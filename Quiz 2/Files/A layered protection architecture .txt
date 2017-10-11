@@ -1,0 +1,4 @@
+1. Platform level protection a. system authentication b. system authorization, c. file integrity management
+2. application level protection a. database login b. database authorization c. transaction management d. database recovery
+3. record level protection a. record access authorization b. record encryption c. record integrity management
+4. patient records

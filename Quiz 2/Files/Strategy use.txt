@@ -1,0 +1,8 @@
+Normally, in critical systems, a mix of risk reduction 
+strategies are used.
+In a chemical plant control system, the system will 
+include sensors to detect and correct excess pressure in 
+the reactor.
+However, it will also include an independent protection 
+system that opens a relief valve if dangerously high 
+pressure is detected.

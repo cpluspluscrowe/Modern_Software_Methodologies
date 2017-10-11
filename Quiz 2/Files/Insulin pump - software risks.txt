@@ -1,0 +1,8 @@
+Arithmetic error
+ A computation causes the value of a variable to overflow or 
+underflow;
+ Maybe include an exception handler for each type of arithmetic 
+error.
+Algorithmic error
+ Compare dose to be delivered with previous dose or safe 
+maximum doses. Reduce dose if too high.

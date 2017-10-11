@@ -1,0 +1,5 @@
+System users authenticated using a name slash password 
+combination.
+The system architecture is client-server with clients 
+accessing the system through a standard web browser.
+Information is presented as an editable web form.

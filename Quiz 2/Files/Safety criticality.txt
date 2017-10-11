@@ -1,0 +1,10 @@
+Primary safety-critical systems
+ Embedded software systems whose failure can cause the 
+associated hardware to fail and directly threaten people. Example 
+is the insulin pump control system.
+Secondary safety-critical systems
+ Systems whose failure results in faults in other (socio-technical) 
+systems, which can then have safety consequences. 
+lead to inappropriate treatment being prescribed.
+• Infrastructure control systems are also secondary safety-critical 
+systems.

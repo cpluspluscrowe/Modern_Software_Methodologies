@@ -1,0 +1,7 @@
+Hazard analysis involves identifying hazards and their 
+root causes.
+There should be clear traceability from identified hazards 
+through their analysis to the actions taken during the 
+process to ensure that these hazards have been 
+covered.
+the process.

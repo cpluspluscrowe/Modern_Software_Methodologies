@@ -1,0 +1,12 @@
+engineering
+Securityguidelines
+Basesecuritydecisionsonanexplicitsecuritypolicy
+Avoidasinglepointoffailure
+Failsecurely
+Balancesecurityandusability
+Loguseractions
+Useredundancyanddiversitytoreducerisk
+Specifytheformatofallsysteminputs
+Compartmentalizeyourassets
+Designfordeployment
+Designforrecoverability

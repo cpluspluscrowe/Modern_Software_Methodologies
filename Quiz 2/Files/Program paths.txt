@@ -1,0 +1,7 @@
+ Can only happen if CurrentDose is >= minimumDose and <= 
+maxDose.
+ currentDose = 0.
+ currentDose = maxDose.
+In all cases, the post conditions contradict the unsafe 
+condition that the dose administered is greater than 
+maxDose.

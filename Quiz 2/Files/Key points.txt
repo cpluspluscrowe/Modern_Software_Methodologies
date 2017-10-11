@@ -1,0 +1,10 @@
+Key issues when designing a secure systems 
+architecture include organizing the system structure to 
+protect key assets and distributing the system assets to 
+minimize the losses from a successful attack.
+Security design guidelines sensitize system designers to 
+provide a basis for creating security review checklists.
+Security validation is difficult because security 
+requirements state what should not happen in a system, 
+rather than what should. Furthermore, system attackers 
+weaknesses than is available for security testing.

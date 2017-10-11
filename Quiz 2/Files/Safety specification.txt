@@ -1,0 +1,10 @@
+The goal of safety requirements engineering is to identify 
+protection requirements that ensure that system failures 
+do not cause injury or death or environmental damage.
+they define situations and events that should never 
+occur.
+Functional safety requirements define:
+ Checking and recovery features that should be included in a 
+system
+ Features that provide protection against system failures and 
+external attacks

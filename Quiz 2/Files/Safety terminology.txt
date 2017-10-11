@@ -1,0 +1,22 @@
+Term Definition
+Accident (or mishap) An unplanned event or sequence of events which results in human death or injury,
+damage to property, or to the environment. An overdose of insulin is an example of an
+accident.
+Hazard A condition with the potential for causing or contributing to an accident. A failure of the
+sensor that measures blood glucose is an example of a hazard.
+Damage A measure of the loss resulting from a mishap. Damage can range from many people
+being killed as a result of an accident to minor injury or property damage. Damage
+resulting from an overdose of insulin could be serious injury or the death of the user of
+the insulin pump.
+Hazard severity An assessment of the worst possible damage that could result from a particular hazard.
+Hazard severity can range from catastrophic, where many people are killed, to minor,
+where only minor damage results. When an individual death is a possibility, a
+reasonable assessment of hazard severity is ‘very high’.
+Hazard probability The probability of the events occurring which create a hazard. Probability values tend to
+‘implausible’ (no conceivable situations are likely in which the hazard could occur). The
+probability of a sensor failure in the insulin pump that results in an overdose is probably
+low.
+Risk This is a measure of the probability that the system will cause an accident. The risk is
+assessed by considering the hazard probability, the hazard severity, and the probability
+that the hazard will lead to an accident. The risk of an insulin overdose is probably
+medium to low.

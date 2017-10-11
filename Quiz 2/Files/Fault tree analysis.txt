@@ -1,0 +1,9 @@
+Three possible conditions that can lead to delivery of 
+incorrect dose of insulin
+ Incorrect measurement of blood sugar level
+ Failure of delivery system
+ Dose delivered at wrong time
+By analysis of the fault tree, root causes of these 
+hazards related to software are:
+ Algorithm error
+ Arithmetic error

@@ -1,0 +1,7 @@
+Application security is a software engineering problem 
+where the system is designed to resist attacks.
+Infrastructure security is a systems management 
+problem where the infrastructure is configured to resist 
+attacks.
+The focus of this chapter is application security rather 
+than infrastructure security.

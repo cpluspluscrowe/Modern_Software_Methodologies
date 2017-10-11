@@ -1,0 +1,12 @@
+Security requirements for the Mentcare system
+Patient information shall be downloaded at the start of a 
+clinic session to a secure area on the system client that 
+is used by clinical staff.
+All patient information on the system client shall be 
+encrypted.
+Patient information shall be uploaded to the database 
+after a clinic session has finished and deleted from the 
+client computer.
+A log on a separate computer from the database server 
+must be maintained of all changes made to the system 
+database.

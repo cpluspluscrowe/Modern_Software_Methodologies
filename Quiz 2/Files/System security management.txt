@@ -1,0 +1,10 @@
+User and permission management
+ Adding and removing users from the system and setting up 
+appropriate permissions for users
+Software deployment and maintenance
+ Installing application software and middleware and configuring 
+these systems so that vulnerabilities are avoided.
+Attack monitoring, detection and recovery
+ Monitoring the system for unauthorized access, design 
+strategies for resisting attacks and develop backup and recovery 
+strategies.

@@ -1,0 +1,8 @@
+Systems where it is essential that system operation is 
+always safe i.e. the system should never cause damage 
+to people or the system’s environment
+Examples
+ Control and monitoring systems in aircraft
+ Process control systems in chemical manufacture
+ Automobile control systems such as braking and engine 
+management systems

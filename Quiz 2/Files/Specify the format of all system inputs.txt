@@ -1,0 +1,11 @@
+ If input formats are known then you can check that all inputs are 
+within range so that unexpected inputs don’t cause problems.
+Compartmentalize your assets
+ Organize the system so that assets are in separate areas and 
+users only have access to the information that they need rather 
+than all system information.
+Design for deployment
+ Design the system to avoid deployment problems
+Design for recoverability
+ Design the system to simplify recoverability after a successful 
+attack.

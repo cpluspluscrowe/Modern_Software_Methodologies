@@ -1,0 +1,9 @@
+Security is expensive and it is important that security 
+decisions are made in a cost-effective way
+ There is no point in spending more than the value of an asset to 
+keep that asset secure.
+Organizations use a risk-based approach to support 
+security decision making and should have a defined 
+security policy based on security risk analysis
+Security risk analysis is a business rather than a 
+technical process

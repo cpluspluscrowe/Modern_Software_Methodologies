@@ -1,0 +1,8 @@
+Particularly valuable when a language such as C is used 
+which has weak typing and hence many errors are 
+undetected by the compiler.
+Particularly valuable for security checking – the static 
+analyzer can discover areas of vulnerability such as 
+buffer overflows or unchecked inputs.
+Static analysis is now routinely used in the development 
+of many safety and security critical systems.

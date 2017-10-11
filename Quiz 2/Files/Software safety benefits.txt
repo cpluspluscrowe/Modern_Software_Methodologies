@@ -1,0 +1,10 @@
+Although software failures can be safety-critical, the use 
+of software control systems contributes to increased 
+system safety
+ Software monitoring and control allows a wider range of 
+conditions to be monitored and controlled than is possible using 
+electro-mechanical safety systems.
+ Software control allows safety strategies to be adopted that 
+reduce the amount of time people spend in hazardous 
+environments.
+ Software can detect and correct safety-critical operator errors.

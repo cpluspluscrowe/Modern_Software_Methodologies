@@ -1,0 +1,20 @@
+report for the Mentcare system
+Asset Value Exposure
+Theinformationsystem High. Required to support all 
+clinical consultations. Potentially 
+safety-critical.
+High. Financial loss as clinics
+of restoring system. Possible
+patient harm if treatment cannot
+beprescribed.
+Thepatientdatabase High. Required to support all 
+clinical consultations. Potentially 
+safety-critical.
+High. Financial loss as clinics
+of restoring system. Possible
+patient harm if treatment cannot
+beprescribed.
+high for specific high-profile
+patients.
+Low direct losses but possible
+lossofreputation.

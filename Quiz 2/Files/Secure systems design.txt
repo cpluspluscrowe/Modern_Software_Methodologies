@@ -1,0 +1,8 @@
+Security should be designed into a system –it is very 
+difficult to make an insecure system secure after it has 
+been designed or implemented
+Architectural design
+ how do architectural design decisions affect the security of a 
+system?
+Good practice
+ what is accepted good practice when designing secure systems?

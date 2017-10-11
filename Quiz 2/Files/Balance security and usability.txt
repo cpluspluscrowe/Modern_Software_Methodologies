@@ -1,0 +1,11 @@
+ Try to avoid security procedures that make the system difficult to 
+use. Sometimes you have to accept weaker security to make the 
+system more usable.
+Log user actions
+ Maintain a log of user actions that can be analyzed to discover 
+who did what. If users know about such a log, they are less likely 
+to behave in an irresponsible way.
+Use redundancy and diversity to reduce risk
+ Keep multiple copies of data and use diverse infrastructure so 
+that an infrastructure vulnerability cannot be the single point of 
+failure.

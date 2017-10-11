@@ -1,0 +1,6 @@
+Distributing assets means that attacks on one system do 
+not necessarily lead to complete loss of system service
+be different from other platforms so that they do not 
+share a common vulnerability
+Distribution is particularly important if the risk of denial of 
+service attacks is high

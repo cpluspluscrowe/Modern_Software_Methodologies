@@ -1,0 +1,10 @@
+Safety and reliability are related but distinct
+ In general, reliability and availability are necessary but not 
+sufficient conditions for system safety 
+Reliability is concerned with conformance to a given 
+specification and delivery of service
+Safety is concerned with ensuring system cannot cause 
+damage irrespective of whether or not it conforms to its 
+specification.
+ System reliability is essential for safety but is not enough
+ Reliable systems can be unsafe

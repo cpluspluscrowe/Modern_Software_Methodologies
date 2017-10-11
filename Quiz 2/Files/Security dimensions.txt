@@ -1,0 +1,7 @@
+Confidentiality
+people or programs that are not authorized to have access to 
+that information. 
+Integrity 
+unusual or unreliable. 
+Availability
+be possible. 

@@ -1,0 +1,11 @@
+Security and safety 
+ An attack that corrupts the system or its data means that 
+analysing the source code of safety critical software and assume 
+the executing code is a completely accurate translation of that 
+induced and the safety case made for the software is invalid. 
+Security and resilience
+ Resilience is a system characteristic that reflects its ability to 
+resist and recover from damaging events. The most probable 
+damaging event on networked software systems is a cyberattack 
+of some kind so most of the work now done in resilience is 
+aimed at deterring, detecting and recovering from such attacks.

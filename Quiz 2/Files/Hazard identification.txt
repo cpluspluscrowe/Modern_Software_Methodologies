@@ -1,0 +1,6 @@
+hazard:
+ Physical hazards
+ Electrical hazards
+ Biological hazards
+ Service failure hazards
+ Etc.

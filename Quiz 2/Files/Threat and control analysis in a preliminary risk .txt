@@ -1,0 +1,28 @@
+assessment report
+Threat Probability Control Feasibility
+An unauthorized user
+gains access as
+system manager and
+makes system
+unavailable
+Low Only allow system 
+management from 
+specific locations that are 
+physically secure.
+Low cost of implementation but
+care must be taken with key
+distribution and to ensure that
+keys are available in the event
+ofanemergency.
+An unauthorized user
+gains access as
+system user and
+accesses confidential
+information
+High Require all users to
+authenticate themselves
+using a biometric
+mechanism.
+Log all changes to
+patient information to
+tracksystemusage.

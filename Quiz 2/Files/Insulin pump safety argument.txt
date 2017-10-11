@@ -1,0 +1,10 @@
+Arguments are based on claims and evidence.
+Insulin pump safety:
+ Claim: The maximum single dose of insulin to be delivered 
+(CurrentDose) will not exceed MaxDose.
+ Evidence: Safety argument for insulin pump (discussed later)
+ Evidence: Test data for insulin pump. The value of currentDose
+ Evidence: Static analysis report for insulin pump software 
+revealed no anomalies that affected the value of CurrentDose
+ Argument: The evidence presented demonstrates that the 
+maximum dose of insulin that can be computed = MaxDose.

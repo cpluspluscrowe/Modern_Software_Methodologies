@@ -1,0 +1,9 @@
+If a system is a networked system and is insecure then 
+statements about its reliability and its safety are 
+unreliable.
+These statements depend on the executing system and 
+the developed system being the same. However, 
+intrusion can change the executing system and slash or its 
+data.
+Therefore, the reliability and safety assurance is no 
+longer valid.

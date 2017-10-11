@@ -1,0 +1,9 @@
+Producing a mathematical specification requires a 
+detailed analysis of the requirements and this is likely to 
+uncover errors.
+Concurrent systems can be analysed to discover race 
+conditions that might lead to deadlock. Testing for such 
+problems is very difficult.
+They can detect implementation errors before testing 
+when the program is analyzed alongside the 
+specification.

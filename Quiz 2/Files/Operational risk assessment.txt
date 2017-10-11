@@ -1,0 +1,9 @@
+This risk assessment process focuses on the use of the 
+system and the possible risks that can arise from human 
+behavior. 
+Operational risk assessment should continue after a 
+system has been installed to take account of how the 
+system is used. 
+used in different ways from those originally planned. 
+These changes lead to new security requirements that 
+have to be implemented as the system evolves. 

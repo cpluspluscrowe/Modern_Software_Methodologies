@@ -1,0 +1,7 @@
+Require specialized notations that cannot be understood 
+by domain experts.
+Very expensive to develop a specification and even more 
+expensive to show that a program meets that 
+specification.
+in a program more cheaply using other V & V 
+techniques.

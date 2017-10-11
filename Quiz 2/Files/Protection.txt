@@ -1,0 +1,9 @@
+Platform-level protection
+ Top-level controls on the platform on which a system runs.
+Application-level protection
+ Specific protection mechanisms built into the application itself 
+e.g. additional password protection.
+Record-level protection
+ Protection that is invoked when access to specific information is 
+requested
+These lead to a layered protection architecture

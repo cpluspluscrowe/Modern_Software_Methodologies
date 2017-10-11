@@ -1,0 +1,7 @@
+A deductive top-down technique.
+Put the risk or hazard at the root of the tree and identify 
+the system states that could lead to that hazard.
+Where appropriate, link these with ‘and’ or ‘or’ 
+conditions.
+A goal should be to minimise the number of single 
+causes of system failure.

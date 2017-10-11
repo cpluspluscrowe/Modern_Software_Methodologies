@@ -1,0 +1,7 @@
+knowledge of information representation and system 
+distribution
+Separating patient and treatment information limits the 
+amount of information (personal patient data) that needs 
+to be protected
+Maintaining copies of records on a local client protects 
+against denial of service attacks on the server

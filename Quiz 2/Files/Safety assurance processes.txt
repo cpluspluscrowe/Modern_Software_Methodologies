@@ -1,0 +1,12 @@
+Process assurance involves defining a dependable 
+process and ensuring that this process is followed during 
+the system development.
+Process assurance focuses on:
+ Do we have the right processes? Are the processes appropriate 
+for the level of dependability required. Should include 
+requirements management, change management, reviews and 
+inspections, etc.
+ Are we doing the processes right? Have these processes been 
+followed by the development team.
+Process assurance generates documentation
+ Agile processes therefore are rarely used for critical systems.

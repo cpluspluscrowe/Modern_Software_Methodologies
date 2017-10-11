@@ -1,0 +1,10 @@
+Modification threats that allow an attacker to tamper with 
+a system asset. 
+ In the Mentcare system, a modification threat would be where an 
+attacker alters or destroys a patient record.
+Fabrication threats that allow an attacker to insert false 
+information into a system. 
+ This is perhaps not a credible threat in the Mentcare system but 
+would be a threat in a banking system, where false transactions 
+might be added to the system that transfer money to the 
+perpetrator’s bank account. 

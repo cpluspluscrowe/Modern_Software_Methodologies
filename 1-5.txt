@@ -1,0 +1,2816 @@
+8/29/17
+1
+Chapter 10 – Dependable systems
+30/10/2014 Chapter	10	Dependable	Systems 1
+Topics covered
+² Dependability properties
+² Sociotechnical systems
+² Redundancy and diversity
+² Dependable processes
+² Formal methods and dependability
+30/10/2014 Chapter	10	Dependable	Systems 2
+8/29/17
+2
+System dependability
+² The most important system property is the dependability
+² Reflect the user’s degree of trust in that system. 
+² Reflect the extent of the user’s confidence that it will 
+operate as users expect.
+² Cover the related attributes: reliability, availability and 
+security.
+3
+Chapter	10	Dependable	Systems
+30/10/2014
+Importance of dependability
+² System failures may have widespread.
+² Systems that are not dependable may be rejected.
+² The costs of system failure is high if the failure leads to 
+economic losses.
+² Undependable systems may cause information loss.
+4
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+3
+Causes of failure
+² Hardware failure
+§ Design and manufacturing errors.
+² Software failure
+§ Errors in its implementation.
+² Operational failure
+§ Human operators make mistakes. 
+5
+Chapter	10	Dependable	Systems
+30/10/2014
+Dependability properties
+30/10/2014 Chapter	10	Dependable	Systems 6
+8/29/17
+4
+The principal dependability properties
+Dependability
+Availability Reliability Security
+Safety Resilience
+The ability of the system 
+to protect itself against 
+deliberate or accidental 
+intrusion
+The ability of the system 
+to resist and recover 
+from damaging events
+The ability of the system 
+to operate without 
+catastrophic failure
+The ability of the system 
+to deliver services as 
+specified
+The ability of the system 
+to deliver services when 
+requested
+30/10/2014 Chapter	10	Dependable	Systems 7
+Principal properties
+² Availability
+§ Deliver useful services to users.
+² Reliability
+§ Correctly deliver services as expected.
+² Safety
+§ Capability of preventing damage to people or its environment.
+8
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+5
+Principal properties
+² Security
+§ Capability of resisting accidental or deliberate intrusions.
+² Resilience
+§ A judgment of how well a system can maintain the continuity of 
+its critical services.
+30/10/2014 Chapter	10	Dependable	Systems 9
+Other dependability properties
+² Repairability
+§ Capability of being repaired in the event of a failure
+² Maintainability
+§ Capability of being adapted to new requirements
+² Error tolerance
+§ Capability to tolerate failures due to user input errors
+10
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+6
+Dependability attribute dependencies
+² Depend on the system's availability and reliability.
+² Corrupted data by an external attack.
+² Unavailable to conduct denial of service attacks on a 
+system.
+² Malicious system virus infection and damage
+Chapter	10	Dependable	Systems 11
+30/10/2014
+Dependability achievement
+² Inspect and avoid accidental error introduction.
+² Validation processes to reveal errors.
+² Fault tolerant system to tolerate runtime errors.
+² Protection mechanisms against external attacks.
+Chapter	10	Dependable	Systems 12
+30/10/2014
+8/29/17
+7
+Dependability achievement
+² Correct system configuration.
+² Capabilities to resist cyberattacks.
+² Service recovery mechanisms after a failure.
+30/10/2014 Chapter	10	Dependable	Systems 13
+Dependability costs
+² Dependability costs increase exponentially.
+² There are two reasons for this
+§ Expensive development techniques and hardware for higher 
+levels of dependability.
+§ Increased testing and system validation for system clients and 
+regulators.
+14
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+8
+Cost/dependability curve
+Cost
+Low Medium High Very
+high
+UltrahighDependability30/10/2014 Chapter
+10	Dependable	Systems 15
+Dependability economics
+² Accepting untrustworthy systems and pay for failure 
+costs may be cost effective.
+² However, it may lose future business depending on 
+social and political factors.
+² Depends on system types that need modest levels of 
+dependability.
+16
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+9
+Sociotechnical systems (STS)
+30/10/2014 Chapter	10	Dependable	Systems 17
+Systems and software
+² Software engineering is part of system engineering 
+process.
+² Software systems are are essential components of 
+systems based on organizational purposes.
+² Example
+§ The wilderness weather system is part of forecasting systems
+§ Hardware and software, forecasting processes, the 
+organizations, etc.
+Chapter	10	Dependable	Systems 18
+30/10/2014
+8/29/17
+10
+The sociotechnical systems (STS) stack
+Equipment
+Operating system
+Communications and data management
+Application system
+Business processes
+Organization
+Society
+Systems
+engineering
+Software
+engineering
+30/10/2014 Chapter	10	Dependable	Systems 19
+Layers in the STS stack
+² Equipment
+§ Hardware devices, including embedded systems
+² Operating system
+§ Common facilities for higher level applications.
+² Communications and data management
+§ Access to remote systems and databases.
+² Application systems
+§ Functionalities for specific requirements.
+Chapter	10	Dependable	Systems 20
+30/10/2014
+8/29/17
+11
+Layers in the STS stack
+² Business processes
+§ Processes involving people and systems
+² Organizations
+§ Business activities for system operations
+² Society
+§ Laws, regulation and culture
+Chapter	10	Dependable	Systems 21
+30/10/2014
+Holistic system design
+² Interactions and dependencies between system layers
+§ Example: regulation changes causes changes in applications.
+² For dependability, a systems perspective is essential
+§ Software failures within the enclosing layers.
+§ Failures in adjacent layers affects software systems.
+Chapter	10	Dependable	Systems 22
+30/10/2014
+8/29/17
+12
+Regulation and compliance
+² The general model of economic organization 
+§ Universal in the world.
+§ Offer goods and services and make a profit.
+² Ensure the safety of their citizens
+§ Follow standards to ensure that products are safe and secure. 
+30/10/2014 Chapter	10	Dependable	Systems 23
+Regulated systems
+² Critical systems are regulated systems
+§ Approved by an external regulator. 
+§ E.g., nuclear systems and air traffic control systems
+² A safety and dependability case 
+§ Approved by the regulator. 
+§ Create the evidence for systems' dependability, safety and 
+security.
+Chapter	10	Dependable	Systems 24
+30/10/2014
+8/29/17
+13
+Safety regulation
+² Regulation and compliance applies to the sociotechnical 
+system.
+² Safety-related systems 
+§ Certified as safe by the regulator.
+² Produce safety cases to show systems follow rules and 
+regulations. 
+² Expensive to document certification.
+30/10/2014 Chapter	10	Dependable	Systems 25
+Redundancy and diversity
+30/10/2014 Chapter	10	Dependable	Systems 26
+Aug	
+29th
+8/29/17
+14
+Redundancy and diversity
+² Redundancy
+§ Keep more than a single version.
+² Diversity
+§ Provide the same functionality in different mechanism. 
+² Redundant and diverse components should be 
+performed independently
+§ E.g., software written in different programming languages.
+27
+Chapter	10	Dependable	Systems
+30/10/2014
+Diversity and redundancy examples
+² Redundancy. 
+§ Backup servers to switch, when failure occurs.
+² Diversity. 
+§ Different servers running on different operating systems.
+28
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+15
+Process diversity and redundancy
+² Process activities
+§ Not depend on a single approach, such as testing.
+² Redundant and diverse process activities.
+² Multiple process activities complement each other 
+§ Cross-checking techniques avoid process errors
+Chapter	10	Dependable	Systems 29
+30/10/2014
+Problems with redundancy and diversity
+² Adding diversity and redundancy increases complexity.
+² Increase the chances of error 
+§ Unanticipated interactions between redundant components.
+² Advocate simplicity to decrease software dependability.
+§ E.g., an Airbus product is redundant/diverse; a Boeing product 
+has no software diversity
+30/10/2014 Chapter	10	Dependable	Systems 30
+8/29/17
+16
+Dependable processes
+30/10/2014 Chapter	10	Dependable	Systems 31
+Dependable processes
+² A well-defined, repeatable software process to reduce 
+faults.
+² A well-defined repeatable process 
+§ Not depend on individual skills.
+² Check whether to use software engineering practice.
+² Verification and validation (V&V) activities for fault 
+detection.
+32
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+17
+Dependable process characteristics
+² Explicitly defined 
+§ A defined process model to drive the production process. 
+§ Data must be collected during the process to prove that the 
+development follows process models.
+² Repeatable
+§ Not rely on individual judgment. 
+§ Can be repeated across projects and with different team 
+members. 
+30/10/2014 Chapter	10	Dependable	Systems 33
+Attributes of dependable processes
+Process characteristic Description
+Auditable The process should be understandable by people apart
+from process participants, who can check that process
+standards are being followed and make suggestions for
+process improvement.
+Diverse The process should include redundant and diverse
+verification and validation activities.
+Documentable The process should have a defined process model that
+sets out the activities in the process and the
+documentation that is to be produced during these
+activities.
+Robust The process should be able to recover from failures of
+individual process activities.
+Standardized A comprehensive set of software development
+standards covering software production and
+documentation should be available.
+34
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+18
+Dependable process activities
+² Requirements reviews
+§ Check whether to be complete and consistent.
+² Requirements management 
+§ Ensure that requirement modifications are controlled and 
+understood.
+² Formal specification
+§ Analyze mathematical models. 
+² System modeling
+§ Documentation through graphical models
+§ Relationships between system requirements. 
+30/10/2014 Chapter	10	Dependable	Systems 35
+Dependable process activities
+² Design and program inspections
+§ Inspection and checking for systems by different people. 
+² Static analysis 
+§ Automated inspection on the program source code. 
+² Test planning and management
+§ Design system test suites. 
+§ Manage to provide enough coverage of system requirements.
+30/10/2014 Chapter	10	Dependable	Systems 36
+8/29/17
+19
+Dependable processes and agility
+² Produce process and product documentation.
+² Up-front requirements analysis 
+§ Discover requirements and requirements conflicts for system 
+safety and security
+² These conflict with agile development 
+§ Minimizing documentation of system requirements
+30/10/2014 Chapter	10	Dependable	Systems 37
+Dependable processes and agility
+² Agile process 
+§ iterative development, test-first development and user 
+involvement in the development team.  
+² Agile team follows agile process, actions, and agile 
+methods
+² However, ‘pure agile’ is impractical for dependable 
+systems.
+30/10/2014 Chapter	10	Dependable	Systems 38
+8/29/17
+20
+Formal methods and dependability
+30/10/2014 Chapter	10	Dependable	Systems 39
+Formal specification
+² Formal methods 
+§ Development approaches based on mathematical analysis.
+² Formal methods include
+§ Formal specification;
+§ Specification analysis and proof;
+§ Transformational development;
+§ Program verification.
+² Reduce programming errors and cost for dependable 
+systems.
+40
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+21
+Formal approaches
+² Verification-based approaches
+§ Different representations of a software system are proved to be 
+equivalent. 
+§ Demonstrate the absence of errors.
+² Refinement-based approaches
+§ A system representation is transformed into a lower-level 
+representation.
+§ Correct transformation results in equivalent representations.
+30/10/2014 Chapter	10	Dependable	Systems 41
+Use of formal methods
+² The principal benefits 
+§ Reduce faults or runtime errors.
+² Applicable main area:
+§ Dependable systems engineering.
+² Cost-effective formal methods 
+§ Reduce high system failure costs
+42
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+22
+Classes of error
+² Specification and design errors and omissions. 
+§ Reveal errors and omissions in requirements. 
+§ Models generated automatically from source code.
+§ Analysis by using model checking find undesirable faults.
+² Inconsistences between a specification and a program. 
+§ Refinement methods 
+§ Programmer mistakes of inconsistencies with specification
+§ Discover inconsistencies between programs and specifications.
+30/10/2014 Chapter	10	Dependable	Systems 43
+Benefits of formal specification
+² Developing a formal specification
+§ Analyze system requirements in detail. 
+§ Detect problems, inconsistencies and incompleteness.
+² Specification expressed in a formal language
+§ Discover inconsistencies and incompleteness.
+² A formal method correctly transforms a formal specification 
+into a program.
+² Reduce program testing costs 
+§ Verify a program formally against its specification.
+44
+Chapter	10	Dependable	Systems
+30/10/2014
+8/29/17
+23
+Acceptance of formal methods
+² Formal methods limited in practical development:
+§ Hard to understand a formal specification 
+§ Cannot assess if it is an accurate representation.
+§ Assess development costs but harder to assess the benefits. 
+§ Unwilling to invest in formal methods.
+§ Unfamiliar with formal method approach.
+§ Difficulty in scaling up to large systems.
+§ Incompatibility with agile development methods.
+45
+Chapter	10	Dependable	Systems
+30/10/2014
+Key points
+² System dependability is important 
+§ failure of critical systems can lead to economic losses, 
+information loss, physical damage or threats to human life.  
+² The dependability of a computer system 
+§ a system property that reflects the user’s degree of trust in the 
+system. 
+§ The most important dimensions are availability, reliability, safety, 
+security and resilience.
+² Sociotechnical systems 
+§ computer hardware, software and people, and are situated within 
+an organization. 
+§ designed to support organizational or business goals and 
+objectives.
+30/10/2014 Chapter	10	Dependable	Systems 46
+8/29/17
+24
+Key points
+² The use of a dependable, repeatable process 
+§ essential if faults in a system are to be minimized. 
+§ verification and validation activities at all stages, from 
+requirements definition through to system implementation.
+² The use of redundancy and diversity 
+§ essential to the development of dependable systems.
+² Formal methods, 
+§ a formal model of a system as a basis for development 
+§ reduce the number of specification and implementation errors
+30/10/2014 Chapter	10	Dependable	Systems 47
+Chapter 11 – Reliability Engineering
+1
+Chapter	11	Reliability	Engineering
+30/10/2014
+Topics covered
+² Availability and reliability
+² Reliability requirements
+² Fault-tolerant architectures
+² Programming for reliability
+² Reliability measurement
+2
+Chapter	11	Reliability	Engineering
+30/10/2014
+Software reliability
+² Dependable software is expected
+² However, some system failures are accepted.
+² Software systems have high reliability requirements
+§ E.g., critical software systems
+² Software engineering techniques for reliability 
+requirements.
+§ E.g., medical systems and aerospace systems
+3
+Chapter	11	Reliability	Engineering
+30/10/2014
+Faults, errors and failures
+Term Description
+Human error or
+mistake
+Human behavior that results in the introduction of faults into a system. For 
+example, in the wilderness weather system, a programmer might decide that the 
+way to compute the time for the next transmission is to add 1 hour to the current 
+time. This works except when the transmission time is between 23.00 and 
+midnight (midnight is 00.00 in the 24-hour clock).
+System fault
+A characteristic of a software system that can lead to a system error. The fault is 
+the inclusion of the code to add 1 hour to the time of the last transmission, 
+without a check if the time is greater than or equal to 23.00.
+System error
+An erroneous system state that can lead to system behavior that is unexpected 
+by system users. The value of transmission time is set incorrectly (to 24.XX 
+rather than 00.XX) when the faulty code is executed.
+System failure
+An event that occurs at some point in time when the system does not deliver a 
+service as expected by its users. No weather data is transmitted because the 
+time is invalid.
+4
+Chapter	11	Reliability	Engineering
+30/10/2014
+Faults and failures
+² Failures 
+§ Results of system errors resulted from faults in the system
+² However, faults do not necessarily result in system 
+errors
+§ Transient and ‘corrected’ before an error arises.
+§ Never be executed.
+² Errors do not necessarily lead to system failures
+§ Corrected by detection and recovery
+§ Protected by protection facilities.
+5
+Chapter	11	Reliability	Engineering
+30/10/2014
+Fault management
+² Fault avoidance
+§ Avoid human errors to minimize system faults.
+§ Organize development processes to detect and repair faults.
+² Fault detection
+§ Verification and validation techniques to remove faults.
+² Fault tolerance
+§ Design systems that faults do not cause failures.
+6
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability achievement
+² Fault avoidance
+§ Development technique to minimise the possibility of mistakes or 
+reveal mistakes.
+² Fault detection and removal
+§ Verification and validation techniques to increase the probability 
+of correcting errors.
+² Fault tolerance
+§ Run-time techniques to ensure that faults do not cause errors.
+7
+Chapter	11	Reliability	Engineering
+30/10/2014
+The increasing costs of residual fault removal 
+8
+Cost per error detected
+Few
+Number of residual errors
+Many Very few
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability and reliability
+9
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability and reliability
+² Reliability
+§ The probability of failure-free system operation.
+² Availability
+§ The probability that a system conducts requested services at a 
+point in time.
+§ E.g., availability of 0.99.
+10
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability and specifications
+² Reliability 
+§ Defined formally w.r.t. a system specification
+§ A deviation from a specification.
+² Incomplete or incorrect specifications
+§ A system following specifications may ‘fail’.
+² Unfamiliar with specifications 
+§ Unaware how the system is supposed to behave.
+² Perceptions of reliability
+11
+Chapter	11	Reliability	Engineering
+30/10/2014
+Perceptions of reliability
+² Not always reflect the user’s reliability perception
+§ The assumptions about environments for a system are incorrect
+• Different usage of a system between in an office environment and in 
+a university environment.
+§ The consequences of system failures affects the perception of 
+reliability.
+12
+Chapter	11	Reliability	Engineering
+30/10/2014
+A system as an input/output mapping
+Ie
+Input set
+Oe
+Output set
+Program
+Inputs causing
+erroneous outputs
+Erroneous
+outputs
+13
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability perception
+² Expressed as a percentage of the time
+§ Available to conduct services.
+² Two factors not considered:
+§ The number of users affected by unavailable systems. 
+§ The length of system failed or unavailable period. 
+14
+Chapter	11	Reliability	Engineering
+30/10/2014
+Software usage patterns
+Possible
+inputs
+User
+1
+User
+3
+User
+2
+Erroneous
+inputs
+15
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability in use
+² Reliability not improved by X% by removing faults with 
+X%
+² Program defects rarely executed
+§ Not encountered by users. 
+§ Not affect the perceived reliability.
+² Users' operation patterns to avoid system features.
+² Software systems with known faults
+§ Considered reliable systems by users.
+16
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability requirements
+Chapter	11	Reliability	Engineering 17
+30/10/2014
+System reliability requirements
+² Functional reliability requirements 
+§ Define system and software functions 
+§ Avoid, detect or tolerate faults 
+§ Not lead to system failure.
+² Software reliability requirements 
+§ Cope with hardware failure or operator error.
+² Non-functional reliability requirements
+² A measurable system attribute specified quantitatively. 
+² E.g., the number of failures and the available time. 
+18
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability metrics
+² Units of measurement of system reliability.
+² Counting the number of operational failures and the 
+period length that the system has been operational.
+² Assess the reliability (e.g., critical systems)
+§ Long-term measurement techniques
+² Metrics
+§ Probability of failure on demand
+§ Rate of occurrence of failures
+19
+Chapter	11	Reliability	Engineering
+30/10/2014
+Probability of failure on demand (POFOD)
+² The probability of the system failure when a service 
+request is made. 
+§ Useful when demands for service are relatively infrequent.
+² Implement appropriate protection systems
+§ Demand services occasionally.
+§ Serious consequence due to failed services.
+² Develop for safety-critical systems
+§ E.g., emergency shutdown system in a chemical plant.
+20
+Chapter	11	Reliability	Engineering
+30/10/2014
+Rate of fault occurrence (ROCOF)
+² System failure occurrence rate
+² ROCOF of 0.002 
+§ 2 failures are likely in each 1000 operational time units
+² Reliable systems needed
+§ Systems perform a number of similar requests in a short time
+§ E.g., credit card processing system.
+² Reciprocal of ROCOF is Mean time to Failure (MTTF)
+§ Systems with long transactions
+§ System processing takes a long time. MTTF should be longer than 
+expected transaction length.
+21
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability
+² The time that a software system is available
+§ Repair and restart time considered
+² Availability of 0.998 
+§ Software is available for 998 out of 1000 time units.
+² Continuously running systems 
+§ E.g., railway signalling systems.
+22
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability specification
+Availability Explanation
+0.9 The system is available for 90% of the time. This means that, in a
+24-hour period (1,440 minutes), the system will be unavailable for
+144 minutes. (1440 * 10%) 
+0.99 In a 24-hour period, the system is unavailable for 14.4 minutes.
+0.999 The system is unavailable for 84 seconds in a 24-hour period.
+0.9999 The system is unavailable for 8.4 seconds in a 24-hour period.
+Roughly, one minute per week.
+23
+Chapter	11	Reliability	Engineering
+30/10/2014
+Non-functional reliability requirements
+² Non-functional reliability requirements
+§ Reliability specifications using one of the reliability metrics 
+§ POFOD: probability of fault on demand
+§ ROCOF: rate of occurrence of Fault
+§ AVAIL: availability
+² Used for many years in safety-critical systems 
+§ Uncommon for business critical systems. 
+² Need precise measurement about reliability and 
+availability expectations.
+Chapter	11	Reliability	Engineering 24
+30/10/2014
+Benefits of reliability specification
+² Help to clarify stakeholders' needs.
+² Provide a measurement basis for system tests.
+² Improve the reliability by different design strategies. 
+² Evidence of including required reliability 
+implementations.
+Chapter	11	Reliability	Engineering 25
+30/10/2014
+Specifying reliability requirements
+² Availability and reliability requirements for different types 
+of failure. 
+§ Low probability of high-cost failures
+² Availability and reliability requirements for different types 
+of system service. 
+§ Tolerate failures in less critical services. 
+² A high level of reliability required. 
+§ Other mechanisms for reliable system services.
+Chapter	11	Reliability	Engineering 26
+30/10/2014
+ATM reliability specification
+² Key concerns
+§ ATMs conduct services as requested 
+§ Record customer transactions
+§ ATM systems are available when required.
+² Database transaction mechanisms make a correction of 
+transaction problems 
+Chapter	11	Reliability	Engineering 27
+30/10/2014
+ATM availability specification
+² System services
+§ The customer account database service;
+§ ‘withdraw cash’, ‘provide account information’, etc.
+² Specify a high level of availability in database service.
+§ Database availability: 0.9999, between 7 am and 11pm. 
+§ A downtime of less than 1 minute per week.
+Chapter	11	Reliability	Engineering 28
+30/10/2014
+ATM availability specification
+² Key reliability issues depends on mechanical reliability. 
+² A lower level of software availability is acceptable. 
+² The overall availability
+§ Specify availability with 0.999
+§ A machine might be unavailable for between 1 and 2 minutes 
+each day. 
+Chapter	11	Reliability	Engineering 29
+30/10/2014
+Insulin pump reliability specification
+² Probability of failure (POFOD) metric.
+² Transient failures 
+§ Repaired by user actions, such as, recalibration of the machine. 
+§ Low POFOD is acceptable. A failure occurs in every 500 
+demands.
+² Permanent failures
+§ Re-installed by the manufacturer. 
+§ Occur no more than once per year. 
+§ POFOD < 0.00002.
+30
+Chapter	11	Reliability	Engineering
+30/10/2014
+Functional reliability requirements
+² Checking requirements
+§ Identify incorrect data before it leads to a failure.
+² Recovery requirements 
+§ Help the system recover from a failure.
+² Redundancy requirements 
+§ Specify redundant system features.
+² Process requirements 
+§ Specify software development processes.
+31
+Chapter	11	Reliability	Engineering
+30/10/2014
+Examples of functional reliability requirements
+RR1: A pre-defined range for all operator inputs shall be defined and 
+the system shall check that all operator inputs fall within this pre-defined 
+range. (Checking)
+RR2: Copies of the patient database shall be maintained on two 
+separate servers that are not housed in the same building. (Recovery, 
+redundancy)
+RR3: N-version programming shall be used to implement the braking 
+control system. (Redundancy)
+RR4: The system must be implemented in a safe subset of Ada and 
+checked using static analysis. (Process)
+32
+Chapter	11	Reliability	Engineering
+30/10/2014
+Fault-tolerant architectures
+Chapter	11	Reliability	Engineering 33
+30/10/2014
+Fault tolerance
+² Fault tolerant in critical situations.
+² Fault tolerance required 
+§ High availability requirements 
+§ Failure costs are very high.
+² Fault tolerance
+§ Able to continue in operation despite software failures.
+² Fault tolerant required against incorrect validation or 
+specification errors, although a system is proved to 
+conform to its specification
+Chapter	11	Reliability	Engineering 34
+30/10/2014
+Fault-tolerant system architectures
+² Fault-tolerant systems architectures
+§ Fault tolerance is essential based on redundancy and diversity.
+² Examples of situations for dependable architectures:
+§ Flight control systems for safety of passengers
+§ Reactor systems for a chemical or nuclear emergency
+§ Telecommunication systems for 24/7 availability.
+Chapter	11	Reliability	Engineering 35
+30/10/2014
+Protection systems
+² A specialized system 
+§ Associated with other control system.
+§ Take emergency action to deal with failures.
+§ E.g., System to stop a train or system to shut down a reactor
+² Monitor the controlled system and the environment.
+² Take emergency action to shut down the system and 
+avoid a catastrophe.
+Chapter	11	Reliability	Engineering 36
+30/10/2014
+Protection system architecture
+Chapter	11	Reliability	Engineering 37
+Protection
+sensors
+System environment
+Actuators
+Controlled
+equipment
+Control system
+Protection
+system
+Sensors
+30/10/2014
+Protection system functionality
+² Protection systems for redundancy 
+§ Control capabilities to replicate in the control software.
+² Diverse protection systems
+§ Different technology used in the control software.
+² Need to expend in validation and dependability 
+assurance.
+² A low probability of failure for the protection system.
+Chapter	11	Reliability	Engineering 38
+30/10/2014
+Self-monitoring architectures
+² Multi-channel architectures 
+§ System monitoring its own operations
+§ Take action if inconsistencies are discovered
+² The same computation is carried out on each channel 
+§ Compare the results
+§ Producing identical results assumes correct system operation
+§ A failure exception is reported when different results arise.
+Chapter	11	Reliability	Engineering 39
+30/10/2014
+Self-monitoring architecture
+Chapter	11	Reliability	Engineering 40
+Splitter
+Channel 1
+Channel 2
+Comparator
+Input value
+Output value
+Status
+30/10/2014
+The	first	
+half	of	the	
+chapter
+Chapter 11 – Reliability Engineering
+1
+Chapter	11	Reliability	Engineering
+30/10/2014
+Topics covered
+² Availability and reliability
+² Reliability requirements
+² Fault-tolerant architectures
+² Programming for reliability
+² Reliability measurement
+2
+Chapter	11	Reliability	Engineering
+30/10/2014
+Software reliability
+² Dependable software is expected
+² However, some system failures are accepted.
+² Software systems have high reliability requirements
+§ E.g., critical software systems
+² Software engineering techniques for reliability 
+requirements.
+§ E.g., medical systems and aerospace systems
+3
+Chapter	11	Reliability	Engineering
+30/10/2014
+Faults, errors and failures
+Term Description
+Human error or
+mistake
+Human behavior that results in the introduction of faults into a system. For 
+example, in the wilderness weather system, a programmer might decide that the 
+way to compute the time for the next transmission is to add 1 hour to the current 
+time. This works except when the transmission time is between 23.00 and 
+midnight (midnight is 00.00 in the 24-hour clock).
+System fault
+A characteristic of a software system that can lead to a system error. The fault is 
+the inclusion of the code to add 1 hour to the time of the last transmission, 
+without a check if the time is greater than or equal to 23.00.
+System error
+An erroneous system state that can lead to system behavior that is unexpected 
+by system users. The value of transmission time is set incorrectly (to 24.XX 
+rather than 00.XX) when the faulty code is executed.
+System failure
+An event that occurs at some point in time when the system does not deliver a 
+service as expected by its users. No weather data is transmitted because the 
+time is invalid.
+4
+Chapter	11	Reliability	Engineering
+30/10/2014
+Faults and failures
+² Failures 
+§ Results of system errors resulted from faults in the system
+² However, faults do not necessarily result in system 
+errors
+§ Transient and ‘corrected’ before an error arises.
+§ Never be executed.
+² Errors do not necessarily lead to system failures
+§ Corrected by detection and recovery
+§ Protected by protection facilities.
+5
+Chapter	11	Reliability	Engineering
+30/10/2014
+Fault management
+² Fault avoidance
+§ Avoid human errors to minimize system faults.
+§ Organize development processes to detect and repair faults.
+² Fault detection
+§ Verification and validation techniques to remove faults.
+² Fault tolerance
+§ Design systems that faults do not cause failures.
+6
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability achievement
+² Fault avoidance
+§ Development technique to minimise the possibility of mistakes or 
+reveal mistakes.
+² Fault detection and removal
+§ Verification and validation techniques to increase the probability 
+of correcting errors.
+² Fault tolerance
+§ Run-time techniques to ensure that faults do not cause errors.
+7
+Chapter	11	Reliability	Engineering
+30/10/2014
+The increasing costs of residual fault removal 
+8
+Cost per error detected
+Few
+Number of residual errors
+Many Very few
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability and reliability
+9
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability and reliability
+² Reliability
+§ The probability of failure-free system operation.
+² Availability
+§ The probability that a system conducts requested services at a 
+point in time.
+10
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability and specifications
+² Reliability 
+§ Defined formally w.r.t. a system specification
+§ A deviation from a specification.
+² Incomplete or incorrect specifications
+§ A system following specifications may ‘fail’.
+² Unfamiliar with specifications 
+§ Unaware how the system is supposed to behave.
+² Perceptions of reliability
+11
+Chapter	11	Reliability	Engineering
+30/10/2014
+Perceptions of reliability
+² Not always reflect the user’s reliability perception
+§ The assumptions about environments for a system are incorrect
+• Different usage of a system between in an office environment and in 
+a university environment.
+§ The consequences of system failures affects the perception of 
+reliability.
+12
+Chapter	11	Reliability	Engineering
+30/10/2014
+A system as an input/output mapping
+Ie
+Input set
+Oe
+Output set
+Program
+Inputs causing
+erroneous outputs
+Erroneous
+outputs
+13
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability perception
+² Expressed as a percentage of the time
+§ Available to conduct services.
+² Two factors not considered:
+§ The number of users affected by unavailable systems. 
+§ The length of system failed or unavailable period. 
+14
+Chapter	11	Reliability	Engineering
+30/10/2014
+Software usage patterns
+Possible
+inputs
+User
+1
+User
+3
+User
+2
+Erroneous
+inputs
+15
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability in use
+² Reliability not improved by X% by removing faults with 
+X%
+² Program defects rarely executed
+§ Not encountered by users. 
+§ Not affect the perceived reliability.
+² Users' operation patterns to avoid system features.
+² Software systems with known faults
+§ Considered reliable systems by users.
+16
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability requirements
+Chapter	11	Reliability	Engineering 17
+30/10/2014
+System reliability requirements
+² Functional reliability requirements 
+§ Define system and software functions 
+§ Avoid, detect or tolerate faults 
+§ Not lead to system failure.
+² Software reliability requirements 
+§ Cope with hardware failure or operator error.
+² Non-functional reliability requirements
+² A measurable system attribute specified quantitatively. 
+² E.g., the number of failures and the available time. 
+18
+Chapter	11	Reliability	Engineering
+30/10/2014
+Reliability metrics
+² Units of measurement of system reliability.
+² Counting the number of operational failures and the 
+period length that the system has been operational.
+² Assess the reliability (e.g., critical systems)
+§ Long-term measurement techniques
+² Metrics
+§ Probability of failure on demand
+§ Rate of occurrence of failures
+19
+Chapter	11	Reliability	Engineering
+30/10/2014
+Probability of failure on demand (POFOD)
+² The probability of the system failure when a service 
+request is made. 
+§ Useful when demands for service are relatively infrequent.
+² Implement appropriate protection systems
+§ Demand services occasionally.
+§ Serious consequence due to failed services.
+² Develop for safety-critical systems
+§ E.g., emergency shutdown system in a chemical plant.
+20
+Chapter	11	Reliability	Engineering
+30/10/2014
+Rate of fault occurrence (ROCOF)
+² System failure occurrence rate
+² ROCOF of 0.002 
+§ 2 failures are likely in each 1000 operational time units
+² Reliable systems needed
+§ Systems perform a number of similar requests in a short time
+§ E.g., credit card processing system.
+² Reciprocal of ROCOF is Mean time to Failure (MTTF)
+§ Systems with long transactions
+§ System processing takes a long time. MTTF is longer than expected 
+transaction length.
+21
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability
+² The time that a software system is available
+§ Repair and restart time considered
+² Availability of 0.001 
+§ Software is available for 1 out of 1000 time units.
+² Continuously running systems 
+§ E.g., railway signalling systems.
+22
+Chapter	11	Reliability	Engineering
+30/10/2014
+Availability specification
+Availability Explanation
+0.9 The system is available for 90% of the time. This means that, in a
+24-hour period (1,440 minutes), the system will be unavailable for
+144 minutes. (1440 * 10%) 
+0.99 In a 24-hour period, the system is unavailable for 14.4 minutes.
+0.999 The system is unavailable for 84 seconds in a 24-hour period.
+0.9999 The system is unavailable for 8.4 seconds in a 24-hour period.
+Roughly, one minute per week.
+23
+Chapter	11	Reliability	Engineering
+30/10/2014
+Non-functional reliability requirements
+² Non-functional reliability requirements
+§ Reliability specifications using one of the reliability metrics 
+(POFOD, ROCOF or AVAIL).
+² Used for many years in safety-critical systems 
+§ Uncommon for business critical systems. 
+² Need precise measurement about reliability and 
+availability expectations.
+Chapter	11	Reliability	Engineering 24
+30/10/2014
+Benefits of reliability specification
+² Help to clarify stakeholders' needs.
+² Provide a measurement basis for system tests.
+² Improve the reliability by different design strategies. 
+² Evidence of including required reliability 
+implementations.
+Chapter	11	Reliability	Engineering 25
+30/10/2014
+Specifying reliability requirements
+² Availability and reliability requirements for different types 
+of failure. 
+§ Low probability of high-cost failures
+² Availability and reliability requirements for different types 
+of system service. 
+§ Tolerate failures in less critical services. 
+² A high level of reliability required. 
+§ Other mechanisms for reliable system services.
+Chapter	11	Reliability	Engineering 26
+30/10/2014
+ATM reliability specification
+² Key concerns
+§ ATMs conduct services as requested 
+§ Record customer transactions
+§ ATM systems are available when required.
+² Database transaction mechanisms make a correction of 
+transaction problems 
+Chapter	11	Reliability	Engineering 27
+30/10/2014
+ATM availability specification
+² System services
+§ The customer account database service;
+§ ‘withdraw cash’, ‘provide account information’, etc.
+² Specify a high level of availability in database service.
+§ Database availability: 0.9999, between 7 am and 11pm. 
+§ A downtime of less than 1 minute per week.
+Chapter	11	Reliability	Engineering 28
+30/10/2014
+ATM availability specification
+² Key reliability issues depends on mechanical reliability. 
+² A lower level of software availability is acceptable. 
+² The overall availability
+§ Specify availability with 0.999
+§ A machine might be unavailable for between 1 and 2 minutes 
+each day. 
+Chapter	11	Reliability	Engineering 29
+30/10/2014
+Insulin pump reliability specification
+² Probability of failure (POFOD) metric.
+² Transient failures 
+§ Repaired by user actions, such as, recalibration of the machine. 
+§ Low POFOD is acceptable. A failure occurs in every 500 
+demands.
+² Permanent failures
+§ Re-installed by the manufacturer. 
+§ Occur no more than once per year. 
+§ POFOD < 0.00002.
+30
+Chapter	11	Reliability	Engineering
+30/10/2014
+Functional reliability requirements
+² Checking requirements
+§ Identify incorrect data before it leads to a failure.
+² Recovery requirements 
+§ Help the system recover from a failure.
+² Redundancy requirements 
+§ Specify redundant system features.
+² Process requirements 
+§ Specify software development processes.
+31
+Chapter	11	Reliability	Engineering
+30/10/2014
+Examples of functional reliability requirements
+RR1: A pre-defined range for all operator inputs shall be defined and 
+the system shall check that all operator inputs fall within this pre-defined 
+range. (Checking)
+RR2: Copies of the patient database shall be maintained on two 
+separate servers that are not housed in the same building. (Recovery, 
+redundancy)
+RR3: N-version programming shall be used to implement the braking 
+control system. (Redundancy)
+RR4: The system must be implemented in a safe subset of Ada and 
+checked using static analysis. (Process)
+32
+Chapter	11	Reliability	Engineering
+30/10/2014
+Fault-tolerant architectures
+Chapter	11	Reliability	Engineering 33
+30/10/2014
+Fault tolerance
+² Fault tolerant in critical situations.
+² Fault tolerance required 
+§ High availability requirements 
+§ Failure costs are very high.
+² Fault tolerance
+§ Able to continue in operation despite software failures.
+² Fault tolerant required against incorrect validation or 
+specification errors, although a system is proved to 
+conform to its specification
+Chapter	11	Reliability	Engineering 34
+30/10/2014
+Fault-tolerant system architectures
+² Fault-tolerant systems architectures
+§ Fault tolerance is essential based on redundancy and diversity.
+² Examples of situations for dependable architectures:
+§ Flight control systems for safety of passengers
+§ Reactor systems for a chemical or nuclear emergency
+§ Telecommunication systemsfor 24/7 availability.
+Chapter	11	Reliability	Engineering 35
+30/10/2014
+Protection systems
+² A specialized system 
+§ Associated with other control system.
+§ Take emergency action to deal with failures.
+§ E.g., System to stop a train or system to shut down a reactor
+² Monitor the controlled system and the environment.
+² Take emergency action to shut down the system and 
+avoid a catastrophe.
+Chapter	11	Reliability	Engineering 36
+30/10/2014
+Protection system architecture
+Chapter	11	Reliability	Engineering 37
+Protection
+sensors
+System environment
+Actuators
+Controlled
+equipment
+Control system
+Protection
+system
+Sensors
+30/10/2014
+Protection system functionality
+² Protection systems for redundancy 
+§ Control capabilities to replicate in the control software.
+² Diverse protection systems
+§ Different technology used in the control software.
+² Need to expend in validation and dependability 
+assurance.
+² A low probability of failure for the protection system.
+Chapter	11	Reliability	Engineering 38
+30/10/2014
+Self-monitoring architectures
+² Multi-channel architectures 
+§ System monitoring its own operations
+§ Take action if inconsistencies are discovered
+² The same computation is carried out on each channel 
+§ Compare the results
+§ Producing identical results assumes correct system operation
+§ A failure exception is reported when different results arise.
+Chapter	11	Reliability	Engineering 39
+30/10/2014
+Self-monitoring architecture
+Chapter	11	Reliability	Engineering 40
+Splitter
+Channel 1
+Channel 2
+Comparator
+Input value
+Output value
+Status
+30/10/2014
+Self-monitoring systems
+² Diverse hardware systems on each channel 
+§ Prevent common failures producing the same results.
+² Diverse software applications in each channel 
+§ Prevent same errors affecting each channel.
+² Several self-checking systems in parallel.
+§ High-availability required.
+§ E.g., Airbus aircraft's flight control systems.
+Chapter	11	Reliability	Engineering 41
+30/10/2014
+Airbus flight control system architecture
+Chapter	11	Reliability	Engineering 42
+Splitter
+Channel 1
+Channel 2
+Comparator
+Input value
+Output
+Status
+Primary flight control system 1
+Primary flight control system 2
+Primary flight control system 3
+Splitter
+Channel 1
+Channel 2
+Comparator
+Output
+Status
+Secondary flight control system 1
+Secondary flight control system 2
+Input Filter
+Filter
+Filter
+Filter
+Filter
+Status
+Status
+Status
+Output
+Output
+Output
+Output
+30/10/2014
+Airbus architecture discussion
+² The Airbus FCS has 5 separate computers
+§ Each system is able to perform the control software.
+² Extensive diverse systems between primary and 
+secondary systems:
+§ Different processors
+§ Different chipsets from different manufacturers.
+§ Different complexity -- only critical functionality in secondary.
+§ Different programming languages by different teams.
+Chapter	11	Reliability	Engineering 43
+30/10/2014
+N-version programming
+² Multiple versions of a program execute computations. 
+§ Odd number of computers involved, e.g., three versions.
+² The results are compared using a voting system.
+² The correct result is determine by the majority result.
+² The notion of triple-modular redundancy, as used in 
+hardware systems.
+Chapter	11	Reliability	Engineering 44
+30/10/2014
+Hardware fault tolerance
+² Triple-modular redundancy (TMR).
+² Three replicated identical components 
+§ Receive the same input and their outputs are compared.
+² One different output 
+§ Ignored based on the assumption of component failure.
+² Most faults caused by component failures 
+§ A low probability of simultaneous component failure.
+Chapter	11	Reliability	Engineering 45
+30/10/2014
+Triple modular redundancy (TMR)
+Chapter	11	Reliability	Engineering 46
+A2
+A1
+A3
+Output
+selector
+Input
+30/10/2014
+N-version programming
+Chapter	11	Reliability	Engineering 47
+Version 2
+Version 1
+Version 3
+Output
+selector
+N software versions
+Agreed
+result
+Fault
+manager
+Input
+30/10/2014
+N-version programming
+² The different versions of a system 
+§ Designed and implemented by different teams. 
+² Assuming a low probability of making same mistakes
+§ Different algorithms used
+² Empirical evidence
+§ Commonly misinterpret specifications 
+§ Use same algorithms in different systems.
+Chapter	11	Reliability	Engineering 48
+30/10/2014
+Software diversity
+² Fault tolerance depend on software diversity 
+² Assume that different implementations fail differently
+§ Independent implementations 
+§ Uncommon errors
+² Strategies
+§ Different programming languages
+§ Different design methods and tools
+§ Explicit specification of different algorithms
+Chapter	11	Reliability	Engineering 49
+30/10/2014
+Problems with design diversity
+² Tend to solve problems using same methods
+² Characteristic errors
+§ Different teams making same mistakes. Making mistakes in 
+same parts.
+§ Specification errors propagated to all implementations
+Chapter	11	Reliability	Engineering 50
+30/10/2014
+Specification dependency
+² Software redundancy susceptible to specification errors. 
+§ Incorrect specification causes system failures.
+² Complex software specifications
+§ Hard to perform validation and verification.
+² Developing separate software specifications.
+Chapter	11	Reliability	Engineering 51
+30/10/2014
+Improvements in practice
+² Multi-version programming leads to significant 
+improvements in reliability and availability.
+§ Diversity and independence
+² In practice, observed improvements are much less 
+significant 
+§ Reliability improvements of between 5 and 9 times.
+² Considerable costs to develop multi-versions of systems.
+Chapter	11	Reliability	Engineering 52
+30/10/2014
+Programming for reliability
+Chapter	11	Reliability	Engineering 53
+30/10/2014
+Dependable programming
+² Standard programming practices 
+§ Reduce program fault introduction rate.
+² Support fault avoidance, detection and tolerance
+Chapter	11	Reliability	Engineering 54
+30/10/2014
+Good practice guidelines for dependable 
+programming
+Chapter	11	Reliability	Engineering 55
+Dependable	programming	guidelines
+1. Limit	the	visibility	of	information	in	a	program
+2. Check	all	inputs	for	validity
+3. Provide	a	handler	for	all	exceptions
+4. Minimize	the	use	of	error-prone	constructs
+5. Provide	restart	capabilities
+6. Check	array	bounds
+7. Include	timeouts	when	calling	external	components
+8. Name	all	constants	that	represent	real-world	values
+30/10/2014
+ProcessBuilder pb =
+new ProcessBuilder("external-program"); 
+Timer t = new Timer(); 
+Process p = pb.start(); 
+TimerTask killer =
+new TimeoutProcessKiller(p); 
+t.schedule(killer, 5000);
+class TimeoutProcessKiller extends TimerTask { 
+Process p; 
+public TimeoutProcessKiller(Process p) { 
+this.p = p; 
+} 
+@Override
+public void run() { p.destroy(); } 
+}
+(1) Limit the visibility of information in a program
+² Limited access to data for their implementation.
+² Reduce possibilities of accidental corruption of program 
+state by other components
+² Control visibility by using abstract data types
+§ Private data representation.
+§ Limited access to data through predefined operations.
+Chapter	11	Reliability	Engineering 56
+30/10/2014
+(2) Check all inputs for validity
+² Taking inputs from their environment based on 
+assumptions about the inputs.
+² Program specifications rarely defined 
+§ Inconsistent inputs with the assumptions.
+² Unpredictable program behavior 
+§ Unusual inputs
+§ Threats to the security of the system.
+² Check program inputs before processing 
+§ Considering the assumptions about the inputs.
+Chapter	11	Reliability	Engineering 57
+30/10/2014
+Validity checks
+² Range checks
+§ Check the input's range.
+² Size checks
+§ Check the input's maximum or minimum size.
+² Representation checks
+§ Check the input's expression for the representation 
+§ E.g. names do not include numerals.
+² Reasonableness checks
+§ Check the input's logical information.
+§ E.g., reasonable rather than an extreme value.
+Chapter	11	Reliability	Engineering 58
+30/10/2014
+Example
+30/10/2014 Chapter	11	Reliability	Engineering 59
+try {
+int a[]= {1, 2, 3, 4};
+for (int i = 1; i <= SIZE; i++) {
+System.out.println ("a[" + i + "]=" + a[i] + "\n");
+}
+}
+catch (Exception e) {
+System.out.println ("error = " + e);
+}
+catch (ArrayIndexOutOfBoundsException e) {
+System.out.println ("ArrayIndexOutOfBoundsException");
+}
+A.java: error: exception ArrayIndexOutOfBoundsException has already been caught 
+catch (ArrayIndexOutOfBoundsException e)
+^ 1 error
+(3) Provide a handler for all exceptions
+² An error or some unexpected event 
+§ E.g., a power failure.
+² Exception handling constructs
+§ Responding and handling exception events 
+§ Change the program execution flow
+² Using normal control constructs to handle exceptions?
+§ A number of additional statements
+§ Significant overhead 
+§ Tedious and error-prone
+Chapter	11	Reliability	Engineering 60
+30/10/2014
+Exception handling
+Chapter	11	Reliability	Engineering 61
+Code section
+Exception handling code
+Normal flow
+of control
+Exception detected
+Normal exit
+Exception
+processing
+30/10/2014
+Method where error occurred
+Method with an exception handler
+The main method
+Throws 
+exception
+Forwards 
+exception
+Catches 
+exception
+Looking for 
+appropriate 
+handler
+Method without an exception handler
+Searching the call stack for the 
+exception handler
+Exception handling
+² Three possible exception handling strategies
+§ Report exceptions and provide the related information.
+§ Conduct alternative processes
+• The related information required to recover from the problem.
+§ Pass control to a run-time support system.
+² A mechanism to provide fault tolerance
+§ Recovering from fault-caused errors
+§ Eliminating faults
+Chapter	11	Reliability	Engineering 62
+30/10/2014
+(4) Minimize the use of error-prone constructs
+² Human error of misunderstanding or losing track of the 
+relationships between the different parts of the system
+² Error-prone constructs in programming languages 
+§ Inherently complex
+² Avoid or minimize the use of error-prone constructs.
+Chapter	11	Reliability	Engineering 63
+30/10/2014
+Error-prone constructs
+² Unconditional branch (goto) statements
+² Floating-point numbers
+§ Inherently imprecise. The imprecision may lead to invalid 
+comparisons. 
+§ E.g., 7.00000000 (6.99999999 or 7.00000001)
+² Pointers
+§ Pointers referring to the wrong memory areas can corrupt 
+data. Aliasing can make programs difficult to understand 
+and change.
+² Dynamic memory allocation
+§ Run-time allocation can cause memory overflow.
+Chapter	11	Reliability	Engineering 64
+30/10/2014
+Common Mistakes in Dynamic Memory 
+Allocation
+² No matter how much we try, it is very difficult to free all 
+dynamically allocated memory. Even if we can do that, it is 
+often not safe from exceptions.
+² If an exception is thrown, the “a” object is never deleted.
+² Detect memory leaks by Valgrind
+30/10/2014 Chapter	11	Reliability	Engineering 65
+void SomeMethod() { 
+ClassA *a = new ClassA; 
+// it can throw an exception 
+foo();
+delete a; 
+}
+Error-prone constructs
+² Parallelism
+§ Can result in subtle timing errors because of unforeseen 
+interaction between parallel processes.
+² Recursion
+§ Errors in recursion can cause memory overflow as the 
+program stack fills up.
+² Interrupts
+§ Interrupts can cause a critical operation to be terminated 
+and make a program difficult to understand.  
+² Inheritance
+§ Code is not localised. This can result in unexpected 
+behaviour when changes are made and problems of 
+understanding the code.
+Chapter	11	Reliability	Engineering 66
+30/10/2014
+Common Mistake in Inheritance and Dynamic 
+Binding
+30/10/2014 Chapter	11	Reliability	Engineering 67
+abstract class Base {
+int f = 0;
+public int m1() {
+return 0;
+}
+}
+class ClassA extends Base {
+int f = 1;
+public int m1() {
+return f;
+}
+}
+class ClassB extends Base {
+public int m1() {
+return f;
+}
+}
+class ClassC extends ClassB {
+int f = 2;
+public int m1() {
+return f;
+}
+}
+1: class Main {
+2:   Base x1;
+void thread1() {
+3: x1 = new ClassA();
+4: System.out.println(x1.m1());
+}
+void thread2() {
+5: x1 = new ClassB();
+6: System.out.println(x1.m1());
+}
+void thread3() {
+7: x1 = new ClassC();
+8: System.out.println(x1.m1());
+}
+}
+Inheritance when combined with dynamic 
+binding can cause timing problems at runtime.
+
+Error-prone constructs
+² Aliasing
+§ Using more than 1 name to refer to the same state variable.
+² Unbounded arrays
+§ Buffer overflow failures can occur if no bound checking on 
+arrays.
+² Default input processing
+§ Occur irrespective of the input.
+§ The default action changes the program control flow. 
+§ Malicious inputs trigger a program failure.
+Chapter	11	Reliability	Engineering 68
+30/10/2014
+Sep.	7
+Common Errors in Default Input Processing
+² Unexpectedly execute a call to method foo(int) with 
+default input '0', instead of a call to method foo(int, int).
+§ Method overloading.
+§ Integer '0' is a default value for argument 'b' in the overloaded 
+method foo(int). 
+30/10/2014 Chapter	11	Reliability	Engineering 69
+void foo(int a, int b) {
+// the implementation goes here
+}
+void foo(int a) {
+foo(a, 0);
+}
+(5) Provide restart capabilities
+² The system restart capability
+§ Preserve the program data or status.
+§ Long transactions or user interactions.
+² Restart scenarios
+§ Web applications keeping copies of forms that users fill in before 
+there is a problem
+§ Text editors restarting from the checkpoint saving periodically the 
+program state or memory 
+Chapter	11	Reliability	Engineering 70
+30/10/2014
+(6) Check array bounds
+² Address a memory location outside of the range of an 
+array declaration.
+² Bounded buffer vulnerability 
+§ E.g., Writing executable code into memory by deliberately writing 
+beyond the top element in an array.
+² Bound checking for an array access 
+§ Within the bounds of the array.
+Chapter	11	Reliability	Engineering 71
+30/10/2014
+Common Errors in Bounded Buffer Vulnerability
+² Writing data past the end of allocated memory can be 
+detected by OS 
+§ Generate a segmentation fault error that terminates the process.
+30/10/2014 Chapter	11	Reliability	Engineering 72
+char str[8] = ""; // 8-byte-long string buffer
+unsigned short year = 2017; // two-byte integer
+var str year
+value [null	string] 2017
+strcpy(str, "boundless"); // boundless" 9 characters long
+var str year
+value 'b' 'o' 'u' 'n' 'd' 'l' 'e' 's' ????
+Common Errors in Bounded Buffer Vulnerability
+² Return a heap-allocated copy of the string with all 
+uppercase letters.
+² No bounds checking on its input.
+² Overflow buf with the unbounded call to strcpy().
+30/10/2014 Chapter	11	Reliability	Engineering 73
+char *lccopy(const char *str) {
+char buf[BUFSIZE];
+char *p;
+strcpy(buf, str);
+for (p = buf; *p; p++) {
+if (isupper(*p)) {
+*p = tolower(*p);
+}
+} 
+return strdup(buf);
+}
+(7) Include timeouts when calling external 
+components
+² May never receive services from failed systems
+§ No indication of a failure.
+§ Failure of a remote computer can be ‘silent’ In a distributed 
+system.
+² Set timeouts on all calls to external components. 
+² Assume failure and take actions to recover from errors
+§ After a defined time period without a response.
+Chapter	11	Reliability	Engineering 74
+30/10/2014
+(8) Name all constants that represent real-world 
+values
+² Use constants reflecting real-world values names 
+§ Do not use numeric values and always refer to them by name.
+² Reduce mistakes for wrong values by using a name 
+rather than a value.
+² Changing constant values 
+§ Easy to maintain and localize edit locations to make the change.
+Chapter	11	Reliability	Engineering 75
+30/10/2014
+Constant Interface Pattern
+² Use final class for Constants
+² Declare public static final and static import all constants
+30/10/2014 Chapter	11	Reliability	Engineering 76
+public final class Constants {
+private Constants() {
+// restrict instantiation
+}
+public static final double PI = 3.14159;
+public static final double PLANCK_CONSTANT = 6.62606896e-34;
+}
+import static math.Constants.PLANCK_CONSTANT;
+import static math.Constants.PI;
+class Calculations {
+public double getReducedPlanckConstant() {
+return PLANCK_CONSTANT / (2 * PI);
+}
+}
+Reliability measurement
+Chapter	11	Reliability	Engineering 77
+30/10/2014
+Reliability measurement
+² Collect data about system operation:
+² The number of failures for system service requests 
+§ Probability of failure on demand (POFOD)
+² The time or the number of transactions between system 
+failures plus the total elapsed time or total number of 
+transactions
+§ Mean time to failure (MTTF)
+§ Rate of occurrence of fault (ROCOF)
+² The repair or restart time after a system failure 
+§ Availability
+§ The time between failures 
+§ The time required to restore the system from failures
+Chapter	11	Reliability	Engineering 78
+30/10/2014
+Reliability testing
+² Reliability testing (Statistical testing) 
+§ Assess whether a system reaches the required level of reliability.
+² Not part of a defect testing process 
+§ Datasets for defect testing do not include actual usage data.
+² Data sets required to replicate actual inputs to be 
+processed.
+Chapter	11	Reliability	Engineering 79
+30/10/2014
+Statistical testing
+² Testing software for reliability rather than fault detection.
+² Measuring the number of errors 
+§ Predict reliability of the software
+§ More errors, compared to the one in the specification.
+² An acceptable level of reliability 
+§ Test software systems and repair or improve them until systems 
+reach the level of reliability.
+Chapter	11	Reliability	Engineering 80
+30/10/2014
+Reliability measurement
+Compute
+observed
+reliability
+Apply tests to
+system
+Prepare test
+data set
+Identify
+operational
+profiles
+Chapter	11	Reliability	Engineering 81
+30/10/2014
+Reliability measurement problems
+² Operational profile uncertainty
+§ Inaccurate operational profile that does not reflect the real use of 
+the system.
+² High costs of test data generation
+§ Expensive costs to generate test datasets for the system.
+² Statistical uncertainty
+§ A statistically significant number of failures for computation.
+§ Highly reliable systems rarely fail.
+² Recognizing failure
+§ Conflicting interpretations of a specification about unobvious 
+failures.
+Chapter	11	Reliability	Engineering 82
+30/10/2014
+Operational profiles
+² A set of test data 
+§ Frequency matches the actual frequency from ‘normal’ usage of 
+the system. 
+§ The number of times the failure event occurred.
+² A close match with actual usage 
+§ The measured reliability 
+§ Reflect the actual usage of the system.
+² Generate from real data 
+§ Collect from an existing system 
+§ Assumption of the usage pattern of a system
+Chapter	11	Reliability	Engineering 83
+30/10/2014
+An operational profile
+...
+Number of inputs
+Input classes
+Chapter	11	Reliability	Engineering 84
+30/10/2014
+Operational profile generation
+² Automatic data generation, if possible.
+§ Difficult for interactive systems.
+§ Easy for ‘normal’ inputs 
+² Difficult to generate ‘unlikely’ inputs (anomalies) and test 
+data for these anomalies.
+² Unknown usage pattern of new systems.
+² Changeable operational profiles 
+§ Non-static but dynamic
+§ E.g., learn about new systems, changing usage patterns.
+Chapter	11	Reliability	Engineering 85
+30/10/2014
+Key points
+² Software reliability can be achieved by avoiding the 
+introduction of faults, by detecting and removing faults 
+before system deployment and by including fault 
+tolerance facilities that allow the system to remain 
+operational after a fault has caused a system failure.
+² Reliability requirements can be defined quantitatively in 
+the system requirements specification. 
+² Reliability metrics include probability of failure on 
+demand (POFOD), rate of occurrence of failure 
+(ROCOF) and availability (AVAIL). 
+86
+Chapter	11	Reliability	Engineering
+30/10/2014
+Key points
+² Functional reliability requirements are requirements for 
+system functionality, such as checking and redundancy 
+requirements, which help the system meet its nonfunctional
+reliability requirements.
+² Dependable system architectures are system 
+architectures that are designed for fault tolerance. 
+² There are a number of architectural styles that support 
+fault tolerance including protection systems, selfmonitoring
+architectures and N-version programming.
+Chapter	11	Reliability	Engineering 87
+30/10/2014
+Key points
+² Software diversity is difficult to achieve because it is 
+practically impossible to ensure that each version of the 
+software is truly independent.
+² Dependable programming relies on including 
+redundancy in a program as checks on the validity of 
+inputs and the values of program variables.
+² Statistical testing is used to estimate software reliability. 
+It relies on testing the system with test data that matches 
+an operational profile, which reflects the distribution of 
+inputs to the software when it is in use.
+Chapter	11	Reliability	Engineering 88
+30/10/2014
+Chapter 12 – Safety Engineering
+04/11/2014 Chapter	12	Safety	Engineering 1
+Topics covered
+² Safety-critical systems
+² Safety requirements
+² Safety engineering processes
+² Safety cases
+04/11/2014 Chapter	12	Safety	Engineering 2
+Safety
+² A property of a system 
+² The system’s ability to operate services
+§ Prevent danger causing human injury or death 
+§ Avoiding damage to the system’s environment.
+² Software safety issues become important 
+§ Most devices incorporate software-based control systems. 
+§ Control real-time, safety-critical processes.
+3
+Chapter	12	Safety	Engineering
+04/11/2014
+Software in safety-critical systems
+² Software-controlled systems 
+§ Decisions are made by the software.
+§ Subsequent actions are safety-critical. 
+§ Software behaviour is related to safety of the system. 
+² Checking and monitoring safety-critical components
+§ E.g., monitoring aircraft engine components for fault detection. 
+² Monitoring software is safety-critical 
+§ Other components may fail due to the failure of fault detection. 
+04/11/2014 Chapter	12	Safety	Engineering 4
+Safety and reliability
+² Safety and reliability 
+§ Reliability and availability are not sufficient for system safety 
+² Reliability 
+§ Conformance to a given specification and delivery of service
+² Safety 
+§ Ensuring system cannot cause damage.
+² System reliability is essential for safety 
+§ However, reliable systems can be unsafe
+5
+Chapter	12	Safety	Engineering
+04/11/2014
+Unsafe reliable systems
+² Dormant system faults
+§ Undetected for a number of years and only rarely arise.
+² Specification errors
+§ Software system behaves as specified but cause an accident.
+² Hardware failures at runtime
+§ E.g., generating spurious inputs
+§ Hard to anticipate in the specification
+² Context-sensitive commands 
+§ E.g., a system command is executed at the wrong time.
+6
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety-critical systems
+04/11/2014 Chapter	12	Safety	Engineering 7
+Safety critical systems
+² Essential that system operation is always safe 
+§ Must not cause damage to people or the system’s environment
+² Examples
+§ Process control systems in chemical manufacture
+§ Automobile control systems such as braking management 
+systems
+04/11/2014 Chapter	12	Safety	Engineering 8
+Safety criticality
+² Primary safety-critical systems
+§ Embedded software systems 
+§ Cause associated hardware failures, directly threatening people. 
+§ E.g., the insulin pump control system.
+² Secondary safety-critical systems
+§ Result in faults in other connected systems, affecting safety 
+consequences. 
+§ E.g., the Mentcare system producing inappropriate treatment 
+being prescribed.
+§ Infrastructure control systems.
+9
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin pump control system
+² Collects data from a blood sugar sensor and calculates 
+the amount of insulin required to be injected.
+² Calculation based on the rate of change of blood sugar 
+levels.
+Insulin pump control system (cont.)
+² Sends signals to a micro-pump to deliver the correct 
+dose of insulin.
+² Safety-critical system as low blood sugars can lead to 
+brain malfunctioning, coma and death; high-blood sugar 
+levels have long-term consequences such as eye and 
+kidney damage.
+Safety criticality
+² Primary safety-critical systems
+§ Embedded software systems 
+§ Cause associated hardware failures, directly threatening people. 
+§ E.g., the insulin pump control system.
+² Secondary safety-critical systems
+§ Result in faults in other connected systems, affecting safety 
+consequences. 
+§ E.g., the Mentcare system producing inappropriate treatment 
+being prescribed.
+§ Infrastructure control systems.
+12
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazards
+² Situations or events that can lead to an accident
+§ Incorrect computation by software in navigation system
+§ Failure to detect possible disease in medication prescribing 
+system
+² Perform accident prevention actions 
+§ Hazards do not inevitably lead to accidents
+04/11/2014 Chapter	12	Safety	Engineering 13
+Safety achievement
+² Hazard avoidance
+§ Appling hazard avoidance design to software systems.
+§ Prevent some classes of hazard.     
+² Hazard detection and removal
+§ Detecting and removing hazard before causing accidents.
+² Damage limitation
+§ Protection features to minimise the damage.
+14
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety terminology
+Term Definition
+Accident (or mishap)
+An unplanned event or sequence of events which results in human death or injury,
+damage to property, or to the environment. An overdose of insulin is an example of an
+accident.
+Hazard A condition with the potential for causing or contributing to an accident. A failure of the
+sensor that measures blood glucose is an example of a hazard.
+Damage
+A measure of the loss resulting from a mishap. Damage can range from many people
+being killed as a result of an accident to minor injury or property damage. Damage
+resulting from an overdose of insulin could be serious injury or the death of the user of
+the insulin pump.
+Hazard severity
+An assessment of the worst possible damage that could result from a particular hazard.
+Hazard severity can range from catastrophic, where many people are killed, to minor,
+where only minor damage results. When an individual death is a possibility, a
+reasonable assessment of hazard severity is ‘very high’.
+Hazard probability
+The probability of the events occurring which create a hazard. Probability values tend to
+be arbitrary but range from ‘probable’ (say 1/100 chance of a hazard occurring) to
+‘implausible’ (no conceivable situations are likely in which the hazard could occur). The
+probability of a sensor failure in the insulin pump that results in an overdose is probably
+low.
+Risk
+This is a measure of the probability that the system will cause an accident. The risk is
+assessed by considering the hazard probability, the hazard severity, and the probability
+that the hazard will lead to an accident. The risk of an insulin overdose is probably
+medium to low.
+15
+Chapter	12	Safety	Engineering
+04/11/2014
+Normal accidents
+² Rarely have a single cause in complex systems 
+² Designed to be resilient to a single point of failure
+² A fundamental principle of safe systems design
+§ A single point of failure does not cause an accident.
+² A result of combinations of malfunctions.
+² Hard to anticipate all combinations in software systems
+§ Difficult to achieve complete safety.
+§ Accidents are inevitable.
+16
+Chapter	12	Safety	Engineering
+04/11/2014
+Software safety benefits
+² Software control systems contributes to system safety
+§ A large number of conditions to be monitored and controlled.
+§ Reducing human efforts and time in hazardous environments.
+§ Detecting and repairing safety-critical operator errors.
+Chapter	12	Safety	Engineering 17
+04/11/2014
+Safety requirements
+04/11/2014 Chapter	12	Safety	Engineering 18
+Functional and non-functional requirements
+² Functional requirements
+§ Statements of services the system should provide, 
+§ How the system should react to particular inputs and 
+how the system should behave in particular situations.
+² Non-functional requirements
+§ Constraints on the services or functions of the system.
+§ Apply to the whole system rather than individual features.
+Functional requirements
+² Describe functionality or system services.
+§ Depending on the type of software systems and users. 
+² Functional user requirements 
+§ High-level statements of what the system should do.
+² Functional system requirements 
+§ The system services in detail.
+Safety specification
+² Goal 
+§ Identifying protection requirements.
+§ Preventing injury or death or environmental damage.
+² Safety requirements
+§ Shall Not requirements.
+§ Define situations and events that should never occur.
+² Functional safety requirements
+§ Checking and recovery features in a system.
+§ Protection feature against failures and external attacks.
+21
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard-driven analysis
+² Hazard identification
+² Hazard assessment
+² Hazard analysis
+² Risk reduction
+§ Safety requirements specification
+04/11/2014 Chapter	12	Safety	Engineering 22
+Hazard identification
+² Identify the hazards threatening the system.
+² Different types of hazard:
+§ Physical hazards
+§ Electrical hazards
+§ Biological hazards
+§ Service failure hazards
+§ Etc.
+23
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin pump risks
+² Insulin overdose (service failure).
+² Insulin underdose (service failure).
+² Power failure due to exhausted battery (electrical).
+² Electrical interference with other medical equipment 
+(electrical).
+² Poor sensor and actuator contact (physical).
+² Infection caused by introduction of machine (biological).
+² Allergic reaction to materials or insulin (biological).
+24
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard assessment
+² Understanding the likelihood that a risk will arise and the 
+potential consequences.
+² Risks category:
+² Intolerable. 
+§ Unsupportable.
+² As low as reasonably practical (ALARP). 
+§ Minimising risk possibilities given available resources.
+² Acceptable. 
+§ No extra costs to reduce hazard probability.
+25
+Chapter	12	Safety	Engineering
+04/11/2014
+The risk triangle
+Unacceptable region
+Risk cannot be tolerated
+Risk tolerated only if
+risk reduction is impractical
+or excessively expensive
+Acceptable
+region
+Negligible risk
+ALARP
+region
+26
+Chapter	12	Safety	Engineering
+04/11/2014
+Social acceptability of risk
+² The acceptability of a risk.
+§ Human, social and political considerations.
+² Society is less willing to accept risk in most cases.
+§ E.g., the costs of cleaning up or preventing pollution.
+² Subjective assessment
+§ Depending on evaluators making the assessment.
+27
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard assessment
+² The risk probability and the risk severity.
+² Relative values: ‘unlikely’, ‘rare’, ‘very high’, etc.
+§ Impossible to do precise measurement
+² Goal:
+§ Prevent or remove potential risks with the high severity.
+28
+Chapter	12	Safety	Engineering
+04/11/2014
+Risk classification for the insulin pump
+Identified hazard Hazard probability Accident severity Estimated risk Acceptability
+1.Insulin overdose 
+computation
+Medium High High Intolerable
+2. Insulin underdose 
+computation
+Medium Low Low Acceptable
+3. Failure of 
+hardware monitoring 
+system
+Medium Medium Low ALARP
+4. Power failure High Low Low Acceptable
+5. Machine 
+incorrectly fitted
+High High High Intolerable
+6. Machine breaks in 
+patient
+Low High Medium ALARP
+7. Machine causes 
+infection
+Medium Medium Medium ALARP
+8. Electrical 
+interference
+Low High Medium ALARP
+9. Allergic reaction Low Low Low Acceptable
+29
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard analysis
+² The root causes of risks in a particular system.
+² Hazard analysis techniques
+§ Inductive, bottom-up techniques: 
+Evaluate the hazards, starting with system failures.
+§ Deductive, top-down techniques: 
+Reason failure causes, starting with a hazard
+30
+Chapter	12	Safety	Engineering
+04/11/2014
+Fault-tree analysis
+² A deductive top-down technique.
+² Hazard at the root of the tree 
+§ Identify states causing hazards.
+² Linking conditions by relationships (e.g., ‘and’ or ‘or’)
+² Goal
+§ Minimizing the number of single failure causes.
+31
+Chapter	12	Safety	Engineering
+04/11/2014
+An example of a software fault tree
+Incorrect
+sugar level
+measured
+Incorrect
+insulin dose
+administered
+or
+Correct dose
+delivered at
+wrong time
+Sensor
+failure
+or
+Sugar
+computation
+error
+Timer
+failure
+Pump
+signals
+incorrect
+or
+Insulin
+computation
+incorrect
+Delivery
+system
+failure
+Arithmetic
+error
+or
+Algorithm
+error
+Arithmetic
+error
+or
+Algorithm
+error
+32
+Chapter	12	Safety	Engineering
+04/11/2014
+Fault tree analysis
+² Possible conditions of incorrect dose of insulin:
+§ Incorrect measurement of blood sugar level
+§ Failure of delivery system
+§ Dose delivered at wrong time
+² Root causes of these hazards:
+§ Algorithm error
+§ Arithmetic error
+33
+Chapter	12	Safety	Engineering
+04/11/2014
+Risk reduction
+² Goal:
+§ Identify requirements for risk managements to avoid accidents.
+² Risk reduction strategies
+§ Hazard avoidance
+§ Hazard detection and removal
+§ Damage limitation
+34
+Chapter	12	Safety	Engineering
+04/11/2014
+Strategy use
+² Combining multiple risk reduction strategies
+² E.g., a chemical plant control system:
+§ Detecting and correcting excess pressure in the reactor.
+§ Opening a relief valve as independent protection system
+35
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin pump - software risks
+² Arithmetic error
+§ Data variable overflow or underflow during a computation.
+§ Handing runtime exception.
+² Algorithmic error
+§ Comparison between previous and current values
+§ Checking the maximum value to control dose.
+36
+Chapter	12	Safety	Engineering
+04/11/2014
+Examples of safety requirements
+SR1:	The	system	shall	not	deliver	a	single	dose	of	insulin	that	is	greater	than	a	
+specified	maximum	dose	for	a	system	user.
+SR2:	The	system	shall	not	deliver	a	daily	cumulative	dose	of	insulin	that	is	greater	
+than	a	specified	maximum	daily	dose	for	a	system	user.
+SR3:	The	system	shall	include	a	hardware	diagnostic	facility	that	shall	be	
+executed	at	least	four	times	per	hour.
+SR4:	The	system	shall	include	an	exception	handler	for	all	of	the	exceptions	that	
+are	identified	in	Table	3.
+SR5:	The	audible	alarm	shall	be	sounded	when	any	hardware	or	software	
+anomaly	is	discovered	and	a	diagnostic	message,	as	defined	in	Table	4,	shall	be	
+displayed.
+SR6:	In	the	event	of	an	alarm,	insulin	delivery	shall	be	suspended	until	the	user	
+has	reset	the	system	and	cleared	the	alarm.
+37
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety engineering processes
+04/11/2014 Chapter	12	Safety	Engineering 38
+Chapter 12 – Safety Engineering
+² Safety-critical systems
+² Safety requirements
+² Safety engineering processes
+² Safety cases
+04/11/2014 Chapter	12	Safety	Engineering 1
+Safety engineering processes
+04/11/2014 Chapter	12	Safety	Engineering 2
+Safety engineering processes
+² Reliability engineering processes
+§ Reviews and checks at each stage in the process
+§ General goal of fault avoidance and fault detection
+§ Safety reviews and explicit identification of hazards
+04/11/2014 Chapter	12	Safety	Engineering 3
+Regulation
+² Evidence that safety engineering processes used.
+² For example:
+§ The specification and records of the checks.
+§ Evidence of the verification and validation the results.
+§ Organizations for dependable software processes. 
+04/11/2014 Chapter	12	Safety	Engineering 4
+Agile methods and safety
+² Agile methods are not usually used for safety-critical 
+systems engineering
+§ Extensive documentation. 
+§ A detailed safety analysis of a complete system specification.
+² Test-driven development may be used
+04/11/2014 Chapter	12	Safety	Engineering 5
+Safety assurance processes
+² Defining and ensuring a dependable process.
+² Process assurance focuses on:
+§ The processes are appropriate for dependability required.
+§ The processes are followed by the development team.
+² Should generate documentation
+§ Agile processes are not used for critical systems.
+6
+Chapter	12	Safety	Engineering
+04/11/2014
+Processes for safety assurance
+² Process assurance is important for safety-critical 
+systems development:
+§ Testing may not find all problems.
+² Safety assurance activities 
+§ Record the analyses.
+§ Personal responsibility.
+7
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety related process activities
+² A hazard logging and monitoring system.
+² Safety engineers who responsible for safety.
+² Extensive use of safety reviews.
+² A safety certification system.
+² Detailed configuration management 
+8
+Chapter	12	Safety	Engineering
+04/11/2014
+Hazard analysis
+² Identifying hazards and their root causes.
+² Traceability from identified hazards 
+§ Analysis to to ensure that the hazards have been covered.
+² A hazard log may be used to track hazards.
+9
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety reviews
+² Driven by the hazard register.
+² Assess the system and judge whether to cope with  
+hazards in a safe way.
+04/11/2014 Chapter	12	Safety	Engineering 12
+Formal verification
+² A mathematical specification of the system is produced.
+² Static verification technique used in development:
+§ A formal specification -- mathematically analyzed for consistency. 
+• Discover specification errors and omissions.
+§ A program conforms to its mathematical specification 
+• Programming and design errors.
+13
+Chapter	12	Safety	Engineering
+04/11/2014
+Arguments for formal methods
+² A mathematical specification requires a detailed analysis 
+² Concurrent systems 
+§ Discover race conditions. 
+§ Testing is difficult.
+² Detect implementation errors before testing 
+§ Program is analyzed alongside the specification.
+14
+Chapter	12	Safety	Engineering
+04/11/2014
+Arguments against formal methods
+² Require specialized notations 
+§ Cannot be understood by domain experts.
+² Expensive to develop a specification 
+² Proofs may contain errors.
+² More cheaply using other V & V techniques.
+² The proof making incorrect assumptions 
+§ System’s behavior lies outside the scope of the proof.
+15
+Chapter	12	Safety	Engineering
+04/11/2014
+Model checking
+² Create a state model of using a specialized system 
+§ Checking the model for errors.
+² The model checker explores all possible paths 
+§ Checks that a user-specified property is valid for each path.  
+² Verifying concurrent systems, which are hard to test.
+² Model checking is computationally very expensive
+§ Verification of small to medium sized critical systems. 
+16
+Chapter	12	Safety	Engineering
+04/11/2014
+Static program analysis
+² Tools for source text processing.
+² Parse the program text to discover erroneous conditions.
+² Effective as an aid to inspections
+§ A supplement to inspections.
+18
+Chapter	12	Safety	Engineering
+04/11/2014
+Automated static analysis checks
+Fault class Static analysis check
+Data faults Variables used before initialization
+Variables declared but never used
+Variables assigned twice but never used between assignments
+Possible array bound violations
+Undeclared variables
+Control faults Unreachable code
+Unconditional branches into loops
+Input/output faults Variables output twice with no intervening assignment
+Interface faults Parameter-type mismatches
+Parameter number mismatches
+Non-usage of the results of functions
+Uncalled functions and procedures
+Storage management faults Unassigned pointers
+Pointer arithmetic
+Memory leaks
+19
+Chapter	12	Safety	Engineering
+04/11/2014
+Levels of static analysis
+² Characteristic error checking
+§ Check for patterns in the code for characteristic of errors.
+² User-defined error checking
+§ Define error patterns, extending error types by specific rules
+² Assertion checking
+§ Formal assertions in their program 
+§ Symbolically executes to find potential problems.
+20
+Chapter	12	Safety	Engineering
+04/11/2014
+Example for Symbolic Execution
+04/11/2014 Chapter	12	Safety	Engineering 21
+ x = readInput(); 
+ y = x * 2; 
+ 
+if (y == 12) { 
+ fail(); 
+} else { 
+ print("OK"); 
+} 
+Use of static analysis
+² Particularly valuable when a language has weak typing 
+§ Many errors are undetected by the compiler.
+² Security checking 
+§ Discover areas of vulnerability such as buffer overflows.
+² The development of safety and security critical systems.
+22
+Chapter	12	Safety	Engineering
+04/11/2014
+Safety cases
+04/11/2014 Chapter	12	Safety	Engineering 23
+Sep	19
+Safety and dependability cases
+² Safety and dependability cases 
+§ Structured documents 
+§ Evidence of a required level of safety or dependability.
+² Regulators check a system is as safe or dependable.
+² Regulators and developers work together for a system 
+safety/dependability case.
+24
+Chapter	12	Safety	Engineering
+04/11/2014
+The system safety case
+² A safety case is:
+§ A documented body of evidence.
+§ A system is adequately safe for a given environment.
+² Formal proof, design rationale, safety proofs, etc. 
+² Wider system safety case that takes hardware and 
+operational issues into account.
+25
+Chapter	12	Safety	Engineering
+04/11/2014
+The contents of a software safety case
+Chapter Description
+System description
+Safety 
+requirements
+Hazard and risk 
+analysis
+Design analysis
+Verification and 
+validation 
+26
+An overview of the system and a description of its critical 
+components. 
+The safety requirements abstracted from the system requirements 
+specification. Details of other relevant system requirements may 
+also be included.
+Documents describing the hazards and risks that have been 
+identified and the measures taken to reduce risk. Hazard analyses 
+and hazard logs.
+A set of structured arguments that justify why the design is safe. 
+A description of the V & V procedures used and, where 
+appropriate, the test plans for the system. Summaries of the test 
+results showing defects that have been detected and corrected. If 
+formal methods have been used, a formal system specification 
+and any analyses of that specification. Records of static analyses 
+of the source code.
+04/11/2014 Chapter	12	Safety	Engineering 27
+Chapter Description
+Review reports Records of all design and safety reviews.
+Team 
+competences
+Evidence of the competence of all of the team involved in safetyrelated
+systems development and validation.
+Process QA Records of the quality assurance processes (see Chapter 24) 
+carried out during system development.
+Change 
+management 
+processes
+Associated safety 
+cases
+References to other safety cases that may impact the safety case.
+Records of all changes proposed, actions taken and, where 
+appropriate, justification of the safety of these changes. Information 
+about configuration management procedures and configuration 
+management logs. 
+Structured arguments
+² Safety cases be based on structured arguments 
+² Claims of safety and security justified by evidences.
+28
+Chapter	12	Safety	Engineering
+04/11/2014
+Structured arguments
+EVIDENCE
+EVIDENCE
+EVIDENCE
+<< ARGUMENT >> CLAIM
+Supports
+Supports
+Supports Justifies
+29
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin pump safety argument
+² Arguments are based on claims and evidence.
+² Insulin pump safety:
+§ Claim: The maximum single dose of insulin to be delivered 
+(CurrentDose) will not exceed MaxDose.
+§ Evidence: Safety argument for insulin pump
+§ Evidence: Test data for insulin pump. The value of currentDose
+was correctly computed in 400 tests
+§ Evidence: Static analysis report for insulin pump software 
+revealed no anomalies that affected the value of CurrentDose
+§ Argument: The evidence presented demonstrates that the 
+maximum dose of insulin that can be computed = MaxDose.
+30
+Chapter	12	Safety	Engineering
+04/11/2014
+Structured safety arguments
+² Structured arguments of a system safety obligations.
+² Generally based on a claim hierarchy. 
+31
+Chapter	12	Safety	Engineering
+04/11/2014
+A safety claim hierarchy for the insulin pump 
+The maximum single
+dose computed by
+the pump software
+will not exceed
+maxDose
+maxDose is set up
+correctly when the
+pump is configured
+maxDose is a safe
+dose for the user of
+the insulin pump
+The insulin pump will
+not deliver a single
+dose of insulin that is
+unsafe
+In normal
+operation, the
+maximum dose
+computed will not
+exceed maxDose
+If the software fails,
+the maximum dose
+computed will not
+exceed maxDose
+32
+Chapter	12	Safety	Engineering
+04/11/2014
+Even	if	the	software	
+fails,	the	maximum	
+dose	computed	will	
+not	exceed	maxDose.
+Software safety arguments
+² Show that the system cannot reach in unsafe state.
+² These are weaker than correctness arguments which 
+must show that the system code conforms to its 
+specification.
+² They are generally based on proof by contradiction
+§ Assume that an unsafe state can be reached;
+§ Show that this is contradicted by the program code.
+33
+Chapter	12	Safety	Engineering
+04/11/2014
+Insulin dose computation with safety checks
+-- The insulin dose to be delivered is a function of blood sugar level,
+-- the previous dose delivered and the time of delivery of the previous dose
+currentDose = computeInsulin () ;
+// Safety check—adjust currentDose if necessary.
+// if statement 1
+if (previousDose == 0)
+{
+if (currentDose > maxDose/2)
+currentDose = maxDose/2 ;
+}
+else
+if (currentDose > (previousDose * 2) )
+currentDose = previousDose * 2 ;
+// if statement 2
+if ( currentDose < minimumDose )
+currentDose = 0 ;
+else if ( currentDose > maxDose )
+currentDose = maxDose ;
+administerInsulin (currentDose) ;
+35
+Chapter	12	Safety	Engineering
+04/11/2014
+Informal safety argument based on 
+demonstrating contradictions 
+currentDose = 0
+currentDose = 0
+if statement 2
+then branch
+executed
+currentDose =
+maxDose
+currentDose =
+maxDose
+if statement 2
+else branch
+executed
+if statement 2
+not executed
+currentDose >= minimumDose and
+currentDose <= maxDose
+or
+currentDose >
+maxDose
+administerInsulin
+Contradiction
+Contradiction Contradiction
+Pre-condition
+for unsafe state
+Overdose
+administered
+assign assign
+36
+Chapter	12	Safety	Engineering
+04/11/2014
+...
+/* if statement 2 */
+if ( currentDose < minimumDose ) { 
+currentDose = 0 ;
+}
+else if ( currentDose > maxDose ) {
+currentDose = maxDose ; 
+}
+administerInsulin (currentDose) ;
+...
+Program paths
+² Neither branch of if-statement 2 is executed
+§ Can only happen if CurrentDose is >= minimumDose and <= 
+maxDose.
+² then branch of if-statement 2 is executed
+§ currentDose = 0.
+² else branch of if-statement 2 is executed
+§ currentDose = maxDose.
+² In all cases, the post conditions contradict the unsafe 
+condition that the dose administered is greater than 
+maxDose.
+37
+Chapter	12	Safety	Engineering
+04/11/2014
+if ( currentDose < minimumDose ) { 
+currentDose = 0 ;
+}
+else if ( currentDose > maxDose ) {
+currentDose = maxDose ; 
+}
+administerInsulin (currentDose) ;
+Key points
+² Safety-critical systems are systems whose failure can 
+lead to human injury or death.
+² A hazard-driven approach is used to understand the 
+safety requirements for safety-critical systems. You 
+identify potential hazards and decompose these (using 
+methods such as fault tree analysis) to discover their 
+root causes. You then specify requirements to avoid or 
+recover from these problems.
+² It is important to have a well-defined, certified process 
+for safety-critical systems development. This should 
+include the identification and monitoring of potential 
+hazards.
+04/11/2014 Chapter	12	Safety	Engineering 38
+Key points
+² Static analysis is an approach to V & V that examines 
+the source code of a system, looking for errors and 
+anomalies. It allows all parts of a program to be checked, 
+not just those parts that are exercised by system tests.
+² Model checking is a formal approach to static analysis 
+that exhaustively checks all states in a system for 
+potential errors.
+² Safety and dependability cases collect the evidence that 
+demonstrates a system is safe and dependable. Safety 
+cases are required when an external regulator must 
+certify the system before it is used.
+04/11/2014 Chapter	12	Safety	Engineering 39

@@ -1,0 +1,8 @@
+The aim of this initial risk assessment is to identify 
+generic risks that are applicable to the system and to 
+decide if an adequate level of security can be achieved 
+at a reasonable cost. 
+The risk assessment should focus on the identification 
+and analysis of high-level risks to the system. 
+The outcomes of the risk assessment process are used 
+to help identify security requirements.

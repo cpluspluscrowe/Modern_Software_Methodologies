@@ -1,0 +1,7 @@
+Situations or events that can lead to an accident
+ Stuck valve in reactor control system
+ Incorrect computation by software in navigation system
+ Failure to detect possible allergy in medication prescribing 
+system
+Hazards do not inevitably result in accidents – accident 
+prevention actions can be taken.

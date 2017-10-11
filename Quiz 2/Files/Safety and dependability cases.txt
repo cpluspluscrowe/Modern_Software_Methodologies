@@ -1,0 +1,11 @@
+Safety and dependability cases are structured 
+documents that set out detailed arguments and evidence 
+that a required level of safety or dependability has been 
+achieved.
+They are normally required by regulators before a 
+system can be certified for operational use. The 
+regulator’s responsibility is to check that a system is as 
+safe or dependable as is practical.
+Regulators and developers work together and negotiate 
+what needs to be included in a system 
+safety slash dependability case.

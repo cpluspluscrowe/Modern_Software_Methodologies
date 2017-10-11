@@ -1,0 +1,8 @@
+Hazard avoidance
+ The system is designed so that some classes of hazard simply 
+cannot arise.     
+Hazard detection and removal
+ The system is designed so that hazards are detected and 
+removed before they result in an accident.
+Damage limitation
+ The system includes protection features that minimise the 

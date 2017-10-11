@@ -1,0 +1,7 @@
+Process assurance is important for safety-critical 
+systems development:
+ Safety requirements are sometimes ‘shall not’ requirements so 
+cannot be demonstrated through testing.
+software process that record the analyses that have 
+been carried out and the people responsible for these.
+to subsequent legal actions.

@@ -1,0 +1,9 @@
+A safety case is:
+ A documented body of evidence that provides a convincing and 
+valid argument that a system is adequately safe for a given 
+application in a given environment.
+Arguments in a safety case can be based on formal 
+proof, design rationale, safety proofs, etc. Process 
+A software safety case is usually part of a wider system 
+safety case that takes hardware and operational issues 
+into account.

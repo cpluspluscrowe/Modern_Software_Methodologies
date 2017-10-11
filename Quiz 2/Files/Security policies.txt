@@ -1,0 +1,8 @@
+The responsibilities of individual users, managers and 
+the organization
+ The security policy should set out what is expected of users e.g. 
+strong passwords, log out of computers, office security, etc.
+Existing security procedures and technologies that 
+should be maintained
+continue to use existing approaches to security even where 
+these have known limitations.  

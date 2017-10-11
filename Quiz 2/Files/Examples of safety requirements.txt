@@ -1,0 +1,11 @@
+SR1: The system shall not deliver a single dose of insulin that is greater than a 
+specified maximum dose for a system user.
+SR2: The system shall not deliver a daily cumulative dose of insulin that is greater 
+than a specified maximum daily dose for a system user.
+SR3: The system shall include a hardware diagnostic facility that shall be 
+executed at least four times per hour.
+SR4: The system shall include an exception handler for all of the exceptions that 
+SR5: The audible alarm shall be sounded when any hardware or software 
+displayed.
+SR6: In the event of an alarm, insulin delivery shall be suspended until the user 
+has reset the system and cleared the alarm.

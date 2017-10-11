@@ -1,0 +1,9 @@
+Attack assessment
+ Decompose threats into possible attacks on the system and the 
+Control identification
+asset.
+Feasibility assessment
+ Assess the technical feasibility and cost of the controls.
+Security requirements definition
+ Define system security requirements. These can be 
+infrastructure or application system requirements.

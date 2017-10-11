@@ -1,0 +1,8 @@
+Structured arguments that demonstrate that a system 
+meets its safety obligations.
+It is not necessary to demonstrate that the program 
+works as intended; the aim is simply to demonstrate 
+safety.
+Generally based on a claim hierarchy. 
+ You start at the leaves of the hierarchy and demonstrate safety. 
+This implies the higher-level claims are true.

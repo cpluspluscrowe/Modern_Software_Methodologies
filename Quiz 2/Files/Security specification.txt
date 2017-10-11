@@ -1,0 +1,12 @@
+ Security specification has something in common with safety 
+requirements specification –in both cases, your concern is to avoid 
+something bad happening.
+ Four major differences
+ Safety problems are accidental –the software is not operating in a 
+hostile environment. In security, you must assume that attackers have 
+knowledge of system weaknesses
+ When safety failures occur, you can look for the root cause or weakness 
+that led to the failure. When failure results from a deliberate attack, the 
+ Shutting down a system can avoid a safety-related failure. Causing a 
+ Safety-related events are not generated from an intelligent adversary. 
+An attacker can probe defenses over time to discover weaknesses.

@@ -1,0 +1,11 @@
+Vulnerabilities are often language-specific. 
+ Array bound checking is automatic in languages like Java so this 
+is not a vulnerability that can be exploited in Java programs. 
+ However, millions of programs are written in C and C++ as these 
+allow for the development of more efficient software so simply 
+avoiding the use of these languages is not a realistic option.
+Security vulnerabilities are closely related to program 
+reliability. 
+ Programs without array bound checking can crash so actions 
+taken to improve program reliability can also improve system 
+security. 

@@ -1,0 +1,12 @@
+Term Example
+Asset Therecordsofeachpatientthatisreceivingorhasreceivedtreatment.
+Exposure Potential financial loss from future patients who do not seek treatment
+becausetheydonottrusttheclinictomaintaintheirdata.Financialloss
+fromlegalactionbythesportsstar.Lossofreputation.
+Vulnerability A weak password system which makes it easy for users to set
+guessablepasswords.Useridsthatarethesameasnames.
+Attack Animpersonationofanauthorizeduser.
+Threat An unauthorized user will gain access to the system by guessing the
+credentials(loginnameandpassword)ofanauthorizeduser.
+Control A password checking system that disallows user passwords that are
+propernamesorwordsthatarenormallyincludedinadictionary.

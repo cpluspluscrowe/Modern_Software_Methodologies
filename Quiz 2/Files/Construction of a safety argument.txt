@@ -1,0 +1,9 @@
+Establish the safe exit conditions for a component or a 
+program.
+Starting from the END of the code, work backwards until 
+you have identified all paths that lead to the exit of the 
+code.
+Assume that the exit condition is false.
+Show that, for each path leading to the exit that the 
+assignments made in that path contradict the 
+assumption of an unsafe exit from the component.

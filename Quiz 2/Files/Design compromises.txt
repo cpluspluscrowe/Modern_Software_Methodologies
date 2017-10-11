@@ -1,0 +1,7 @@
+Adding security features to a system to enhance its 
+security affects other attributes of the system
+Performance
+ Additional security checks slow down a system so its response 
+Usability
+or require additional interactions to complete a transaction. This 
+makes the system less usable and can frustrate system users.

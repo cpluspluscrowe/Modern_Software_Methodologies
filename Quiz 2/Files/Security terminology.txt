@@ -1,0 +1,14 @@
+Term Definition
+systemitselfordatausedbythatsystem.
+Attack An exploitation of a system’s vulnerability. Generally, this is from outside the
+systemandisadeliberateattempttocausesomedamage.
+Control A protective measure that reduces a system’s vulnerability. Encryption is an
+example of a control that reduces a vulnerability of a weak access control
+system
+Exposure Possible loss or harm to a computing system. This can be loss or damage to
+data,orcanbealossoftimeandeffortifrecoveryisnecessaryafterasecurity
+breach.
+Threat Circumstancesthathavepotentialtocauselossorharm.Youcanthinkofthese
+asasystemvulnerabilitythatissubjectedtoanattack.
+Vulnerability Aweaknessinacomputer-basedsystemthatmaybeexploitedtocauselossor
+harm.

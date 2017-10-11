@@ -1,0 +1,7 @@
+Safety is a property of a system that reflects the system’s 
+ability to operate, normally or abnormally, without danger 
+of causing human injury or death and without damage to 
+the system’s environment.
+It is important to consider software safety as most 
+devices whose failure is critical now incorporate 
+software-based control systems. 

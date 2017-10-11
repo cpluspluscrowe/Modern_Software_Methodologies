@@ -1,0 +1,1 @@
+insulin pump will not deliver  single dose that is unsafe -> (1. the max dose cmputed by software will not exceed x, 2. maxdose is set up correctly when the pump is configred 3. maxdose is a safe dose for the use of the insulin pump) -> (1. in normal operation the max dose will not exceed maxdose 2. if the s/w fails the max dose will not exceed the max dose)
